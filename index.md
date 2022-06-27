@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: home
 title:  "Home"
 date:   2022-06-22 22:09:56 -0400
 categories: 

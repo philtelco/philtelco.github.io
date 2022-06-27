@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Making a weird amateur payphone network in Philadelphia.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
+twitter_username: philtelco
 github_username:  philtelco
 
 # Build settings
@@ -33,9 +33,7 @@ minima:
   skin: dark
 plugins:
   - jekyll-feed
-  
-minima:
-  skin: dark
+ 
 
 # Exclude from processing.
 # The following items will not be processed, by default.
