@@ -1,8 +1,17 @@
 ---
 layout: page
-title: Wish List
-permalink: /wishlist/
+title: Donate
+permalink: /donate/
 ---
+## Donations
+
+Monetary donations can be made via [Ko-fi](https://ko-fi.com/philtel).
+
+## Sponsors
+
+To grow our footprint within the city, we will need locations to install payphones. Do you or someone you know have ownership of a location where a payphone can be installed? [Let us know](../contact)!
+
+## Wishlist
 
 Philtel is always in search of hardware to support our infrastructure and installations. If you have any of the following items that you would like to part with, please [contact us](../contact)!
 
@@ -12,4 +21,4 @@ Philtel is always in search of hardware to support our infrastructure and instal
 * OpenWRT-compatible routers
 * Unlocked SIP ATA devices
 
-Monetary donations can be made via [Ko-fi](https://ko-fi.com/philtel)
+
