@@ -1,8 +1,7 @@
 ---
-layout: about
-title:  "About"
-date:   2022-08-02 11:00:00 -0400
-categories: 
+layout: page
+title:  About
+permalink : /about/
 ---
 {% raw %}<p><img style="width: 100%; display: block; margin: 0 auto; border 0" src="/assets/img/philtel-head.jpg"></p>{% endraw %} 
 
