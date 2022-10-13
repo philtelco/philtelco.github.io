@@ -5,6 +5,8 @@ date:   2022-06-27 10:00:00 -0400
 categories: payphone repair protel
 ---
 
+*Hi reader, since this post was written, there have been extensive issues getting the Protel board fully working and programmed. Because of this, a part two follow-up will be delayed but will definitely materialize after we do end up making use of the Protel board. In the meantime, we will be utilizing a coinless board within the payphone for our first install.* 
+
 I've always been interested in payphones, though I'm really not sure why. Maybe it was that kind of hacker mystique that was associated with them; there was something about exploiting a piece of technology that people just left on the street. In the late 2000s I watched as payphones slowly started to disappear, and people didn't really seem to notice. Around that time I was able to buy a payphone at a flea market and snapped it up as quick as I could. I had never seen a payphone for sale "in the wild" before and I haven't seen once since, but the price was right and I hauled the heavy thing away with hopes of getting it working and installing it for regular use in my home. However, when I got the phone home and plugged it into the phone line, I didn't get a dial tone. So, it sat, waiting for me to find time to look at it again. Now, around a decade later, I grabbed the phone and took it home to finally figure out why it wasn't working. 
 
 {% raw %}<p><center><a href="/assets/img/2022-06-27-fixing-a-protel-pt1/payphone.jpg"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-06-27-fixing-a-protel-pt1/payphone-sm.jpg"></a><figquote>The non-working payphone.</figquote></center></p>{% endraw %}  

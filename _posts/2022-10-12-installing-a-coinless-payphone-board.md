@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Installing a Coinless Payphone Board"
+date:   2022-10-12 20:00:00 -0400
+categories: payphone coinless
+---
+
+After running into some issues getting our Protel board programmed for use, we've decided to instead use a "coinless" board. The coinless board is exactly what it sounds like: a board to use within payphones or armored phones that doesn't have any logic or connections for coin components. Essentially, with this board installed, a payphone can behave like a normal house phone (or more colloquially: a freephone).  
+
+While this isn't the most fun or authentic solution to get our payphone operational, it importantly **will work** to allow users to place calls, and it installs quickly with no destruction to any existing payphone components. The coinless board we are using is known only as the 2110V, and as far as I can tell it is manufactured by a Chinese company specializing in armored and industrial phones. While the 2110V is physically small, it packs s great set of features including both four-terminal and modular connections for common handsets, compatibility with most two-wire hookswitches, adjustable volume switches, ringer support, and both RJ-11 and dial-terminal telephone line connections!  
+
+{% raw %}<p><center><a href="/assets/img/2022-10-12-installing-a-coinless-board/coinless-01.jpg"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-10-12-installing-a-coinless-board/coinless-01-sm.jpg"></a><figquote>A fresh 2110V board right out of the packaging.</figquote></center></p>{% endraw %}  
+
+For many, the 2110V may be a drop-in replacement for an existing payphone board, but in our case we also needed to swap out the keypad. Unfortunately, Protel boards rely on a keypad with a DB-25 connector while the 2110V uses a 7-pin straight connector common on Bell-style coinless phones (Do you know if there is any sort of pin compatibility between Protel and Bell coinless keypads? Let me know!). Luckily, Bell coinless keypads will fit perfectly in GTE-style payphones!  
+
+As I mentioned in a previous post, swapping out a keypad assembly is incredibly easy with just a few screws holding things in place. After installing the new keypad, the 2110V board can be easily mounted on the back of the keypad itself!  
+
+{% raw %}<p><center><a href="/assets/img/2022-10-12-installing-a-coinless-board/coinless-02.jpg"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-10-12-installing-a-coinless-board/coinless-02-sm.jpg"></a><figquote>The 2110V is mounted on the back of the keypad in the housing.</figquote></center></p>{% endraw %}
+
+The only thing left that the 2110V lacks that we wanted to include with this phone is a ringer. Older payphones would typically have a bell/gong ringer (with physical bells that clang when a call is incoming) but more modern phones will make use of a piezoelectric ringer. Fortunately, there is a small piezo ringer made specifically for the 2110V that we were able to purchase. Oddly, the 2110V board uses DuPont connectors for the ringer while the ringer board itself uses a 2.54mm 2-pin JST connector. In lieu of just soldering some wire directly to points on each board, we went ahead and created a custom cable with two DuPont female connectors on one end and a male 2-pin JST connector on the other. After hooking up the ringer to the 2110V board, plugging in the telephone line, and giving the phone a call, the ringer sounded off as expected (loudly).  
+
+{% raw %}<p><center><a href="/assets/img/2022-10-12-installing-a-coinless-board/coinless-03.jpg"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-10-12-installing-a-coinless-board/coinless-03-sm.jpg"></a><figquote>The 2110V ringer board.</figquote></center></p>{% endraw %}
+
+While the 2110V can mount nicely to the back of the keypad, there isn't an obvious mounting point for the ringer board, though some adhesive-back hook and loop fasteners saved the day and we were able to secure the ringer board directly to the upper housing.  
+
+{% raw %}<p><center><a href="/assets/img/2022-10-12-installing-a-coinless-board/coinless-04.jpg"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-10-12-installing-a-coinless-board/coinless-04-sm.jpg"></a><figquote>Everything mounted in the housing.</figquote></center></p>{% endraw %}
+
+The call quality through the 2110V seems to be pretty good. At first we experienced a grounding issue of some sort (if you touched the metal on the front of the phone you could hear some buzzing) but that hasn't happened after the first day or two. We did find a ground point on the board in the off-chance we need to bond to the housing in the future. One chip on the board, the 74HC393N, has ground on pin 7. Checking around on the board with a multimeter in continuity mode, this pin seems to be connected the the GREEN/TX- terminal for the handset which would provide an easy place to connect an additional wire if needed in the future.  
+
+While this solution works well for our needs until we can utilize the Protel board, there is room for more experimentation. It would be interesting to find a compatible gong ringer that could be hooked up to the phone to hear a more authentic ring when getting a call (let me know if you have any ideas, but I think a Western Electric C4 wired in parallel with the phone line may yield good results). Further, it would be great to find an old Western Electric Chassis 32A/32B/32C which was an older payphone board meant to operate on telephone-company-owned payphone lines. While these boards aren't designed to fit GTE-style housing and probably won't work out of the box with Bell coinless of Protel keypads, they could be a less expensive option to achieve coinless operaton.
