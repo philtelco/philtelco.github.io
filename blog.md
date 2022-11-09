@@ -4,7 +4,7 @@ layout: default
 ---
 # {{ page.title }}
 
-philtel's blog posts are listed here!
+PhilTel's blog posts are listed here!
 
 {% for post in site.posts %}
 {% assign currentdate = post.date | date: "%Y-%m-%d" %}
