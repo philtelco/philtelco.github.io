@@ -13,7 +13,7 @@ To grow our footprint within the city, we will need locations to install payphon
 
 ## Wishlist
 
-Philtel is always in search of hardware to support our infrastructure and installations. If you have any of the following items that you would like to part with, please [contact us](../contact)!
+PhilTel is always in search of hardware to support our infrastructure and installations. If you have any of the following items that you would like to part with, please [contact us](../contact)!
 
 * Payphones and payphone parts (including handsets, keys, vault doors, keypads, etc.)
 * Payphone enclosures (boothetes, pedestals, backplates, etc.)
