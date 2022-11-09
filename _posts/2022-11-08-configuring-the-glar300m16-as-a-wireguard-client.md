@@ -5,7 +5,7 @@ date:   2022-11-08 20:30:00 -0400
 categories: openwrt router glinet
 ---
 
-Now that [we have our router connected to the WAN](./2022-11-08-configuring-the-glar300m16-as-a-routed-client.md) and [the WireGuard server is installed](./2022-11-08-configuring-a-wireguard-server.md), we need to install WireGuard on our router to allow it to access the VPN.
+Now that [we have our router connected to the WAN]({{ site.baseurl }}/openwrt/router/glinet/2022/11/09/configuring-the-glar300m16-as-a-routed-client.html) and [the WireGuard server is installed]({{ site.baseurl }}/wireguard/vpn/2022/11/09/configuring-a-wireguard-server.html), we need to install WireGuard on our router to allow it to access the VPN.
 
 ## Installing WireGuard
 
@@ -39,7 +39,7 @@ Finally, reboot. You must perform this step before adding an interface.
 
 ## Configuring an Interface
 
-After a few minutes the router should be rebooted. Navigate to the web interface at http://192.168.1.1 and go to *Network* --> *Interfaces*. Near the bottom of the screen press the button for *Add New Interface...* In the dialog, name the interface `philtel` and set the protocol to `WireGuard VPN` before pressing the *Create Interface* button.
+After a few minutes the router should be rebooted. Navigate to the web interface at <http://192.168.1.1> and go to *Network* --> *Interfaces*. Near the bottom of the screen press the button for *Add New Interface...* In the dialog, name the interface `philtel` and set the protocol to `WireGuard VPN` before pressing the *Create Interface* button.
 
 On the *Interfaces* dialog, check the box for *Bring up on boot* and enter the private key we saved earlier into the corresponding field. In the box next to *IP Addresses*, we will put in an address in our server's advertised range such as `10.11.12.13`.
 
@@ -95,7 +95,7 @@ $ sudo systemctl reload wg-quick@wg0.service
 
 We noticed after downtime/reboots that the WireGuard interface on the router will appear to connect and send TX, but it will not get any RX back. The temporarily solution for this was to up/down the interface on the server side, but this is a bad fix as it has to be done manually and power outages can never be predicted. There should not need to be human intervention for reconnection.  
 
-A similar issue was reported in this thread and workarounds were provided, https://forum.openwrt.org/t/wireguard-not-re-establishing-connection/90556/3  
+A similar issue was reported in this thread and workarounds were provided, <https://forum.openwrt.org/t/wireguard-not-re-establishing-connection/90556/3>.  
 
 NOTE: After applying the below workarounds, complete reconnection after a power cycle may take up to 3 minutes (could be more).  
 

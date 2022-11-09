@@ -9,7 +9,7 @@ To allow each of our phones to access the PhilTel network, we set up a Virtual P
 
 We use WireGuard to facilitate connection between our main C&C server and each client site. Using this VPN, we can also easily administer the hardware at each site as we need.
 
-WireGuard was chosen over OpenVPN due to its reliability, low latency, and ease of use. WireGuard is also considerably faster than OpenVPN but that doesn't matter much for our purposes because each site uses a low amount of data..
+WireGuard was chosen over OpenVPN due to its reliability, low latency, and ease of use. WireGuard is also considerably faster than OpenVPN but that doesn't matter much for our purposes because each site uses a low amount of data.
 
 ## Installing WireGuard
 

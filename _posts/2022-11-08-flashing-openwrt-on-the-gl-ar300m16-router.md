@@ -13,7 +13,7 @@ This device seems to be cost-effective at around $27 USD. This is around the sam
 
 Note: This device is very different than the GL-MT300N-V2 (Mango) device even though they are offered at the same price point and seem to have an identical formfactor. Thile the GL-AR300M16 has a well supported Qualcomm Atheros QCA9531 chipset, the GL-MT300N-V2 has a MediaTek MTK7628NN chipset.
 
-Official site: https://www.gl-inet.com/products/gl-ar300m/
+Official site: <https://www.gl-inet.com/products/gl-ar300m/>
 
 ## Flashing OpenWRT
 
@@ -21,21 +21,21 @@ We will be installing the powerful, open-source [OpenWRT](https://openwrt.org/) 
 
 ### Initial Flash
 
-The AR300M16 can be flashed via the stock GL.iNet web interface. Connect an ethernet cable between your computer and the LAN jack on the router and navigate to `http://192.168.8.1` to login. Once in the web interface, use the left navigation to continue to the *Upgrade* page. Choose *Local Upgrade* and uncheck the option for *Keep Settings*. Drag/drop an OpenWRT `ramfs` image targeted for the router.
+The AR300M16 can be flashed via the stock GL.iNet web interface. Connect an ethernet cable between your computer and the LAN jack on the router and navigate to <http://192.168.8.1> to login. Once in the web interface, use the left navigation to continue to the *Upgrade* page. Choose *Local Upgrade* and uncheck the option for *Keep Settings*. Drag/drop an OpenWRT `ramfs` image targeted for the router.
 
-At the time of writing, https://downloads.openwrt.org/releases/21.02.3/targets/ath79/generic/openwrt-21.02.3-ath79-generic-glinet_gl-ar300m16-initramfs-kernel.bin was used. 
+At the time of writing, <https://downloads.openwrt.org/releases/21.02.3/targets/ath79/generic/openwrt-21.02.3-ath79-generic-glinet_gl-ar300m16-initramfs-kernel.bin> was used. 
 
 Finally, press the *Install* button and wait a few minutes for the firmware to be flashed. Do not unplug anything during this process.
 
-After a few minutes you should be able to access luci (OpenWRT's web interface) through http://192.168.1.1
+After a few minutes you should be able to access luci (OpenWRT's web interface) through <http://192.168.1.1>.
 
 ### Second Flash
 
 If all goes well, we will now want to flash with a `squashfs` image so we can make our changes persistent and not boot from a ramdisk. In the OpenWRT web interface, navigate to *System* --> *Backup / Flash Firmware* and then scroll down to the *Flash new firmware image* section. Press the button for *Flash image...* and choose the squashfs image to flash with.
 
-At the time of writing, we will use https://downloads.openwrt.org/releases/21.02.3/targets/ath79/generic/openwrt-21.02.3-ath79-generic-glinet_gl-ar300m16-squashfs-sysupgrade.bin
+At the time of writing, we will use <https://downloads.openwrt.org/releases/21.02.3/targets/ath79/generic/openwrt-21.02.3-ath79-generic-glinet_gl-ar300m16-squashfs-sysupgrade.bin>
 
-Follow the prompts to upload the image and then before flashing, uncheck the option for *Keep settings and retain the current configuration.* Finally, press the *Continue* button and flash the router. Again, this may take a few minutes but after some time the web interface should come back up at http://192.168.1.1
+Follow the prompts to upload the image and then before flashing, uncheck the option for *Keep settings and retain the current configuration.* Finally, press the *Continue* button and flash the router. Again, this may take a few minutes but after some time the web interface should come back up at <http://192.168.1.1>.
 
 ## Set root Password
 

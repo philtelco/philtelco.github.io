@@ -9,7 +9,7 @@ We may want to get into our router or ATA remotely so it is a good idea to port 
 
 ## Setting an IP Reservation
 
-Navigate to the web interface at http://192.168.1.1 and go to *Network* --> *DHCP and DNS*. At the bottom of the page, view the current DHCP leases and find the one for the ATA, noting the MAC address. Click on the *Add* button and select the corresponding MAC address from the *MAC-Address* dropdown. In the *IPV4-Address* dropdown, enter the IP address for the ATA (likely in the format `191.168.1.x`). In the *Hostname* field enter in `ATA` and in the *Lease time* field enter `infinite`. Next, press the "Save" button. 
+Navigate to the web interface at <http://192.168.1.1> and go to *Network* --> *DHCP and DNS*. At the bottom of the page, view the current DHCP leases and find the one for the ATA, noting the MAC address. Click on the *Add* button and select the corresponding MAC address from the *MAC-Address* dropdown. In the *IPV4-Address* dropdown, enter the IP address for the ATA (likely in the format `191.168.1.x`). In the *Hostname* field enter in `ATA` and in the *Lease time* field enter `infinite`. Next, press the "Save" button. 
 
 Then on the bottom of the *DHCP and DNS* page press the button for *Save & Apply*.
 

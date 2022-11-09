@@ -9,7 +9,7 @@ Earlier versions of the Franklin T9 firmware had some developer/engineer menus t
 
 My Franklin T9 was originally running firmware 2602 when I received it, but firmware 1311 is recommended. Here we will document the downgrade process and provide information for accessing the hidden/secret configuration screens.
 
-Also, be sure to see the previous post about [SIM Unlocking the Franklin T9](./2022-11-08-sim-unlock-a-franklin-t9-hotspot.md).
+Also, be sure to see the previous post about [SIM Unlocking the Franklin T9]({{ site.baseurl }}/franklin/t9/hotspot/2022/11/09/sim-unlock-a-franklin-t9-hotspot.html).
 
 As with the last post, the below content is sourced heavily from the following two web pages:
 * [Rooting and Unlocking the T-Mobile T9 (Franklin Wireless R717)](https://snt.sh/2020/09/rooting-the-t-mobile-t9-franklin-wireless-r717/) 
@@ -19,9 +19,9 @@ As with the last post, the below content is sourced heavily from the following t
 
 Before we downgrade, the Franklin T9 must have a working SIM (with data), a fully charged battery, and be on firmware 2602 for this to work.
 
-Now, download the following config file: https://snt.sh/uploads/t9/configs/downgrade_2602_to_1311_config.bin
+Now, download the following config file: <https://snt.sh/uploads/t9/configs/downgrade_2602_to_1311_config.bin>
 
-Go to the *Backup and Restore* page on the Franklin unit at http://192.168.0.1/settings/device-backup_and_restore.html. Once here, select the config file you just downloaded and click *Restore Now*. 
+Go to the *Backup and Restore* page on the Franklin unit at <http://192.168.0.1/settings/device-backup_and_restore.html>. Once here, select the config file you just downloaded and click *Restore Now*. 
 
 The file will begin to upload and eventually the device will reboot on its own. At this point, leave the device alone for about 15 minutes so the device can pull the proper (older) firmware. You will know the device is updating because the LCD screen will show "Updating." 
 
@@ -31,7 +31,7 @@ After updating, the device should reboot to factory defaults with the desired fi
 
 Now we can enable SSH access on the device by modifying the config file.
 
-Go to the *Backup and Restore* page on the Franklin unit at http://192.168.0.1/settings/device-backup_and_restore.html and backup the config.
+Go to the *Backup and Restore* page on the Franklin unit at <http://192.168.0.1/settings/device-backup_and_restore.html> and backup the config.
 
 Now, on a Linux machine running Python 3 and OpenSSL 1.1.0 or newer, run [this script](https://gist.github.com/riptidewave93/ad135229b0f0939da7bd223d7f723528) which I'm also pasting below for safe keeping:
 
@@ -138,7 +138,7 @@ If the above script is saved as `enablessh.py` you could run it via:
 $ python3 enablessh.py myconfig.bin
 ```
 
-This will output a modified file `hotspot_cfg_ssh_enabled.bin` that can then be restored on the Franklin T9 via the same *Backup and Restore* page, http://192.168.0.1/settings/device-backup_and_restore.html
+This will output a modified file `hotspot_cfg_ssh_enabled.bin` that can then be restored on the Franklin T9 via the same *Backup and Restore* page, <http://192.168.0.1/settings/device-backup_and_restore.html>.
 
 The root password is `frk9x07`.
 
@@ -151,17 +151,17 @@ Hidden Web Pages
 During my digging around the device I found a handful of hidden pages, which were secured by plain text passwords that were statically built into binaries. Below you can find the pages I found, as well as where I found the passwords for said pages.
 
 * Hidden Configuration Pages
-  - http://192.168.0.1/hidden/
-  - http://192.168.0.1/webpst/
-    * Password: frk@r717
+  - <http://192.168.0.1/hidden/>
+  - <http://192.168.0.1/webpst/>
+    * Password: **frk@r717**
 	* Password was extracted from /var/volatile/www/htdocs/cgi-bin/login.cgi
 * IT Admin Page
-  - http://192.168.0.1/itadmin/
-    * Password: t9_it_@dmin
+  - <http://192.168.0.1/itadmin/>
+    * Password: **t9_it_@dmin**
     *Password was extracted from /var/volatile/www/htdocs/cgi-bin/logi
 * Hidden Engineering Page
-  - http://192.168.0.1/engineering/franklin/
-    * Username: r717
-    * Password: frkengr717
+  - <http://192.168.0.1/engineering/franklin/>
+    * Username: **r717**
+    * Password: **frkengr717**
     * User and Password were extracted from /etc/pwlighttpd
     * Note: On firmwares newer than 891, you need to first run the following as root before you can access the engineering pages, `/usr/bin/copy_htdocs.sh eng`
