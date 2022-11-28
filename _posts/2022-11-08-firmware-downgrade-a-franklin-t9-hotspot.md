@@ -9,7 +9,7 @@ Earlier versions of the Franklin T9 firmware had some developer/engineer menus t
 
 My Franklin T9 was originally running firmware 2602 when I received it, but firmware 1311 is recommended. Here we will document the downgrade process and provide information for accessing the hidden/secret configuration screens.
 
-Also, be sure to see the previous post about [SIM Unlocking the Franklin T9]({{ site.baseurl }}/franklin/t9/hotspot/2022/11/09/sim-unlock-a-franklin-t9-hotspot.html).
+Also, be sure to see the previous post about [SIM Unlocking the Franklin T9]({{ site.baseurl }}/2022/11/09/sim-unlock-a-franklin-t9-hotspot.html).
 
 As with the last post, the below content is sourced heavily from the following two web pages:
 * [Rooting and Unlocking the T-Mobile T9 (Franklin Wireless R717)](https://snt.sh/2020/09/rooting-the-t-mobile-t9-franklin-wireless-r717/) 

@@ -26,3 +26,5 @@ I decided to get the cards printed on matte photo paper from [Amazon](https://ww
 Ultimately, I think that the instruction cards look pretty great in the phone, though I could have done a better job with how I cut the cards with regards to whitespace. The top plastic cover was also a bit too large when I installed it so it bows outwards slightly (and because of this there isn't a great way to remove it without damaging it) but it doesn't obscure the card underneath which is the most important thing to consider.
 
 {% raw %}<p><center><a href="/assets/img/2022-11-14-creating-new-payphone-instruction-cards/cards05.jpg"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-14-creating-new-payphone-instruction-cards/cards05-sm.jpg"></a><figquote>The new cards cut and installed in the upper housing.</figquote></center></p>{% endraw %}  
+
+Hopefully these new cards will provide the user with information about the project and even provide some numbers to call if they can't think of any!

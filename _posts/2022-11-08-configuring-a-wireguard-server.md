@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "Configuring a WireGuard Server"
+title:  "[Deprecated] Configuring a WireGuard Server"
 date:   2022-11-08 20:00:00 -0400
 categories: wireguard vpn
 ---
+
+*Note: The following guide has been deprecated in our configuration as we have switched to using OpenVPN. OpenVPN is supported natively by our ATAs, so in some installations, we may not even need a router installed*
 
 To allow each of our phones to access the PhilTel network, we set up a Virtual Private Network (VPN) to allow a secure connection between each of our sites and our server running Asterisk.
 

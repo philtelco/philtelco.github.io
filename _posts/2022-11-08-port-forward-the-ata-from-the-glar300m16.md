@@ -5,7 +5,7 @@ date:   2022-11-08 20:35:00 -0400
 categories: openwrt ata router
 ---
 
-We may want to get into our router or ATA remotely so it is a good idea to port forward necessary ports to our WireGuard network.
+We may want to get into our router or ATA remotely so it is a good idea to port forward necessary ports to our VPN network.
 
 ## Setting an IP Reservation
 
@@ -19,4 +19,4 @@ Go to *Network* --> *Firewall* and the navigate to the *Port Forwards* tab. Pres
 
 Finally on the bottom of the *Port Forwards* page press the button for *Save & Apply*.
 
-Now, from the WireGuard server you should be able to remotely access the ATA's web interface through port `8080` on the internal WireGuard `10.11.12.x` IP address if needed.
+Now, from the VPN server you should be able to remotely access the ATA's web interface through port `8080` on the internal WireGuard `10.11.12.x` IP address if needed.

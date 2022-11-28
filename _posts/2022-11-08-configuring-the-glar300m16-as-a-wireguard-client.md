@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Configuring the GL-AR300M16 as a WireGuard Client"
+title: "[Deprecated] Configuring the GL-AR300M16 as a WireGuard Client"
 date:   2022-11-08 20:30:00 -0400
 categories: openwrt router glinet
 ---
 
-Now that [we have our router connected to the WAN]({{ site.baseurl }}/openwrt/router/glinet/2022/11/09/configuring-the-glar300m16-as-a-routed-client.html) and [the WireGuard server is installed]({{ site.baseurl }}/wireguard/vpn/2022/11/09/configuring-a-wireguard-server.html), we need to install WireGuard on our router to allow it to access the VPN.
+*Note: The following guide has been deprecated in our configuration as we have switched to using OpenVPN. OpenVPN is supported natively by our ATAs, so in some installations, we may not even need a router installed*
+
+Now that [we have our router connected to the WAN]({{ site.baseurl }}/2022/11/09/configuring-the-glar300m16-as-a-routed-client.html) and [the WireGuard server is installed]({{ site.baseurl }}/2022/11/09/configuring-a-wireguard-server.html), we need to install WireGuard on our router to allow it to access the VPN.
 
 ## Installing WireGuard
 
