@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Configuring an OpenVPN Server"
-date:   2022-11-18 00:01:00 -0400
+date:   2022-11-28 00:01:00 -0400
 categories: openvpn vpn
 ---
 
@@ -11,7 +11,7 @@ We use OpenVPN to facilitate connection between our main C&C server and each cli
 
 OpenVPN is now favored over WireGuard as our ATAs natively support it. WireGuard also had some stability issues in our testing, though it could become a viable candidate again in the future for some use-cases.
 
-#IP Forwarding
+# IP Forwarding
 
 We must enable IPv4 forwarding on the server by modifying `/etc/sysctl.conf` and uncommenting `net.ipv4.ip_forward=1`. This will make sure that traffic can flow from our OpenVPN peers through the server:
 
@@ -51,4 +51,4 @@ $ sudo systemctl stop openvpn@server
 
 ## Sources
 
-* https://www.cyberciti.biz/faq/debian-10-set-up-openvpn-server-in-5-minutes/
+* [https://www.cyberciti.biz/faq/debian-10-set-up-openvpn-server-in-5-minutes/](https://www.cyberciti.biz/faq/debian-10-set-up-openvpn-server-in-5-minutes/)

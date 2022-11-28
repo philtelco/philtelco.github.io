@@ -7,7 +7,7 @@ categories: openwrt router glinet
 
 *Note: The following guide has been deprecated in our configuration as we have switched to using OpenVPN. OpenVPN is supported natively by our ATAs, so in some installations, we may not even need a router installed*
 
-Now that [we have our router connected to the WAN]({{ site.baseurl }}/2022/11/09/configuring-the-glar300m16-as-a-routed-client.html) and [the OpenVPN server is installed]({{ site.baseurl }}/2022/11/09/configuring-an-openvpn-server.html), we need to install OpenVPN on our router to allow it to access the VPN.
+Now that [we have our router connected to the WAN]({{ site.baseurl }}/2022/11/09/configuring-the-glar300m16-as-a-routed-client.html) and [the OpenVPN server is installed]({{ site.baseurl }}/2022/11/28/configuring-an-openvpn-server.html), we need to install OpenVPN on our router to allow it to access the VPN.
 
 ## Installing OpenVPN
 
