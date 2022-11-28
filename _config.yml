@@ -28,6 +28,7 @@ twitter_username: philtelco
 github_username:  philtelco
 
 # Build settings
+permalink: /:year/:month/:day/:title.html
 theme: minima
 minima:
   skin: dark
