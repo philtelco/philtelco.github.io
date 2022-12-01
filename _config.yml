@@ -27,6 +27,10 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: philtelco
 github_username:  philtelco
 
+mastodon:
+- username: philtel
+  instance: jawns.club
+
 # Build settings
 permalink: /:year/:month/:day/:title.html
 theme: minima
