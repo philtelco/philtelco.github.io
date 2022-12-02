@@ -32,6 +32,10 @@ Similarly if you own a red box, PhreakNet has several numbers you can dial that 
 
 Blue boxes are not readily available commercially, though they can be built from electronic components or simulated via a computer or mobile phone. Check out [PhreakNet's Virtual Blue Box](https://phreaknet.org/bluebox/){:target="_blank"} that will run in a web browser. If you feel like building a blue box, I recommend [Don Froula's Arduino-based Multi-Mode Blue Box](https://www.instructables.com/Arduino-12-mode-Blue-Box-Introduction/){:target="_blank"}, which can playback blue box tones, red box tones, and many others!
 
+<iframe title="PhilTel Payphone Blue Boxing" src="https://diode.zone/videos/embed/7e8a7961-4432-4e0e-a7dc-db79e5fbaf93" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe>
+
 ## Acquiring a Red box
 
 Similar to blue boxes, red boxes can be built by modifying pocket tone dialers, assembled by hand from electronic components, or simulated via audio files. Check out [phonelosers.org dummies guide to red boxing ](http://www.phonelosers.org/redbox/){:target="_blank"} for downloads of coin tone audio files. If you feel like building a red box, I once again recommend building [Don Froula's Arduino-based Multi-Mode Blue Box](https://www.instructables.com/Arduino-12-mode-Blue-Box-Introduction/){:target="_blank"}, which can playback blue box tones, red box tones, and many others! You can also try building your own red box by [modifying a pocket tone dialer](https://phonelosers.com/redbox/tonedialer/){:target="_blank"} though I have yet to get this to work properly over our system.
+
+<iframe title="PhilTel Payphone Red Boxing" src="https://diode.zone/videos/embed/5ef97335-b8bc-4be6-ac5c-b3aeb2e00354" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe>
