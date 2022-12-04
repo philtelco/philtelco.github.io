@@ -12,6 +12,8 @@ PhilTel is looking to install new (to us) payphones within the city of Philadelp
 
 Want to know how we are building the network? Check out the [about](../about) page!
 
+PhilTel is funded 100% by donations. We collect no data from users and have no record or insight into the content of calls. We may have phone numbers dialed kept in logs temporarily for debugging purposes, but they are cycled out and not kept long-term.
+
 PhilTel was founded in June 2022 and was inspired by [Futel](http://futel.net/){:target="_blank"}.
 
 **Our first payphone will be installed at [Iffy Books](https://iffybooks.net){:target="_blank"} on December 17th! See the event page [here](https://iffybooks.net/event/philtel-free-payphone/){:target="_blank"}!**
