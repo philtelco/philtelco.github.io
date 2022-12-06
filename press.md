@@ -3,6 +3,8 @@ layout: page
 title: Press
 permalink: /press/
 ---
+* 2022-12-05 - [Volunteers in Philadelphia have plan to reinvent public phones](https://youtu.be/kg0JmheBSGk){:target="_blank"} - CBS Philadelphia
+* 2022-12-05 - [Free pay phones coming to Philadelphia for people without cell phones](https://www.audacy.com/kywnewsradio/news/local/free-pay-phones-installed-philadelphia-philtel){:target="_blank"} - KYW Newsradio
 * 2022-12-04 - [A volunteer collective is setting up free pay phones in Philadelphia](https://www.cnn.com/2022/12/04/us/philadelphia-pay-phones-philtel-trnd/index.html){:target="_blank"} - cnn.com
 * 2022-12-03 - [Philadelphia is taking the city back to the past by reinstalling pay phones](hhttps://www.upworthy.com/philadelphia-is-reinstalling-pay-phones){:target="_blank"} - Upworthy.com
 * 2022-12-03 - [The return of pay phones in Philly? One hacker wants to make it happen.](https://www.inquirer.com/business/technology/philtel-free-pay-phones-philadelphia-20221203.html){:target="_blank"} - Inquirer.com
