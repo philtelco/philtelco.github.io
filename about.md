@@ -11,13 +11,13 @@ PhilTel is an amateur phone collective looking to install new (to us) payphones 
 
 ### How is PhilTel funded?
 
-PhilTel is funded completely by donations. If you would like to donate, please check out our [donations page](../donate) for options!
+PhilTel is funded 100% by donations. If you would like to donate, please check out our [donations page](../donate) for options!
 
 We do not play advertisements before, during, or after phone calls.
 
 ### Are my calls private?
 
-PhilTel does not collect any information regarding the caller or contents of any call. At most, we may capture the phone number dialed if we are actively debugging an issue, but this data is not kept long term.
+We collect no data from users and have no record or insight into the contents of calls. At most, we may capture the phone number dialed if we are actively debugging an issue, but this data is not kept long term.
 
 Further, calls are encrypted from the phone site to our server. Any bad actors at the phone location will not be able to inspect call traffic even if they are on the same Internet connection.
 
@@ -26,6 +26,12 @@ Further, calls are encrypted from the phone site to our server. Any bad actors a
 Probably! Please reach out to us via our [contact page](../contact)!
 
 All payphones we utilized will either be acquired from donations or the used market. Contrary to anything you may have heard, it is perfectly legal to own/buy/sell a payphone as a private individual or organization.
+
+### Are there other projects like this?
+
+[Futel](https://futel.net){:target="_blank"} is a Portland, Oregon-based phone company started in 2014 by Karl Anderson. Futel currently operates twelve free-to-use phones (both payphones and armored phones) within Oregon, Washington, and Michigan, including one at Right 2 Dream Too, a self-managed houseless encampment in Portland. Fore more information, visit 
+
+[Talk To Me](http://talktomenyc.com/){:target="_blank"} is a network of five public payphones located in each of the five boroughs of New York City, that only call each other. Participants who pick up a TTM receiver set the other four ringing, inviting passing New Yorkers to answer the call. Upon connection, two unsuspecting strangers are thrust into conversation and left to navigate a serendipitous interaction with their neighbor. Talk To Me was launched in June 2022 by Jordan Seiler. For more information visit
 
 ### How does the PhilTel network work?  
 

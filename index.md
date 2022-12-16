@@ -10,10 +10,6 @@ We're an amateur phone collective in Philadelphia! Are you a hacker, artist, or 
 
 PhilTel is looking to install new (to us) payphones within the city of Philadelphia. Any payphone installed will be completely free-to-use, allowing the user to place calls within North America. Additionally, we would like to provide various experiences and services through the phones; these could be as simple as voicemail, fun as a phone number that randomly calls other payphones, or as complex as an integration with phone collectors' networks to allow [phone-phreaking](https://en.wikipedia.org/wiki/Phreaking){:target="_blank"} and exploration!
 
-Want to know how we are building the network? Check out the [about](../about) page!
-
-PhilTel is funded 100% by donations. We collect no data from users and have no record or insight into the contents of calls. We may have phone numbers dialed kept in logs temporarily for debugging purposes, but they are cycled out and not kept long-term.
-
 PhilTel was founded in June 2022 and was inspired by [Futel](http://futel.net/){:target="_blank"}.
 
 **Our first payphone will be installed at [Iffy Books](https://iffybooks.net){:target="_blank"} on December 17th! See the event page [here](https://iffybooks.net/event/philtel-free-payphone/){:target="_blank"}!**
