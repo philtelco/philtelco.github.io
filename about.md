@@ -5,7 +5,29 @@ permalink : /about/
 ---
 {% raw %}<p><img style="width: 100%; display: block; margin: 0 auto; border 0" src="/assets/img/philtel-head.jpg"></p>{% endraw %} 
 
-Want to know how the PhilTel network actually works?  
+PhilTel is an amateur phone collective looking to install new (to us) payphones within the city of Philadelphia. Any payphone installed will be completely free-to-use, allowing the user to place calls within North America. Additionally, we would like to provide various experiences and services through the phones; these could be as simple as voicemail, fun as a phone number that randomly calls other payphones, or as complex as an integration with phone collectors' networks to allow [phone-phreaking](https://en.wikipedia.org/wiki/Phreaking){:target="_blank"} and exploration!
+
+## Frequently Asked Questions
+
+### How is PhilTel funded?
+
+PhilTel is funded completely by donations. If you would like to donate, please check out our [donations page](../donate) for options!
+
+We do not play advertisements before, during, or after phone calls.
+
+### Are my calls private?
+
+PhilTel does not collect any information regarding the caller or contents of any call. At most, we may capture the phone number dialed if we are actively debugging an issue, but this data is not kept long term.
+
+Further, calls are encrypted from the phone site to our server. Any bad actors at the phone location will not be able to inspect call traffic even if they are on the same Internet connection.
+
+### I have an old payphone in my basement, do you want it?
+
+Probably! Please reach out to us via our [contact page](../contact)!
+
+All payphones we utilized will either be acquired from donations or the used market. Contrary to anything you may have heard, it is perfectly legal to own/buy/sell a payphone as a private individual or organization.
+
+### How does the PhilTel network work?  
 
 To power the telephone network that drives the payphones, we are making use of commodity hardware (especially used/discarded and low-power-consumption hardware) and open-source software where available. The workhorse of our network is an [Asterisk](https://www.asterisk.org/){:target="_blank"}-based Public Branch eXchange (PBX) running on a virtual private server (VPS) on the Internet. Asterisk acts a bit like a bridge between the Public Switched Telephone Network (PSTN) and our collection of payphones; we can facilitate connections between the payphones and the outside world seamlessly. To connect to the PSTN, we get service through a Voice over Internet Protocol (VoIP) provider (think of them like an Internet Service Provider but for telephony). However, Asterisk is much more powerful than a simple traffic controller, and it lets us create our own services or connections to private telephone networks that any caller can access!  
 Each site where a payphone is installed will connect to our Asterisk server through two pieces of hardware: a GL.iNet GL-AR300M16 router and a Grandstream HT801 Analog Telephone Adapter (ATA). These devices connect to mains power (pulling less than 1A at 5V in total), though we hope to explore solar options in the future.  
