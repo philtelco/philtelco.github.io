@@ -3,6 +3,7 @@ layout: page
 title: Press
 permalink: /press/
 ---
+* 2022-12-17 - [Philadelphians welcomed PhilTel’s first free public phone as a small way to resist big tech](https://www.inquirer.com/news/philadelphia/philtel-first-free-payphone-installed-philadelphia-20221217.html){:target="_blank"} - Inquirer.com
 * 2022-12-16 - [Remember the pay phone? This man is bringing them back at no cost](https://www.washingtonpost.com/lifestyle/2022/12/16/philadelphia-free-pay-phones-dank/){:target="_blank"} - Washingtonpost.com
 * 2022-12-16 - [Remember Pay Phones? A Philly Man Is Bringing Them Back Without the Pay Part](https://www.nbcphiladelphia.com/news/tech/pay-phone-philadelphia/3452775/){:target="_blank"} - NBC Philadelphia
 * 2022-12-05 - [Volunteers in Philadelphia have plan to reinvent public phones](https://youtu.be/kg0JmheBSGk){:target="_blank"} - CBS Philadelphia
