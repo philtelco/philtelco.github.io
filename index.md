@@ -12,4 +12,4 @@ PhilTel is looking to install new (to us) payphones within the city of Philadelp
 
 PhilTel was founded in June 2022 and was inspired by [Futel](http://futel.net/){:target="_blank"}.
 
-**Our first payphone will be installed at [Iffy Books](https://iffybooks.net){:target="_blank"} on December 17th! See the event page [here](https://iffybooks.net/event/philtel-free-payphone/){:target="_blank"}!**
+**Our first payphone is installed at [Iffy Books](https://iffybooks.net){:target="_blank"} and went live on December 17th!**
