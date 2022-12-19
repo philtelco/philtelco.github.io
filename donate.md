@@ -7,7 +7,7 @@ permalink: /donate/
 
 Monetary donations can be made via [Ko-fi](https://ko-fi.com/philtel){:target="_blank"} and/or [Patreon](https://www.patreon.com/philtel){:target="_blank"}. 
 
-We also have print-on-demand clothing for sale [here](https://philtel.myspreadshop.com/all){:target="_blank"}, with ~$4.50 of each purchase going to support PhilTel!
+We also have print-on-demand clothing for sale [here](https://philtel.myspreadshop.com/all){:target="_blank"}, with ~$4 of each purchase going to support PhilTel!
 
 Alternatively, coins can be donated by dropping them directly into the coin slot on a PhilTel phone (no change given).
 
