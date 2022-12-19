@@ -25,4 +25,8 @@ PhilTel is always in search of hardware to support our infrastructure and instal
 * OpenWRT-compatible routers
 * Unlocked SIP ATA devices
 
+## Patreon Supporters
+
+Zach S.
+
 
