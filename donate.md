@@ -5,7 +5,9 @@ permalink: /donate/
 ---
 ## Donations
 
-Monetary donations can be made via [Ko-fi](https://ko-fi.com/philtel). Alternatively, coins can be donated by dropping them directly into the coin slot on a PhilTel phone (no change given).
+Monetary donations can be made via [Ko-fi](https://ko-fi.com/philtel){:target="_blank"} and/or [Patreon](https://www.patreon.com/philtel){:target="_blank"}. 
+
+Alternatively, coins can be donated by dropping them directly into the coin slot on a PhilTel phone (no change given).
 
 ## Sponsors
 
