@@ -37,8 +37,8 @@ permalink: /:year/:month/:day/:title.html
 theme: minima
 minima:
   skin: dark
-plugins:
-  - jekyll-feed
+#plugins:
+#  - jekyll-feed
  
 
 # Exclude from processing.
