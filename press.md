@@ -3,6 +3,9 @@ layout: page
 title: Press
 permalink: /press/
 ---
+* 2022-12-21 - [Morning Edition](https://www.npr.org/programs/morning-edition/2022/12/21/1144623666/morning-edition-for-december-21-2022?showDate=2022-12-21){:target="_blank"} - npr.org
+* 2022-12-20 - [As It Happens with Nil Köksal, Chris Howden](https://www.cbc.ca/listen/live-radio/1-2-as-it-happens/clip/15956148-school){:target="_blank"} - cbc.ca
+* 2022-12-20 - [The Jerry Agar Show](https://www.iheart.com/podcast/962-the-jerry-agar-show-88415847/episode/tues-dec-20th-hour-2-were-any-106230041/){:target="_blank"} - Newstalk 1010 Toronto
 * 2022-12-17 - [Philadelphians welcomed PhilTel’s first free public phone as a small way to resist big tech](https://www.inquirer.com/news/philadelphia/philtel-first-free-payphone-installed-philadelphia-20221217.html){:target="_blank"} - Inquirer.com
 * 2022-12-16 - [Remember the pay phone? This man is bringing them back at no cost](https://www.washingtonpost.com/lifestyle/2022/12/16/philadelphia-free-pay-phones-dank/){:target="_blank"} - Washingtonpost.com
 * 2022-12-16 - [Remember Pay Phones? A Philly Man Is Bringing Them Back Without the Pay Part](https://www.nbcphiladelphia.com/news/tech/pay-phone-philadelphia/3452775/){:target="_blank"} - NBC Philadelphia
