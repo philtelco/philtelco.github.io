@@ -21,22 +21,66 @@ We will be installing the powerful, open-source [OpenWRT](https://openwrt.org/) 
 
 ### Initial Flash
 
-The AR300M16 can be flashed via the stock GL.iNet web interface. Connect an ethernet cable between your computer and the LAN jack on the router and navigate to <http://192.168.8.1> to login. Once in the web interface, use the left navigation to continue to the *Upgrade* page. Choose *Local Upgrade* and uncheck the option for *Keep Settings*. Drag/drop an OpenWRT `ramfs` image targeted for the router.
+The AR300M16 can be flashed via the stock GL.iNet web interface. Connect an ethernet cable between your computer and the LAN jack on the router and navigate to <https://192.168.8.1> to login. Once in the web interface, pick a language and press the *Next* button.
 
-At the time of writing, <https://downloads.openwrt.org/releases/21.02.3/targets/ath79/generic/openwrt-21.02.3-ath79-generic-glinet_gl-ar300m16-initramfs-kernel.bin> was used. 
+{% raw %}<p><center><a href="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-01.jpg"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-01.jpg"></a><figquote>Picking a language.</figquote></center></p>{% endraw %} 
+
+Now, set an administrator password and press the *Submit* password. This password does not matter as we will be installing new firmware anyway so just make it something you will remember.
+
+{% raw %}<p><center><a href="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-02.jpg"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-02.jpg"></a><figquote>Setting a temp password.</figquote></center></p>{% endraw %} 
+
+Use the left navigation to continue to the *Upgrade* page and choose the tab for *Local Upgrade*. 
+
+{% raw %}<p><center><a href="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-03.jpg"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-03.jpg"></a><figquote>Navigate to the Upgrade page.</figquote></center></p>{% endraw %} 
+
+We will now want to flash an OpenWRT `initramfs` firmware image to the router so we need to download one. At the time of writing, <https://downloads.openwrt.org/releases/22.03.2/targets/ath79/generic/openwrt-22.03.2-ath79-generic-glinet_gl-ar300m16-initramfs-kernel.bin> was used.  After downloading the file, drag and drop it into the upload section on the page. This may take around ten seconds to upload.
+
+{% raw %}<p><center><a href="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-04.jpg"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-04.jpg"></a><figquote>Drag/drop the firmware.</figquote></center></p>{% endraw %} 
+
+Next, uncheck the option for *Keep Settings*.
 
 Finally, press the *Install* button and wait a few minutes for the firmware to be flashed. Do not unplug anything during this process.
 
-After a few minutes you should be able to access luci (OpenWRT's web interface) through <http://192.168.1.1>.
+{% raw %}<p><center><a href="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-05.jpg"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-05.jpg"></a><figquote>Install the firmware.</figquote></center></p>{% endraw %} 
+
+After a few minutes you should be able to access *luci* (OpenWRT's web interface) through <http://192.168.1.1> and then you can proceed with the second flash.
 
 ### Second Flash
 
-If all goes well, we will now want to flash with a `squashfs` image so we can make our changes persistent and not boot from a ramdisk. In the OpenWRT web interface, navigate to *System* --> *Backup / Flash Firmware* and then scroll down to the *Flash new firmware image* section. Press the button for *Flash image...* and choose the squashfs image to flash with.
+If all goes well, we will now want to flash with a `squashfs` image so we can make our changes persistent and not boot from a ramdisk. Bring up the  OpenWRT web interface by navigating to <http://192.168.1.1> in your browser (if you get a security warning you are safe to accept the risk and continue).
 
-At the time of writing, we will use <https://downloads.openwrt.org/releases/21.02.3/targets/ath79/generic/openwrt-21.02.3-ath79-generic-glinet_gl-ar300m16-squashfs-sysupgrade.bin>
+Enter `root` as both the username and password and press the *Login* button.
 
-Follow the prompts to upload the image and then before flashing, uncheck the option for *Keep settings and retain the current configuration.* Finally, press the *Continue* button and flash the router. Again, this may take a few minutes but after some time the web interface should come back up at <http://192.168.1.1>.
+{% raw %}<p><center><a href="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-06.jpg"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-06.jpg"></a><figquote>Log in to OpenWRT.</figquote></center></p>{% endraw %} 
+
+In the dashboard, navigate to *System* --> *Backup / Flash Firmware*.
+
+{% raw %}<p><center><a href="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-07.jpg"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-07.jpg"></a><figquote>Navigate to the Flash Firmware page.</figquote></center></p>{% endraw %} 
+
+Scroll down to the *Flash new firmware image* section.
+
+We will now want to flash an OpenWRT `squashfs` firmware image to the router so we need to download one. At the time of writing, we will use <https://downloads.openwrt.org/releases/22.03.2/targets/ath79/generic/openwrt-22.03.2-ath79-generic-glinet_gl-ar300m16-squashfs-sysupgrade.bin>
+
+Press the button for *Flash image...*.
+
+{% raw %}<p><center><a href="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-08.jpg"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-08.jpg"></a><figquote>Flash the image.</figquote></center></p>{% endraw %} 
+
+In the resulting popup, press the *Browse...* button and choose the squashfs image to flash with. Then press the *Upload* button.
+
+{% raw %}<p><center><a href="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-09.jpg"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-09.jpg"></a><figquote>Upload the image.</figquote></center></p>{% endraw %} 
+
+Uncheck the option for *Keep settings and retain the current configuration.* Finally, press the *Continue* button and flash the router. 
+
+{% raw %}<p><center><a href="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-10.jpg"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-10.jpg"></a><figquote>Install the new image.</figquote></center></p>{% endraw %} 
+
+Do not unplug anything during this process. Again, this may take a few minutes but after some time the web interface should come back up at <https://192.168.1.1>
 
 ## Set root Password
 
-Before we wrap up, be sure to set the root password. This can be done by navigating to *System* --> *Administration*. Then on the *Router Password* tab, enter a password and a confirmation before pressing the *Save* button.
+Before we wrap up, be sure to set the root password. Navigate to <https://192.168.1.1> to access the router and log in using `root` as the username and password. Once logged in, navigate to *System* --> *Administration*. 
+
+{% raw %}<p><center><a href="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-11.jpg"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-11.jpg"></a><figquote>Navigate to System Administration.</figquote></center></p>{% endraw %} 
+
+Then on the *Router Password* tab, enter a password and a confirmation before pressing the *Save* button.
+
+{% raw %}<p><center><a href="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-12.jpg"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-12.jpg"></a><figquote>Change the password.</figquote></center></p>{% endraw %} 
