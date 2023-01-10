@@ -21,7 +21,9 @@ We will be installing the powerful, open-source [OpenWRT](https://openwrt.org/) 
 
 ### Initial Flash
 
-The AR300M16 can be flashed via the stock GL.iNet web interface. Connect an ethernet cable between your computer and the LAN jack on the router and navigate to <https://192.168.8.1> to login. Once in the web interface, pick a language and press the *Next* button.
+The AR300M16 can be flashed via the stock GL.iNet web interface. Connect an ethernet cable between your computer and the LAN jack on the router and navigate to <https://192.168.8.1> to login. **NOTE:** You may need to disable wireless on the computer you are using in order to access this router URL. I recommend skimming this document beforehand and downloading both the `initramfs` and `squashfs` firmware files listed below ahead of time.
+
+Once in the web interface, pick a language and press the *Next* button.
 
 {% raw %}<p><center><a href="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-01.jpg"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-08-flashing-openwrt-on-the-gl-ar300m16-router/0-gl-ar300m16-flashing-openwrt-01.jpg"></a><figquote>Picking a language.</figquote></center></p>{% endraw %} 
 
