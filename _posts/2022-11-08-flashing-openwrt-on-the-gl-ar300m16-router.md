@@ -13,7 +13,7 @@ This device seems to be cost-effective at around $27 USD. This is around the sam
 
 Note: This device is very different than the GL-MT300N-V2 (Mango) device even though they are offered at the same price point and seem to have an identical formfactor. Thile the GL-AR300M16 has a well supported Qualcomm Atheros QCA9531 chipset, the GL-MT300N-V2 has a MediaTek MTK7628NN chipset.
 
-Official site: <https://www.gl-inet.com/products/gl-ar300m/>
+Official site: <https://store.gl-inet.com/products/gl-ar300m16-mini-smart-router>
 
 ## Flashing OpenWRT
 
