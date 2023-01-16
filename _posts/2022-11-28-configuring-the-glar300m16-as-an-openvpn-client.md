@@ -29,15 +29,15 @@ Next, perform an update and install OpenVPN packages and reboot:
 
 After a few minutes the router should be rebooted. Navigate to the web interface at <http://192.168.1.1> and log in with your username and password. Now navigate to *VPN* --> *OpenVPN*. 
 
-{% raw %}<p><center><a href="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-01.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-01.jpg.jpg"></a><figquote>Navigate to the OpenVPN page.</figquote></center></p>{% endraw %} 
+{% raw %}<p><center><a href="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-01.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-01.jpg"></a><figquote>Navigate to the OpenVPN page.</figquote></center></p>{% endraw %} 
 
 In the *OVPN configuration file upload* section, press the *Browse...* button to select our `.ovpn` file and then in the *instance name* field enter `philtel_PHONENAMEHERE`. Now press the *Upload* button.
 
-{% raw %}<p><center><a href="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-02.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-02.jpg.jpg"></a><figquote>Upload the .ovpn file.</figquote></center></p>{% endraw %} 
+{% raw %}<p><center><a href="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-02.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-02.jpg"></a><figquote>Upload the .ovpn file.</figquote></center></p>{% endraw %} 
 
 The page should refresh with our new configuration now showing in the *OpenVPN instances* list. In the list, check the box for *Enabled* next to our instance and press the button for *Save & Apply*. After the page refreshes, press the *Start* button next to our instance and the list should update to show the instance running.
 
-{% raw %}<p><center><a href="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-03.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-03.jpg.jpg"></a><figquote>The VPN is up and running.</figquote></center></p>{% endraw %} 
+{% raw %}<p><center><a href="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-03.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-03.jpg"></a><figquote>The VPN is up and running.</figquote></center></p>{% endraw %} 
 
 ## Configuring the Firewall
 
@@ -45,11 +45,11 @@ We want to pass all traffic through OpenVPN and also allow connections direct to
 
 Navigate to *Network* --> *Firewall*.
 
-{% raw %}<p><center><a href="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-04.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-04.jpg.jpg"></a><figquote>Navigate to the Firewall page.</figquote></center></p>{% endraw %} 
+{% raw %}<p><center><a href="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-04.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-04.jpg"></a><figquote>Navigate to the Firewall page.</figquote></center></p>{% endraw %} 
 
 Press the *Add* button in the *Zones* section of the page.
 
-{% raw %}<p><center><a href="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-05.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-05.jpg.jpg"></a><figquote>Add a zone.</figquote></center></p>{% endraw %} 
+{% raw %}<p><center><a href="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-05.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-05.jpg"></a><figquote>Add a zone.</figquote></center></p>{% endraw %} 
 
 In the *Name* field enter `philtel_fw`. From the *Input* dropdown choose `Reject`, from the *Output* dropdown choose `Accept`, and from the *Forward* dropdown choose `Reject`.
 
@@ -57,11 +57,11 @@ Check the boxes for *Masquerading* and *MSS clamping*. In *Covered Networks* sel
 
 Press the button for *Save*.
 
-{% raw %}<p><center><a href="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-06.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-06.jpg.jpg"></a><figquote>Fill out the zone settings.</figquote></center></p>{% endraw %} 
+{% raw %}<p><center><a href="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-06.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-06.jpg"></a><figquote>Fill out the zone settings.</figquote></center></p>{% endraw %} 
 
 Back on the *Firewall* page press the button for *Save & Apply*.
 
-{% raw %}<p><center><a href="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-07.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-07.jpg.jpg"></a><figquote>Save & Apply.</figquote></center></p>{% endraw %} 
+{% raw %}<p><center><a href="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-07.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-07.jpg"></a><figquote>Save & Apply.</figquote></center></p>{% endraw %} 
 
 ## Configuring an Interface
 
@@ -69,23 +69,23 @@ Now we need to set up an interface for our OpenVPN adapter so we can add it to t
 
 Click on *Network* --> *Interfaces*. 
 
-{% raw %}<p><center><a href="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-08.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-08.jpg.jpg"></a><figquote>Navigate to the Interfaces page.</figquote></center></p>{% endraw %} 
+{% raw %}<p><center><a href="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-08.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-08.jpg"></a><figquote>Navigate to the Interfaces page.</figquote></center></p>{% endraw %} 
 
 Next, press the button *Add new Interface…* and fill the form with the following values: *name* = `tun0`, *Protocol* = `Unmanaged`, *Interface* = `tun0`. Then press the *Create Interface* button.
 
-{% raw %}<p><center><a href="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-09.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-09.jpg.jpg"></a><figquote>Add a new interface.</figquote></center></p>{% endraw %} 
+{% raw %}<p><center><a href="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-09.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-09.jpg"></a><figquote>Add a new interface.</figquote></center></p>{% endraw %} 
 
 In the resulting popup, in the *General Settings* panel, deselect the checkbox for *Bring up on boot*. 
 
-{% raw %}<p><center><a href="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-10.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-10.jpg.jpg"></a><figquote>Modify interface settings.</figquote></center></p>{% endraw %} 
+{% raw %}<p><center><a href="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-10.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-10.jpg"></a><figquote>Modify interface settings.</figquote></center></p>{% endraw %} 
 
 In panel for *Firewall Settings*, set *Assign Firewall-zone* to `philtel_fw` and then press the *Save* button.
 
-{% raw %}<p><center><a href="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-11.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-11.jpg.jpg"></a><figquote>Modify firewall settings.</figquote></center></p>{% endraw %}
+{% raw %}<p><center><a href="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-11.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-11.jpg"></a><figquote>Modify firewall settings.</figquote></center></p>{% endraw %}
 
 Finally, press the *Save & Apply*. 
 
-{% raw %}<p><center><a href="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-12.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-12.jpg.jpg"></a><figquote>Save & Apply.</figquote></center></p>{% endraw %}
+{% raw %}<p><center><a href="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-12.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2022-11-28-configuring-the-glar300m16-as-an-openvpn-client/2-gl-ar300m16-openvpn-client-12.jpg"></a><figquote>Save & Apply.</figquote></center></p>{% endraw %}
 
 Then, reboot the router.
 
