@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Code of Conduct
+hide: true
 permalink: /code-of-conduct/
 ---
 
