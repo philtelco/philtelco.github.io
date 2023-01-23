@@ -39,6 +39,8 @@ All payphones we utilized will either be acquired from donations or the used mar
 
 [Talk To Me](http://talktomenyc.com/){:target="_blank"} is a network of five public payphones located in each of the five boroughs of New York City, that only call each other. Participants who pick up a TTM receiver set the other four ringing, inviting passing New Yorkers to answer the call. Upon connection, two unsuspecting strangers are thrust into conversation and left to navigate a serendipitous interaction with their neighbor. Talk To Me was launched in June 2022 by Jordan Seiler. For more information visit
 
+[OIRCT](https://oirct.org/){:target="_blank"} is a project in France setting up telephone booths with free-to-use, public telephones.
+
 ### What is 'phreaking'?
 
 Phreaking is a term to describe the act and culture of exploring telecommunications systems, usually the public telephone network. PhilTel is phreaking-friendly, and you can read more about some specific phreaking acts that can be perfomed on the PhilTel network on the [Phreaking](../phreaking) page.
