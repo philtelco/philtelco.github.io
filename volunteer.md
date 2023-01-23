@@ -21,14 +21,14 @@ Here are some skills we are currently looking for:
 
 * Experience with router firmware installation/config (OpenWRT, ddwrt, Tomato, etc.)
 * Experience with metrics/monitoring (syslog, Prometheus, Grafana, etc.)
-* Experience with VoIP, including SIP, ATA configuration, asterisk
+* Experience with VoIP, including SIP, ATA configuration, Asterisk
 * Terminating ethernet or telephone cabling
 * Payphone troubleshooting, repair, installation skills
-* Telephone(land line) wiring and installation skills
+* Telephone (land line) wiring and installation skills
 * Basic/Advanced electrical skills (basic maintenance/troubleshooting, routing wires/circuits in-wall, bending/installing conduit)
 * Building small-scale solar power systems
 * Drilling into brick/mortar, using concrete anchors to mount equipment on masonry
-* Running internet/telephone cabling from home exterior to interior
+* Running Internet/telephone cabling from home exterior to interior
 * Experience with anchoring items to sidewalk, laying concrete, etc.
 * Electronics prototyping, including soldering, breadboarding, work with microcontrollers
 * Web development
