@@ -11,6 +11,8 @@ We've outlined some skills we are looking for below. This is by no means a compl
 
 If you are interested in getting involved with PhilTel, please fill out our [Volunteer Sign-up Form](https://forms.gle/Ua5J677jMovAiJYy9){:target="_blank"}!
 
+Our Code of Conduct is available [here](../code-of-conduct).
+
 ## Tech Team
 
 We are always look for technology-minded individuals to help us grow the payphone network and install/repair existing hardware. Even if you don't have much direct experience with the technologies we are working with, we are happy to help get you up to speed! While we are hoping to have people who can physically attend meetups, workshops, and installations, there is also the possibility for remote work.
