@@ -5,9 +5,15 @@ permalink : /about/
 ---
 {% raw %}<p><img style="width: 100%; display: block; margin: 0 auto; border 0" src="/assets/img/philtel-head.jpg"></p>{% endraw %} 
 
-PhilTel is an amateur phone collective looking to install new (to us) payphones within the city of Philadelphia. Any payphone installed will be completely free-to-use, allowing the user to place calls within North America. Additionally, we would like to provide various experiences and services through the phones; these could be as simple as voicemail, fun as a phone number that randomly calls other payphones, or as complex as an integration with phone collectors' networks to allow [phone-phreaking](https://en.wikipedia.org/wiki/Phreaking){:target="_blank"} and exploration!
+PhilTel is an amateur phone collective looking to install new (to us) payphones within the city of Philadelphia. Any payphone installed will be completely free-to-use, allowing the user to place calls within North America. Additionally, we would like to provide various experiences and services through the phones; these could be as simple as voicemail, fun as a phone number that randomly calls other payphones, or as complex as an integration with [phone collectors' networks](../networks){:target="_blank"} to allow [phone-phreaking](../phreaking){:target="_blank"} and exploration!
 
 ## Frequently Asked Questions
+
+### So I just use this phone to call people?
+
+Yes, you can use a PhilTel phone just like any payphone (without the need to pay) or landline phone! Calls are free to most numbers in North America. 
+
+In addition to connecting with the traditional telephone network, we are also looking to connect with collectors' networks and other payphone projects. For more information check out the [Networks](../networks) page.
 
 ### How is PhilTel funded?
 
@@ -17,7 +23,7 @@ We do not play advertisements before, during, or after phone calls.
 
 ### Are my calls private?
 
-We collect no data from users and have no record or insight into the contents of calls. At most, we may capture the phone number dialed if we are actively debugging an issue, but this data is not kept long term.
+We collect no data from users and have no record or insight into the contents of calls. At most, we may capture the phone number dialed for diagnostic purposes, but this data is not kept long term and we never give or sell this information to anyone.
 
 Further, calls are encrypted from the phone site to our server. Any bad actors at the phone location will not be able to inspect call traffic even if they are on the same Internet connection.
 
@@ -32,6 +38,10 @@ All payphones we utilized will either be acquired from donations or the used mar
 [Futel](https://futel.net){:target="_blank"} is a Portland, Oregon-based phone company started in 2014 by Karl Anderson. Futel currently operates twelve free-to-use phones (both payphones and armored phones) within Oregon, Washington, and Michigan, including one at Right 2 Dream Too, a self-managed houseless encampment in Portland. Fore more information, visit 
 
 [Talk To Me](http://talktomenyc.com/){:target="_blank"} is a network of five public payphones located in each of the five boroughs of New York City, that only call each other. Participants who pick up a TTM receiver set the other four ringing, inviting passing New Yorkers to answer the call. Upon connection, two unsuspecting strangers are thrust into conversation and left to navigate a serendipitous interaction with their neighbor. Talk To Me was launched in June 2022 by Jordan Seiler. For more information visit
+
+### What is 'phreaking'?
+
+Phreaking is a term to describe the act and culture of exploring telecommunications systems, usually the public telephone network. PhilTel is phreaking-friendly, and you can read more about some specific phreaking acts that can be perfomed on the PhilTel network on the [Phreaking](../phreaking) page.
 
 ### How does the PhilTel network work?  
 

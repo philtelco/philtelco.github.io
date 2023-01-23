@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Networks
+hide: true
 permalink: /networks/
 ---
 

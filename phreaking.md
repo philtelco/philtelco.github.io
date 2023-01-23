@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Phreaking
+hide: true
 permalink: /phreaking/
 ---
 
