@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Volunteer
-hide: true
 permalink: /volunteer/
 ---
 
