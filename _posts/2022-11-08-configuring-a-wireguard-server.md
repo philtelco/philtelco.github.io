@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "[Deprecated] Configuring a WireGuard Server"
+deprecated : true
 date:   2022-11-08 20:00:00 -0400
 categories: wireguard vpn
 ---

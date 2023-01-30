@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "[Deprecated] Configuring the GL-AR300M16 as a WireGuard Client"
+deprecated: true
 date:   2022-11-08 20:30:00 -0400
 categories: openwrt router glinet
 ---
