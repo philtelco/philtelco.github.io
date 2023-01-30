@@ -11,6 +11,6 @@ PhilTel's blog posts are listed here!
 {%- if post.title and post.deprecated == nil or post.deprecated == "false" -%}
 {{ currentdate }} - <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
 {% else %}
-{{ currentdate }} - <a href="{{ post.url }}" title="{{ post.title }}"><s>{{ post.title }}</s></a><br>
+{{ currentdate }} - <a href="{{ post.url }}" title="{{ post.title }}"><s>{{ post.title }}</s></a><br><br>
 {%- endif -%}
 {% endfor %}
