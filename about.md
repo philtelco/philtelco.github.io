@@ -35,7 +35,7 @@ All payphones we utilized will either be acquired from donations or the used mar
 
 ### How can I start a project like this in my town? Will you help me?
 
-We don't have the time to address and assist everyone who wants to start a similar project, but we do open-source all of [our documentation](https://github.com/philtelco/philtel-docs)(https://futel.net){:target="_blank"} which is completely free-to-use and non-proprietary. 
+We don't have the time to address and assist everyone who wants to start a similar project, but we do open-source all of [our documentation](https://github.com/philtelco/philtel-docs){:target="_blank"} which is completely free-to-use and non-proprietary. 
 
 For a lot of this, you will need someone technical (that may be you, or it may not) to support the hardware and software work to get a project like this off the ground. If you want something similar like a courtesy phone in a local business (and have some basic computer/network troubleshooting skills, if you can configure your home router you can get the following set up), you can leverage a subset of the technology we use: An Analog Telephone Adapter (ATA) and a Voice over Internet Protocol (VoIP) provider. Using a VoIP provider like [Voip.ms](https://voip.ms){:target="_blank"} you can register an account to buy a telephone number and have some money to cover calling costs. You can then [configure an ATA like the Grandstream HT801/HT802 to use your Voip.ms account](https://wiki.voip.ms/article/Grandstream_HandyTone_802_-_HT802){:target="_blank"} and then any normal landline phone you plug into the ATA will be able to make and receive calls!
 
