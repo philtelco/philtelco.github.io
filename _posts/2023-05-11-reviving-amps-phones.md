@@ -19,15 +19,15 @@ While AMPS phones have been replaced by digital successors these days, they were
 
 # What do I need?
 
-To get your AMPS phone(s) running we will need the following:
+To get an AMPS phone(s) running we will need the following:
 
 * One or more AMPS phones, and some way to power them (more on this later)
 * A LimeSDR Mini (A non-mini also works, and potentially other SDRs, but this guide focuses on the Mini)
 * Cellular antennas for the LimeSDR Mini
 * A computer running Linux (We'll be showing Ubuntu, but this could possibly work on other POSIX operating systems)
-* Antennas or (preferably) dummy loads for your phone(s)
+* Antennas or (preferably) dummy loads for our phone(s)
 
-Obviously we'll need an AMPS phone to get running, but powering it can be a bit tricky. Often, AMPS phones on the secondhand market come with their original power cable, meant to be plugged into the lighter socket of a car (as most people used these exclusively as "car phones). This means we can use a suitable bench power supply [like this one from Pyramid](https://www.amazon.com/Pyramid-PS9KX-Universal-Regulated-Converter/dp/B0002BA570?th=1) with a built-in lighter socket to supply adequate power to your phone. Alternatively one could hack the plug off of the end of the power cable and wire the leads directly to a bench supply's terminals to deliver somewhere between 12V and 13.8V. We'll discuss battery options later in this guide.
+Obviously we'll need an AMPS phone to get running, but powering it can be a bit tricky. Often, AMPS phones on the secondhand market come with their original power cable, meant to be plugged into the lighter socket of a car (as most people used these exclusively as "car phones). This means we can use a suitable bench power supply [like this one from Pyramid](https://www.amazon.com/Pyramid-PS9KX-Universal-Regulated-Converter/dp/B0002BA570?th=1) with a built-in lighter socket to supply adequate power to our phone. Alternatively one could hack the plug off of the end of the power cable and wire the leads directly to a bench supply's terminals to deliver somewhere between 12V and 13.8V. We'll discuss battery options later in this guide.
 
 {% raw %}<p><center><a href="/assets/img/2023-05-11-reviving-amps-phones/amps-02.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2023-05-11-reviving-amps-phones/amps-02-sm.jpg"></a><figquote>Two power supplies with lighter sockers.</figquote></center></p>{% endraw %}  
 
@@ -45,11 +45,11 @@ All of my phones luckily have removable antennas, so I opted to buy dummy loads 
 
 {% raw %}<p><center><a href="/assets/img/2023-05-11-reviving-amps-phones/amps-04.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2023-05-11-reviving-amps-phones/amps-04.jpg"></a><figquote>Searching for the FCC ID of the Radio Shack phone.</figquote></center></p>{% endraw %}  
 
-All of my phones seem to operate at 3 watts (perhaps this was a standard) so I purchased [5 Watt BNC Dummy Loads](https://www.amazon.com/BECEN-Watt-BNC-Dummy-Load/dp/B08K2FRPC8/?th=1) for each phone. Some of my phones have a BNC connector which made this incredibly convenient, but others had different connector types like TNC which meant I had to purchase a [TNC Male to BNC Female Adapter](https://www.amazon.com/gp/product/B0932V73K3/) for that phone. There are phones with neither BNC or TNC connectors (some use mini UHF), so be sure to determine which connector you are working with before getting an adapter (or just buy an assortment).
+All of my phones seem to operate at 3 watts (perhaps this was a standard) so I purchased [5 Watt BNC Dummy Loads](https://www.amazon.com/BECEN-Watt-BNC-Dummy-Load/dp/B08K2FRPC8/?th=1) for each phone. Some of my phones have a BNC connector which made this incredibly convenient, but others had different connector types like TNC which meant I had to purchase a [TNC Male to BNC Female Adapter](https://www.amazon.com/gp/product/B0932V73K3/) for that phone. There are phones with neither BNC or TNC connectors (some use mini UHF), so be sure to determine which connector the phone uses before getting an adapter (or just buy an assortment).
 
 {% raw %}<p><center><a href="/assets/img/2023-05-11-reviving-amps-phones/amps-05.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2023-05-11-reviving-amps-phones/amps-05-sm.jpg"></a><figquote>A pile of dummy loads and connectors.</figquote></center></p>{% endraw %}
 
-Hand-held phones often do not have removable antennas, and I don't have a good way to limit their power output. Because of this, I don't use them. In my testing, operating an AMPS phone with a dummy load limits the use to the room that the LimeSDR Mini is in and I haven't observed the signals being able to travel through walls but your mileage may vary. If you have access to a Faraday cage, that would be the safest place to operate your SDR and phones.
+Hand-held phones often do not have removable antennas, and I don't have a good way to limit their power output. Because of this, I don't use them. In my testing, operating an AMPS phone with a dummy load limits the use to the room that the LimeSDR Mini is in and I haven't observed the signals being able to travel through walls but this may not be the same for everyone. If you have access to a Faraday cage, that would be the safest place to operate your SDR and phones.
 
 # Installing Osmocom-Analog
 
@@ -409,7 +409,7 @@ If our SIP endpoint is NOT within our local network, we will need to modify the 
 $ osmo-cc-sip-endpoint --local 192.168.1.22 --remote newyork.voip.ms -R login@newyork.voip.ms -A login lamepassword newyork.voip.ms -P 1.2.3.4 -v 0 *
 ```
 
-# Make Your Phone Portable
+# Make A Phone Portable Again
 
 As previously mentioned we can run these phones off of a bench power supply, but what if we wanted to take one on-the-go? 
 
