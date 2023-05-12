@@ -336,7 +336,7 @@ Here, we have added another channel, channel 330, which is used as an additional
 
 Just as we did previously, we can run the command and then power up both phones. The logs in the console should report phone numbers for each phone, and we can direct-dial one phone from the other to make them ring and hold a conversation!
 
-{% raw %}<p><center><iframe title="PhilTel Cellular Demonstration" src="https://diode.zone/videos/embed/71fa4a49-bc12-4ea0-baab-ae320b3caf84" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe><figquote>Demonstration of one phone calling the other.</figquote></center></p>{% endraw %} 
+{% raw %}<p><center><iframe title="PhilTel Cellular Demonstration" src="https://diode.zone/videos/embed/71fa4a49-bc12-4ea0-baab-ae320b3caf84" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe><br><figquote>Demonstration of one phone calling the other.</figquote></center></p>{% endraw %} 
 
 # Interface an AMPS Phone with SIP
 
