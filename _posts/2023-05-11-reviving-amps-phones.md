@@ -2,6 +2,7 @@
 layout: post
 title: "Reviving AMPS Phones (April Fools' Post Explained)"
 date:   2023-05-11 0:00:01 -0400
+image: /assets/img/2023-05-11-reviving-amps-phones/amps-01.jpg
 categories: cellular mobile
 ---
 

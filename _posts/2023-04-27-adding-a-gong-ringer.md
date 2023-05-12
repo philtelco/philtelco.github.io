@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Adding A Gong Ringer to a Payphone"
+image: /assets/img/2023-04-27-adding-a-gong-ringer/ringer-03.jpg
 date:   2023-04-27 0:00:01 -0400
 categories: payphone
 ---

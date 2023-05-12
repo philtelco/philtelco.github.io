@@ -2,6 +2,7 @@
 layout: post
 title: "Wall Mounting A Payphone"
 date:   2023-04-14 0:00:01 -0400
+image: /assets/img/2023-04-14-wall-mounting-a-payphone/wall-10.jpg
 categories: payphone
 ---
 
@@ -75,4 +76,4 @@ On the inside of the payphone's housing, use payphone mounting screws to securel
 
 Your payphone is now mounted and you can re-assemble and lock the payphone!
 
-{% raw %}<p><center><a href="/assets/img/2023-04-14-wall-mounting-a-payphone/wall-10.jpg"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2023-04-14-wall-mounting-a-payphone/wall-10-sm.jpg"></a><figquote>All done, the payphone is mouned!</figquote></center></p>{% endraw %}
+{% raw %}<p><center><a href="/assets/img/2023-04-14-wall-mounting-a-payphone/wall-10.jpg"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2023-04-14-wall-mounting-a-payphone/wall-10-sm.jpg"></a><figquote>All done, the payphone is mounted!</figquote></center></p>{% endraw %}
