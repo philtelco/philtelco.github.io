@@ -27,6 +27,8 @@ To get an AMPS phone(s) running we will need the following:
 * A computer running Linux (We'll be showing Ubuntu, but this could possibly work on other POSIX operating systems)
 * Antennas or (preferably) dummy loads for our phone(s)
 
+{% raw %}<p><center><a href="/assets/img/2023-05-11-reviving-amps-phones/amps-11.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2023-05-11-reviving-amps-phones/amps-11-sm.jpg"></a><figquote>Bags of bag phones.</figquote></center></p>{% endraw %} 
+
 Obviously we'll need an AMPS phone to get running, but powering it can be a bit tricky. Often, AMPS phones on the secondhand market come with their original power cable, meant to be plugged into the lighter socket of a car (as most people used these exclusively as "car phones). This means we can use a suitable bench power supply [like this one from Pyramid](https://www.amazon.com/Pyramid-PS9KX-Universal-Regulated-Converter/dp/B0002BA570?th=1) with a built-in lighter socket to supply adequate power to our phone. Alternatively one could hack the plug off of the end of the power cable and wire the leads directly to a bench supply's terminals to deliver somewhere between 12V and 13.8V. We'll discuss battery options later in this guide.
 
 {% raw %}<p><center><a href="/assets/img/2023-05-11-reviving-amps-phones/amps-02.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2023-05-11-reviving-amps-phones/amps-02-sm.jpg"></a><figquote>Two power supplies with lighter sockers.</figquote></center></p>{% endraw %}  
@@ -336,7 +338,7 @@ Here, we have added another channel, channel 330, which is used as an additional
 
 Just as we did previously, we can run the command and then power up both phones. The logs in the console should report phone numbers for each phone, and we can direct-dial one phone from the other to make them ring and hold a conversation!
 
-{% raw %}<p><center><iframe title="PhilTel Cellular Demonstration" src="https://diode.zone/videos/embed/71fa4a49-bc12-4ea0-baab-ae320b3caf84" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe><br><figquote>Demonstration of one phone calling the other.</figquote></center></p>{% endraw %} 
+{% raw %}<p><center><iframe title="PhilTel Cellular Demonstration" src="https://diode.zone/videos/embed/71fa4a49-bc12-4ea0-baab-ae320b3caf84" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="736" height="414" frameborder="0"></iframe><br><figquote>Demonstration of one phone calling the other.</figquote></center></p>{% endraw %} 
 
 # Interface an AMPS Phone with SIP
 
@@ -403,6 +405,8 @@ $ sudo amps --limesdr-mini --channel 334 --channel 332 --fast-math --sdr-rx-gain
 
 Now we will be able to interface with the PBX as though we were any other phone on the system.
 
+{% raw %}<p><center><iframe title="SIP Call with an AMPS Cellular Phone" src="https://diode.zone/videos/embed/ab0d57c5-040b-4d23-8862-7a99a1e65482" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="736" height="414" frameborder="0"></iframe><br><figquote>Making a SIP call with an AMPS phone.</figquote></center></p>{% endraw %} 
+
 If our SIP endpoint is NOT within our local network, we will need to modify the Osmocom Call Control command to use the `-P` option to specify our public IP address. For example, if our endpoint was `newyork.voip.ms` and our public IP address was 1.2.3.4` (and all other information was the same), our new command would be:
 
 ```
@@ -434,6 +438,8 @@ In the early 1990's it was really common for technically-savvy people to eavesdr
 This scanner was the [Radio Shack PRO-51](https://rigreference.com/documents/rr-5eb71c9c1e15e4.34936870), a compact and portable handheld scanner.
 
 To receive AMPS cellular frequencies with the PRO-51, we need to put it into "Test Mode 1" by holding the `2` key, `9` key, and `L/OUT` key while powering on the scanner. This will fill channels 1-25 with test frequencies. We want to check out channel 23 which is now programmed with 888.960MHz, right in the range for cellular traffic! After powering on the scanner, we can navigate to this channel by pressing the `MANUAL` button repeatedly until reaching `23`. Then, using the `▲` and `▼` buttons we can step in proper 30kHz increments to our desired frequency. For precision, it helps if Squelch is opened when stepping to the frequency.
+
+{% raw %}<p><center><iframe title="Eavesdropping on AMPS Cellular Calls" src="https://diode.zone/videos/embed/32056644-a02a-44e9-8908-2dfd3e13a9cc" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="736" height="414" frameborder="0"></iframe><br><figquote>Listening in on an AMPS call.</figquote></center></p>{% endraw %} 
 
 Keep in mind that when intercepting phone calls, we will only hear one side of the conversation. AMPS phones transmit and receive on different frequencies so unless we have two scanners, we won't be able to hear both parties talking. Additionally, while we likely want to listen to the voice frequencies, we can also listen in on the control channel to hear (one side at a time of) the data the phone and transmitter send one another for handshaking, disconnection, etc. To know which frequencies we can tune to, we can check the Osmocom-Analog logs at startup to see the frequencies being utilized .
 
