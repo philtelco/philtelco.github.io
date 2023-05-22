@@ -11,9 +11,9 @@ Installing a payphone on a wall can be a tricky task, and it is worth sharing th
 To install a payphone on a wall, you will need the following tools and supplies:
 
 * A payphone, we are focusing on a touch-tone phone which has a fairly standardized installation process. Rotary payphones may have a different installation process.
-* [A payphone backplate](https://payphone.com/Mounting-Backplate.html) (Selecting the option here for including mounting hardware is less expesnive than ordering the mounting bolts and screws separately)
-* [Payphone mounting bolts](https://payphone.com/Mounting-Stud.html) (at least two)
-* [Payphone mounting screws](https://payphone.com/1/4/x20PayphoneHardware.html) (four)
+* [A payphone backplate](https://payphone.com/Mounting-Backplate.html){:target="_blank"} (Selecting the option here for including mounting hardware is less expesnive than ordering the mounting bolts and screws separately)
+* [Payphone mounting bolts](https://payphone.com/Mounting-Stud.html){:target="_blank"} (at least two)
+* [Payphone mounting screws](https://payphone.com/1/4/x20PayphoneHardware.html){:target="_blank"} (four)
 * A pencil
 * A measuring tape
 * A spirit level
@@ -21,7 +21,7 @@ To install a payphone on a wall, you will need the following tools and supplies:
 * A Phillips screwdriver or impact diver with a Phillips bit (I highly recommend the impact driver)
 * A Stud finder
 * Flat head wood screws 1/4" x 2 1/2" or 1/4" x 3" (If using a wood stud)
-* Toggle bolts with screws (I highly recommend [SNAPTOGGLEs](https://toggler.com/products/snaptoggle-heavy-duty-toggle-bolts-304-stainless-steel-channels) 1/4" x 2 1/2" (If using a metal stud)
+* Toggle bolts with screws (I highly recommend [SNAPTOGGLEs](https://toggler.com/products/snaptoggle-heavy-duty-toggle-bolts-304-stainless-steel-channels){:target="_blank"} 1/4" x 2 1/2" (If using a metal stud)
 * Washers 1/4" (one per screw)
 * Drywall anchors with screws (Optional)
 * Cable raceway (Optional)
