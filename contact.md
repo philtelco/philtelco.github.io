@@ -14,4 +14,5 @@ There are several ways you can contact us or engage with others interested in th
 * Tweet us [@philtelco](https://twitter.com/philtelco){:target="_blank"}
 * Toot us [@philtel@jawns.club](https://jawns.club/@philtel){:target="_blank"}
 * Follow us on PeerTube, [@philtelco@diode.zone](https://diode.zone/c/philtelco/videos){:target="_blank"}
-* Call us from any PhilTel phone, 1-400-892-7445
+* Call us from the PSTN, 1-844-PHILTEL (1-844-744-5835)
+* Call us from any PhilTel phone, 1-400-892-PHIL (1-400-892-7445)
