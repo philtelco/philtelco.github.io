@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Use A Protel Keypad with the 2110V Coinless Board"
-image: /assets/img/2023-05-22-protel-keypad-2110/keypad-02.jpg
+image: /assets/img/2023-05-22-protel-keypad-2110v/keypad-02.jpg
 date:   2023-05-22 0:00:01 -0400
 categories: payphone
 ---
