@@ -20,7 +20,7 @@ This is done randomly at first. I simply connected each probe to a different pin
 
 {% raw %}<p><center><a href="/assets/img/2023-05-22-protel-keypad-2110v/bell-coinless-keypad.png"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2023-05-22-protel-keypad-2110v/bell-coinless-keypad.png"></a><figquote>Pinout for Bell Coinless keypad.</figquote></center></p>{% endraw %}
 
-The Protel keypad has a DB-25 connector, so there were a lot more possible pins here that needed to be checked in the same manor. 
+The Protel keypad has a DB-25 connector, so there were a lot more possible pins here that needed to be checked in the same manner. 
 
 {% raw %}<p><center><a href="/assets/img/2023-05-22-protel-keypad-2110v/keypad-03.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2023-05-22-protel-keypad-2110v/keypad-03-sm.jpg"></a><figquote>The Protel keypad.</figquote></center></p>{% endraw %}
 
