@@ -5,7 +5,7 @@ permalink: /donate/
 ---
 ## Donations
 
-Monetary donations can be made via [Ko-fi](https://ko-fi.com/philtel){:target="_blank"} and/or [Patreon](https://www.patreon.com/philtel){:target="_blank"}. 
+Monetary donations can be made via [Ko-fi](https://ko-fi.com/philtel){:target="_blank"}, [Patreon](https://www.patreon.com/philtel){:target="_blank"}, and/or [GitHub Sponsors](https://github.com/sponsors/philtelco){:target="_blank"}.
 
 We also have print-on-demand clothing for sale [here](https://philtel.myspreadshop.com/all){:target="_blank"}, with ~$4 of each purchase going to support PhilTel!
 

@@ -3,6 +3,8 @@ layout: page
 title: Press
 permalink: /press/
 ---
+
+* 2022-06-30 - [Story2Share: Payphones get unexpected spotlight](https://nbc-2.com/news/2023/06/28/story2share-payphones-get-unexpected-spotlight/){:target="_blank"} - NBC-2 Fort Myers
 * 2022-03-02 - [DelVal Entrepreneur Installs a Free-to-Use Payphone in Philly ](https://delawarevalleyjournal.com/delval-entrepreneur-helps-install-a-free-to-use-payphone-in-philly/){:target="_blank"} - delawarevalleyjournal.com
 * 2022-02-13 - [In a high-tech world, this duo is installing free-to-use pay phones across Philadelphia](https://technical.ly/software-development/philtel-free-pay-phones-philly/){:target="_blank"} - technical.ly
 * 2022-02-03 - [Remember Pay Phones? Philly's Bringing Them Back for Free](https://electronics.howstuffworks.com/pay-phones-coming-back-free.htm){:target="_blank"} - howstuffworks.com
