@@ -16,7 +16,7 @@ Advanced Mobile Phone System (AMPS) is an analog mobile phone standard that was 
 
 AMPS utilized 60kHz duplex channels, each of which was composed of two frequencies with 30kHz one-way bandwidth. As this technology was analog, it was subject to noise and static and offered no protection from eavesdropping (which could even be done from older televisions about to pick up UHF TV channels 70–83, as AMPS reused some of the older allocation), or cellular cloning.
 
-While AMPS phones have been replaced by digital successors these days, they were fairly popular in their time and mostly exist now and paperweights.
+While AMPS phones have been replaced by digital successors these days, they were fairly popular in their time and mostly exist now as paperweights.
 
 # What do I need?
 
