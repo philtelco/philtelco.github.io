@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Resurrecting A Nortel Millennium"
-image: /assets/img/2023-09-24-resurrecting-a-nortel-millennium/floppy-copy.jpg
-date:   2023-09-20 0:00:01 -0400
+image: /assets/img/2023-09-24-resurrecting-a-nortel-millennium/millennium-01-sm.jpg
+date:   2023-09-24 0:00:01 -0400
 categories: payphone software nortel millennium eprom programming
 ---
 *This guide is a work-in-progress and may change over time. Please reach out with any issues!*
