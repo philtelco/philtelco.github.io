@@ -94,7 +94,7 @@ To upgrade the firmware on our phone, we can use a *new* EPROM with the proper v
 
 From here, we [downloaded and burned the v1.20 firmware](https://github.com/muccc/millennium/blob/master/firmware/NPA1S01/dump2/NT_FW_1.20_STM27C2001_32DIP){:target="_blank"} using a MiniPro II programmer with its accompanying software. Afterwards, with the phone un-powered, we simply swapped out the chips and restarted the phone. There won't be any evidence that the firmware is different until the phone is programmed. After programming, the phone will display the date and time while idle.
 
-## Updating Rate Tables
+## Updating the Rate Table
 
 By default, the programming from `mm_manager` will associate costs with any call made through the phone. Paying for a call is easily spoofed as `mm_manager` aims to duplicate the normal payphone experience. A non-expired credit card can be inserted into the phone, the phone contacts `mm_manager` to authorize the transaction, and `mm_manager` blindly accepts the card as valid allowing the call to go through (but not actually charging the card) provided the card isn't expired. Funny enough, some gift cards will actually work for this. A Dunkin' Donuts gift card will validate just fine though a Starbucks gift card will not work at all.
 
