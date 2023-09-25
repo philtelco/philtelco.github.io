@@ -33,7 +33,7 @@ To connect phone and power up to the Millennium we need a [4-pin plug-in screw t
 
 ## Setting Up Millennium Manager
 
-To program the Millennium we will use a utility from Howard Harte called [Millennium Manager or mm_manager](https://github.com/hharte/mm_manager){:target="_blank"}. Millennium Manager runs on Linux, MacOs, or Windows, but I will be showing how to use it via a Linux machine running Debian.
+To program the Millennium we will use a utility from Howard Harte called [Millennium Manager or mm_manager](https://github.com/hharte/mm_manager){:target="_blank"}. `mm_manager` runs on Linux, MacOs, or Windows, but I will be showing how to use it via a Linux machine running Debian.
 
 Installation is fairly easy:
 
@@ -84,7 +84,7 @@ The Millennium requires *Polarity Reversal* to be set to `Yes` on our ATA, so ma
 
 ## Upgrading the Firmware
 
-After speaking with Howard Harte, firmware version 1.20 is the most self-sufficient firmware as it allows the phone to handle call rates itself without phoning back to Millennium Manager.
+After speaking with Howard Harte, firmware version 1.20 is the most self-sufficient firmware as it allows the phone to handle call rates itself without phoning back to `mm_manager`.
 
 Looking at the phone in our possession, we luckily have an older Rev 1 model that makes use of through-hole DIP EPROMS on the control board. The firmware EPROM sits in location U5 near the middle-left edge of the board, and ours has a label reading `06CAA17` that signifies it is using firmware version 1.0. Some phones sold have been reprogrammed with demo firmware that will allow for free calls, but cannot be customized. While a phone running demo firmware may be usable as-is for making calls, it can also be reflashed with production firmware to restore full functionality and allow customizations.
 
@@ -96,7 +96,7 @@ From here, we [downloaded and burned the v1.20 firmware](https://github.com/mucc
 
 ## Updating Rate Tables
 
-By default, the programming from `mm_manager` will associate costs with any call made through the phone. Paying for a call is easily spoofed as `mm_manager` aims to duplicate the normal payphone experience. A non-expired credit card can be inserted into the phone, the phone contacts Millennium Manager to authorize the transaction, and `mm_manager` blindly accepts the card as valid allowing the call to go through (but not actually charging the card) provided the card isn't expired. Funny enough, some gift cards will actually work for this. A Dunkin' Donuts gift card will validate just fine though a Starbucks gift card will not work at all.
+By default, the programming from `mm_manager` will associate costs with any call made through the phone. Paying for a call is easily spoofed as `mm_manager` aims to duplicate the normal payphone experience. A non-expired credit card can be inserted into the phone, the phone contacts `mm_manager` to authorize the transaction, and `mm_manager` blindly accepts the card as valid allowing the call to go through (but not actually charging the card) provided the card isn't expired. Funny enough, some gift cards will actually work for this. A Dunkin' Donuts gift card will validate just fine though a Starbucks gift card will not work at all.
 
 While this is a fun feature, it would be more user friendly to make all the calls free without the need to insert a card. Through a bit of trial and error, we've discovered that the rate table can be edited so that all calls can have unlimited duration and require $0.00.
 
@@ -390,7 +390,7 @@ Generated tables/5555555555/mm_table_1d.bin.
 Starting `mm_manager` can be done via the following command:
 
 ```
-$ ./mm_manager -m -n 6666666666 -f /dev/ttyACM0 -vv -l install.dlog -p install.pcap
+mm_manager$ ./mm_manager -m -n 6666666666 -f /dev/ttyACM0 -vv -l install.dlog -p install.pcap
 ```
 
 Note that `6666666666` is the phone number we have assigned to `mm_manager` (or more appropriately, the modem) and `/dev/ttyACM0` is the USB modem device as it appears on the Linux system (though `/dev/ttyUSB0` is also common).
