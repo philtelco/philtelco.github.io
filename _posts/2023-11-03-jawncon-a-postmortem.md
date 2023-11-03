@@ -1,0 +1,50 @@
+---
+layout: post
+title: "JawnCon 0x0 - A Postmortem"
+image: /assets/img/2023-11-03-jawncon-a-postmortem/jawncon-01-sm.jpg
+date:   2023-11-03 0:00:01 -0400
+categories: payphone conference jawncon
+---
+
+We attended [JawnCon 0x0](https://jawncon.org/){:target="_blank"} on October 19th-20th 2023 and gave a presentation on the 20th titled *The Payphone You Have Dialed Has Been Disconnected -- The State (and Revival) of Payphones in 2023*. The presentation covered payphones, [PhreakScan](https://phreakscan.com/){:target="_blank"}, [PhreakNet](https://portal.phreaknet.org/){:target="_blank"}, and PhilTel, and seemed to go over well based on the comments and feedback we received from attendees afterwards. The staff did a fantastic job creating this conference in a fairly small amount of time (90 days!) and were incredibly accommodating and helpful throughout the whole event.
+
+If you want to watch a video of our talk you can do so [on YouTube](https://www.youtube.com/watch?v=nICy6murDYU){:target="_blank"}, and we also have the slides available [here](https://github.com/philtelco/philtel-presentations/tree/master/jawncon-0x0){:target="_blank"}.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nICy6murDYU?si=o63r-NKTn9q-A-GB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Originally, we had planned on only giving a presentation but this quickly evolved into bringing a bunch of phones and other hardware to set up in the "Chillout Room" as they were having a Retro Show 'N Tell. We arrived early on Thursday morning and got to work setting up a large table in the back corner of the room. Thankfully some attendees gave us a hand in bringing the phones inside (and back out the next day!), as it would have been exhausting brining them up by ourselves as there were multiple doors and an elevator before between the outside and the room. 
+
+We ended up bringing: A Western Electric 3-slot, an Automatic Electric 3-Slot, a GTE-sytle single-slot, a Nortel Millennium, a Ceeco Charge-A-Call, a WebTV and monitor, a pile of Grandstream HT802 ATAs, a Libre Computer running `mm_manager`, various other phones and tapping devices (if we needed to get audio in or out of a phone line), various phreak boxes, a router and networking switch, various cables, and a fully stocked toolbox.
+
+In all, we were able to set up a fairly impressive and mostly-working display of phones that people could come up and use. We chatted with a lot of friends as they stopped by, met a lot of new people, and generally had a blast! One highlight was [Mudge coming to check things out](https://twitter.com/dotMudge/status/1715828425196183760){:target="_blank"} and he seemed really taken by the Automatic Electric payphone and the payphone TTY/TDD we had set up. It was incredible seeing people's faces as they used a payphone for the first time or otherwise relived their own memories. On a personal note, I'm really happy that we had the idea to create some letter-sized signs to put next to each phone to provide a bit of background information. This really helped drive home a "living museum" feel and likely made the whole thing more accessible than just a bunch of hardware thrown on a table.
+
+{% raw %}<p><center><a href="/assets/img/2023-11-03-jawncon-a-postmortem/jawncon-01.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2023-11-03-jawncon-a-postmortem/jawncon-01-sm.jpg"></a><figquote>An Automatic Electric 3-slot, a GTE-style single-slot with Ultratec payphone TDD, another Ultratec TDD, and a Nortel Millennium.</figquote></center></p>{% endraw %}
+
+{% raw %}<p><center><a href="/assets/img/2023-11-03-jawncon-a-postmortem/jawncon-02.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2023-11-03-jawncon-a-postmortem/jawncon-02-sm.jpg"></a><figquote>A Sony WebTV with keyboard and Commodore 1702 monitor.</figquote></center></p>{% endraw %}
+
+{% raw %}<p><center><a href="/assets/img/2023-11-03-jawncon-a-postmortem/jawncon-03.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2023-11-03-jawncon-a-postmortem/jawncon-03-sm.jpg"></a><figquote>A Western Electric 3-slot, a blue box (Don Froula's design) and an old intercom system someone dropped off for us to take a look at.</figquote></center></p>{% endraw %}
+
+{% raw %}<p><center><a href="/assets/img/2023-11-03-jawncon-a-postmortem/jawncon-04.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2023-11-03-jawncon-a-postmortem/jawncon-04-sm.jpg"></a><figquote>At one point someone brought a second WebTV and we had both online.</figquote></center></p>{% endraw %}
+
+As these things go, we ran into a number of issues and we'd like to share them to showcase how things don't always go to plan.
+
+The first issue that we ran into was connecting our router up to the VPN running off of our server. We were luckily able to get an ethernet connection to our router for stability, but quickly realized that the venue network was locked down and restricted access to high-number ports. For the first day, we were able to use a friend's mobile hotspot to run our whole network, and this worked fairly well. For the second day, we decided to change our OpenVPN port to `53` as this is the standard port for DNS and in the case they do protocol filtering we know this port is also commonly used for UDP (which is what our VPN relies on). This ended up working perfectly and we were able to use the venue network successfully.
+
+We had anticipated showing off some phone phreaking techniques, but quickly realized that there were issues with blue boxing as we couldn't seize the trunk with 2600Hz. By the next morning we had seizing working, but there were issues actually dialing a call using MF afterwards. We still need to investigate this issue, but luckily red boxing was working and we were able to show that.
+
+We had brought a blue CEECO armored phone but it quickly showed issues soon as the handset was taken off-hook. It seemed to be randomly pulsing which at first appeared to be a damaged hookswitch. The real issue turned out to be much more interesting. The phone was actually pulse-dialing "56" when the handset went off-hook, which was a remnant from the phone's original programming. There are two jumpers on the phone's main board that toggle normal and programming modes for the phone. We thought that they were some sort of write-protect jumpers so we only set them back to normal operating mode right before the conference, after we had programmed the phone. It turns out that to save the programming, the jumpers need to be changed immediately after programming while the phone is on. We didn't find this out until after the conference but the phone now works perfectly and we're glad it isn't broken.
+
+The Automatic Electric phone we brought showed some sort of ringer issue and wouldn't ring when we would call it. It would also make a tiny ringing noise for each pulse of the rotary dial, so the bias spring on the ringer needs an adjustment. This however doesn't explain the lack of ring on incoming call, so that is still a mystery.
+
+In one case we had no audio between two phones when one called another. This seemed to be a random, isolated incident, but if it happened once it could happen again. We will have to recreate this issue by making phone calls back and forth until we can trigger a call without audio.
+
+Making calls to PhreakNet numbers through the 400 area code on our Nortel Millennium resulted in being prompted to deposit money, even though we had set all calls to be free via the phone's internal rate table. This may be caused by the area code not being included in the phone's known list of codes, so it has trouble figuring out how to handle the call and ends up in an error state. We were able to discuss this situation with [Harold Harte of mm_manager](https://github.com/hharte){:target="_blank"} and he provided some potential solutions we can explore at a later time.
+
+We had a case where some calls were going out over the wrong trunk from our SIP provider and calling from a different number than what we wanted. We were able to fix this in a few minutes on the spot by updating configuration files on the server.
+
+There was an issue when we were trying to use a TDD/TTY connected to a payphone to access PhreakNet IRC via the PhreakNet BBS. It could successfully connect and receive messages, but any messages sent would not appear on IRC. This appears to be more of an issue with how the BBS interfaces with IRC (since the TDD could properly navigate the BBS menus) but it only allowed attendees at the conference the ability to watch the conversation instead of participate.
+
+Somewhat expected, but the WebTV we brought was a little unreliable in connecting to the [dialup.world](http://dialup.world/){:target="_blank"} ISP. Connecting to the ISP via WebTV normally works fairly well, but due to an issue where we needed to dial the ISP through the PSTN instead of PhreakNet, this likely resulted in latency and/or quality loss which made connections unstable. That said, we were able to connect many times and many people had fun browsing the web on the old hardware. A big thanks to the [WebTV Redialed](https://webtv.zone/) {:target="_blank"} project for their work on building a replacement for the original WebTV service.
+
+
+That about sums everything up! We had a blast but also had quite a few issues, some of which are still unresolved. Now that we attended one conference with a lot of phone hardware, we know what pain points to look out for and have a better understanding of what issues might pop up. If we met you at JawnCon, we hope you had a great time and checked out the phones. If not, there's always next time!
