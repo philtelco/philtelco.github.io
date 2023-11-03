@@ -10,7 +10,7 @@ We attended [JawnCon 0x0](https://jawncon.org/){:target="_blank"} on October 19t
 
 If you want to watch a video of our talk you can do so [on YouTube](https://www.youtube.com/watch?v=nICy6murDYU){:target="_blank"}, and we also have the slides available [here](https://github.com/philtelco/philtel-presentations/tree/master/jawncon-0x0){:target="_blank"}.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nICy6murDYU?si=o63r-NKTn9q-A-GB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% raw %}<p><center><iframe width="560" height="315" src="https://www.youtube.com/embed/nICy6murDYU?si=o63r-NKTn9q-A-GB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center></p>{% endraw %}  
 
 Originally, we had planned on only giving a presentation but this quickly evolved into bringing a bunch of phones and other hardware to set up in the "Chillout Room" as they were having a Retro Show 'N Tell. We arrived early on Thursday morning and got to work setting up a large table in the back corner of the room. Thankfully some attendees gave us a hand in bringing the phones inside (and back out the next day!), as it would have been exhausting brining them up by ourselves as there were multiple doors and an elevator before between the outside and the room. 
 
