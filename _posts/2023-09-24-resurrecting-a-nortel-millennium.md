@@ -5,7 +5,7 @@ image: /assets/img/2023-09-24-resurrecting-a-nortel-millennium/millennium-01-sm.
 date:   2023-09-24 0:00:01 -0400
 categories: payphone software nortel millennium eprom programming
 ---
-*This guide is a work-in-progress and may change over time. Please reach out with any issues!*
+*This guide is a work-in-progress and may change over time. Please reach out with any issues! Updated 2023-11-13.*
 
 In the mid '90s Nortel released a new type of payphone, the Millennium, that could accept coins, smart chip cards, and standard credit cards. No longer would the masses need to carry around pocket change! More interestingly, and perhaps a main selling point given the name, was the fact that the phone featured a 2x20 character VFD screen that could display text to the caller. Unfortunately, while these phones were adopted by numerous telephone companies, they never received widespread adoption. Eventually Nortel would exit the hardware business and sell the rights to these phones to QuorTech, who in-turn would later fold and sell the rights to WiMacTel who continues to operate remaining phones today.
 
@@ -69,7 +69,7 @@ usage: mm_manager [-vhmq] [-f <filename>] [-i "modem init string"] [-l <logfile>
         -w - don't monitor the modem for carrier loss.
 ```
 
-To communicate with the phone we will need a modem connected to a phone line the Millennium can reach. Exactly how to have the phone and modem communicate is out of scope for this guide, but using the previously-linked Grandstream HT802, it is possible to [configure direct calling between the phone ports](http://www.ducktelecom.co.uk/2021/10/calling-between-ports-on-grandstream.html){:target="_blank"} without the need for a PBX or anything else sitting in-between. This is great for configuration, but note that is not an idea setup for making calls as the phone can only communicate with the modem in this setup. 
+To communicate with the phone we will need a modem connected to a phone line the Millennium can reach. Exactly how to have the phone and modem communicate is out of scope for this guide, but using the previously-linked Grandstream HT802, it is possible to [configure direct calling between the phone ports](http://www.ducktelecom.co.uk/2021/10/calling-between-ports-on-grandstream.html){:target="_blank"} without the need for a PBX or anything else sitting in-between. This is great for configuration, but note that is not an idea setup for making calls as the phone can only communicate with the modem in this setup. Due to latency between the phone and modem over a PBX, programming the phone using direct FXS port calling is highly recommended.
 
 The modem that we are using is a [Dell Conexant USB Modem](https://www.amazon.com/dp/B006P3IWV0/){:target="_blank"}. This modem is available for around $15 from second-hand sources and may also be branded by other companies like Lenovo. The modem should be plugged into both the Linux machine and ATA using a USB port and FXS phone port respectively.
 
@@ -98,7 +98,7 @@ From here, we [downloaded and burned the v1.20 firmware](https://github.com/mucc
 
 By default, the programming from `mm_manager` will associate costs with any call made through the phone. Paying for a call is easily spoofed as `mm_manager` aims to duplicate the normal payphone experience. A non-expired credit card can be inserted into the phone, the phone contacts `mm_manager` to authorize the transaction, and `mm_manager` blindly accepts the card as valid allowing the call to go through (but not actually charging the card) provided the card isn't expired. Funny enough, some gift cards will actually work for this. A Dunkin' Donuts gift card will validate just fine though a Starbucks gift card will not work at all.
 
-While this is a fun feature, it would be more user friendly to make all the calls free without the need to insert a card. Through a bit of trial and error, we've discovered that the rate table can be edited so that all calls can have unlimited duration and require $0.00.
+While this is a fun feature, it would be more user friendly to make all the calls free without the need to insert a card. Through a bit of trial and error, we've discovered that the rate table can be edited so that all calls can have unlimited duration and require $0.00. *NOTE:* We discovered that our internal PhreakNet dialing via `1-400-NXX-XXXX` is still prompting for payment. This is likely due to the NPA (400) not being configured since it is unused in the North American Numbering Plan (NANP) and the phone does not know how to handle the call. We still need to work on a fix for this, but it will likely be accomplished by [generating NPA/LCD tables](https://github.com/hharte/mm_manager#generating-npa-and-lcd-tables){:target="_blank"}.
 
 To make the changes, we can edit `mm_table_49.bin`. `mm_manager` contains a utility `mm_rate` to check the rate table and display the contents. Below we see the default rate table: 
 
@@ -417,7 +417,7 @@ After the phone reports a success message after programming, the upper housing c
 
 If we want to make updates to the Millennium configuration, this can be done through a menu option on the phone without having to do through the initial installation steps all over again.
 
-With the Millennium powered on and the upper housing locked with the handset on the cradle, we can key in `2727378` on the keypad to access the craft terminal menu. We then enter in our pin number (`55555`) and use `*` to save. We will be prompted to unlock the housing, and afterwards we can key in `269` to select *Force download* from the menu and then `1` to confirm. Then we can press `*` to start the download and pull down our latest configuration. When the download finished finishes, we can lock the upper housing again and the new configuration is applied!
+With the Millennium powered on and the upper housing locked with the handset on the cradle, we can key in `2727378` on the keypad to access the craft terminal menu. We then enter in our pin number (`55555`) and use `*` to save. We will be prompted to unlock the housing, and afterwards we can key in `369` to select *Force download* from the menu and then `1` to confirm. Then we can press `*` to start the download and pull down our latest configuration. When the download finished finishes, we can lock the upper housing again and the new configuration is applied!
 
 ## Conclusion
 
