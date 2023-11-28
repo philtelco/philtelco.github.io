@@ -21,9 +21,12 @@ PhilTel is always in search of hardware to support our infrastructure and instal
 
 * Payphones and payphone parts (including handsets, keys, vault doors, keypads, etc.)
 * Payphone enclosures (boothetes, pedestals, backplates, etc.)
+* x86 computers running or supporting Windows 98
+* Telephony PCI/PCIE cards and modulea (Digium, Sangoma, etc.)
 * Bulk telephone cable
 * OpenWRT-compatible routers
 * Unlocked SIP ATA devices
+* and more, if you think we want it we probably do!
 
 ## Patreon Supporters
 
