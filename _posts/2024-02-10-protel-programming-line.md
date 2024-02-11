@@ -13,7 +13,7 @@ Special thanks to John Porter and Peter for their help with ExpressNet along the
 
 ## How is this set up?
 
-From a technical standpoint, we are running ExpressNet 1.55 on Windows 98SE on a Wyse thin client hooked up to a Protel UPMS modem. The modem is hooked into an Adit 600 channel bank, which is connected to an Asterisk PBX by way of a Sangoma T1/E1 card. A video explaining the whole setup is available below:
+From a technical standpoint, we are running ExpressNet 1.55 on Windows 98SE on a Wyse thin client hooked up to a Protel UPMS 1200 modem. The modem is hooked into an Adit 600 channel bank, which is connected to an Asterisk PBX by way of a Sangoma T1/E1 card. A video explaining the whole setup is available below:
 
 {% raw %}<p><iframe width="560" height="315" src="https://www.youtube.com/embed/yRDab94jheM?si=GWcb96ulaDOHEaJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>{% endraw %}
 
@@ -21,11 +21,11 @@ From a technical standpoint, we are running ExpressNet 1.55 on Windows 98SE on a
 
 To program your phone, first make sure it is on-hook.
 Now, hold down the program button and take the phone off-hook, you should hear a single beep. You can now release the program button.
-On the keypad, dial __005555555555*__, you should then hear a single beep.
-Next, dial __252252776835*__ (for PSTN) or __252630500*__ (for PhreakNet), you should then hear a single beep.
+On the keypad, dial `005555555555*`, you should then hear a single beep.
+Next, dial `252252776835*` (for PSTN) or `252630500*` (for PhreakNet), you should then hear a single beep.
 If you hear more than one beep on the above steps, simply repeat the step.
-Finally, dial __*#3__. You should hear the phone say the phone number of the phone (in this case __555-555-5555__) and then you will hear the phone connect to ExpressNet and download config. This should take around 5 minutes total.
-After the download finishes, dial __*#6__, and you should hear a timestamp of the last successful download.
+Finally, dial `*#3`. You should hear the phone say the phone number of the phone (in this case __555-555-5555__) and then you will hear the phone connect to ExpressNet and download the necessary configuration. This should take around 5 minutes total.
+After the download finishes, dial `*#6`, and you should hear a timestamp of the last successful download.
 
 If your download fails, try repeating the steps above again. Otherwise, make sure you have working (and charged) payphone batteries (test this by calling your payphone and seeing if the internal modem picks up), a working keypad, etc.
 
