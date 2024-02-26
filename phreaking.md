@@ -67,7 +67,7 @@ We will be blue-boxing directly from ProjectMF's switch within PhreakNet. Keep i
   
 To blue-box, do the following,  
 1) Pick up the handset and dial __1-400-762-2601__. You should hear some tones in the background folloed by ringing.  
-2) During this ringing, play a_ _2600 Hz__ tone into the mouthpiece of the handset. The ringing should stop and you should hear a _wink_ which sounds a but like tapping a knife against the rim of a glass a few times. If you do not hear a wink, try playing the __2600 Hz__ tone again. The line can be sensitive, so trying higher/lower volume can give different levels of success.  
+2) During this ringing, play a __2600 Hz__ tone into the mouthpiece of the handset. The ringing should stop and you should hear a _wink_ which sounds a but like tapping a knife against the rim of a glass a few times. If you do not hear a wink, try playing the __2600 Hz__ tone again. The line can be sensitive, so trying higher/lower volume can give different levels of success.  
 3) After the wink, you have about five seconds to start dialing another number, so quickly dial __KP__ (key pulse) so signify the start of a new call.  
 4) Next, dial __112__ (MF digits) to signify the number we want to dial. This is a 3-digit extension on the ProjectMF switch, and other extensions can be found [here](https://projectmf.org/intro.html){:target="_blank"} if you want to experiment with other destinations.
 5) Finally, dial __ST__ (STart). After this, you should hear the digits dialing in the background and the call will connect to a recording describing the phreaking technique of "Tandem Stacking."
