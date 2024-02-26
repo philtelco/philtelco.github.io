@@ -23,31 +23,31 @@ These days, advances in technology have closed many of the loopholes that were p
 
 ## Red-Boxing from a PhilTel phone
 
-[PhreakNet](https://portal.phreaknet.org/directory){:target="_blank"} has several numbers you can dial that will give you a simulated payphone trunk that will respond to coin (red box) tones.
+[PhreakNet](https://portal.phreaknet.org/directory){:target="blank"} has several numbers you can dial that will give you a simulated payphone trunk that will respond to coin (red box) tones.
 
 ### Acquiring a Red Box
 
-Red boxes can be built by modifying pocket tone dialers, assembled by hand from electronic components, or simulated via audio files and online apps. Check out [phonelosers.org dummies guide to red boxing ](http://www.phonelosers.org/redbox/){:target="_blank"} for downloads of coin tone audio files. If you feel like building a red box, I once recommend building [Don Froula's Arduino-based Multi-Mode Blue Box](https://www.instructables.com/Arduino-12-mode-Blue-Box-Introduction/){:target="_blank"}, which can playback blue box tones, red box tones, and many others! You can also try building your own red box by [modifying a pocket tone dialer](https://phonelosers.com/redbox/tonedialer/){:target="_blank"}.  
+Red boxes can be built by modifying pocket tone dialers, assembled by hand from electronic components, or simulated via audio files and online apps. Check out [phonelosers.org dummies guide to red boxing ](http://www.phonelosers.org/redbox/){:target="blank"} for downloads of coin tone audio files. If you feel like building a red box, I once recommend building [Don Froula's Arduino-based Multi-Mode Blue Box](https://www.instructables.com/Arduino-12-mode-Blue-Box-Introduction/){:target="blank"}, which can playback blue box tones, red box tones, and many others! You can also try building your own red box by [modifying a pocket tone dialer](https://phonelosers.com/redbox/tonedialer/){:target="blank"}.  
   
-For most people, using the online PhreakNet webapp's [1-SLOT COIN DENOMINATION TONES](https://phreaknet.org/bluebox/){:target="_blank"} will work for most people on their cell phones.  
+For most people, using the online PhreakNet webapp's [1-SLOT COIN DENOMINATION TONES](https://phreaknet.org/bluebox/){:target="blank"} will work for most people on their cell phones.  
 
 ### How to Red-Box
   
 While Red-boxing once required an actual coin line from the telephone company, PhilTel phones can now simulate these lines for red-boxing for calls to PhreakNet numbers!  
   
 To red-box, do the following,  
-1) Pick up the handset and dial _*11_ to drop into a pre-pay (coin first) coin line. This line simulates a CoinZone coin trunk as would normally be provided to the payphone from a phone company. You should hear a high-pitched whine after dialing this number.  
-2) Now is time to red-box! Using your red box of choice, play the audio for the denomination of _10 cents_ into the handset mouthpiece. You should hear two chirps from your red box and you should then hear a dialtone from the phone. If you do not hear a dialtone, try the _10 cents_ audio again.  
-3) Now that you have dialtone, try dialing a 7-digit PhreakNet number like _767-2676_. You will hear sounds from the phone when entering each digit, just like you would have if dialing back in the day! After dialing the full number, it should connect. If you dialed _767-2676_ it will provide the time and temperature.  
+1) Pick up the handset and dial __*11__ to drop into a pre-pay (coin first) coin line. This line simulates a CoinZone coin trunk as would normally be provided to the payphone from a phone company. You should hear a high-pitched whine after dialing this number.  
+2) Now is time to red-box! Using your red box of choice, play the audio for the denomination of __10 cents__ into the handset mouthpiece. You should hear two chirps from your red box and you should then hear a dialtone from the phone. If you do not hear a dialtone, try the __10 cents__ audio again.  
+3) Now that you have dialtone, try dialing a 7-digit PhreakNet number like __767-2676__. You will hear sounds from the phone when entering each digit, just like you would have if dialing back in the day! After dialing the full number, it should connect. If you dialed __767-2676__ it will provide the time and temperature.  
   
 There are many types of coin lines! Feel free to experiment with lines from the following list which may have different behavior (including prompting for more money after the initial 10-dent desposit):  
   
-* *11 - Pre-Pay (Coin First) coin line, CoinZone coin trunk
-* *12 - Post-Pay (WECo) coin line (CoinZone coin trunk)
-* *13 - Dial-tone first coin line (CoinZone coin trunk)
-* *14 - Dial-tone first coin line (ACTS coin trunk)
-* *15 - Semi-Dial-tone first coin line (CoinZone coin trunk)
-* *16 - Dial-tone first coin line (Nortel TOPS ACTS trunk)
+* __*11__ - Pre-Pay (Coin First) coin line, CoinZone coin trunk
+* __*12__ - Post-Pay (WECo) coin line (CoinZone coin trunk)
+* __*13__ - Dial-tone first coin line (CoinZone coin trunk)
+* __*14__ - Dial-tone first coin line (ACTS coin trunk)
+* __*15__ - Semi-Dial-tone first coin line (CoinZone coin trunk)
+* __*16__ - Dial-tone first coin line (Nortel TOPS ACTS trunk)
   
 <iframe title="PhilTel Payphone Red Boxing" src="https://diode.zone/videos/embed/5ef97335-b8bc-4be6-ac5c-b3aeb2e00354" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe>
   
@@ -66,11 +66,11 @@ For most people, using the online PhreakNet [Ultimate Online "Phreak Box"](https
 We will be blue-boxing directly from ProjectMF's switch within PhreakNet. Keep in mind that blue-boxing does not always work the first time, and this is true-to-form as it did not always work first time when it was at its peak use. Having issues is totally normal and expected.  
   
 To blue-box, do the following,  
-1) Pick up the handset and dial _1-400-762-2601_. You should hear some tones in the background folloed by ringing.  
-2) During this ringing, play a _2600 Hz_ tone into the mouthpiece of the handset. The ringing should stop and you should hear a _wink_ which sounds a but like tapping a knife against the rim of a glass a few times. If you do not hear a wink, try playing the _2600 Hz_ tone again. The line can be sensitive, so trying higher/lower volume can give different levels of success.  
-3) After the wink, you have about five seconds to start dialing another number, so quickly dial _KP_ (key pulse) so signify the start of a new call.  
-4) Next, dial _112_ (MF digits) to signify the number we want to dial. This is a 3-digit extension on the ProjectMF switch, and other extensions can be found [here](https://projectmf.org/intro.html){:target="_blank"} if you want to experiment with other destinations.
-5) Finally, dial _ST_ (STart). After this, you should hear the digits dialing in the background and the call will connect to a recording describing the phreaking technique of "Tandem Stacking."
+1) Pick up the handset and dial __1-400-762-2601__. You should hear some tones in the background folloed by ringing.  
+2) During this ringing, play a_ _2600 Hz__ tone into the mouthpiece of the handset. The ringing should stop and you should hear a _wink_ which sounds a but like tapping a knife against the rim of a glass a few times. If you do not hear a wink, try playing the __2600 Hz__ tone again. The line can be sensitive, so trying higher/lower volume can give different levels of success.  
+3) After the wink, you have about five seconds to start dialing another number, so quickly dial __KP__ (key pulse) so signify the start of a new call.  
+4) Next, dial __112__ (MF digits) to signify the number we want to dial. This is a 3-digit extension on the ProjectMF switch, and other extensions can be found [here](https://projectmf.org/intro.html){:target="_blank"} if you want to experiment with other destinations.
+5) Finally, dial __ST__ (STart). After this, you should hear the digits dialing in the background and the call will connect to a recording describing the phreaking technique of "Tandem Stacking."
   
 <iframe title="PhilTel Payphone Blue Boxing" src="https://diode.zone/videos/embed/7e8a7961-4432-4e0e-a7dc-db79e5fbaf93" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe>
 
