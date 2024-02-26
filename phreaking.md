@@ -49,7 +49,7 @@ There are many types of coin lines! Feel free to experiment with lines from the 
 * __*15__ - Semi-Dial-tone first coin line (CoinZone coin trunk)
 * __*16__ - Dial-tone first coin line (Nortel TOPS ACTS trunk)
   
-<iframe title="PhilTel Payphone Red Boxing" src="https://diode.zone/videos/embed/5ef97335-b8bc-4be6-ac5c-b3aeb2e00354" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe>
+<iframe title="PhilTel Payphone Red Boxing" src="https://diode.zone/videos/embed/7e8a7961-4432-4e0e-a7dc-db79e5fbaf93" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe>
   
 ## Blue-Boxing from a PhilTel phone
 
@@ -72,7 +72,4 @@ To blue-box, do the following,
 4) Next, dial __112__ (MF digits) to signify the number we want to dial. This is a 3-digit extension on the ProjectMF switch, and other extensions can be found [here](https://projectmf.org/intro.html){:target="_blank"} if you want to experiment with other destinations.
 5) Finally, dial __ST__ (STart). After this, you should hear the digits dialing in the background and the call will connect to a recording describing the phreaking technique of "Tandem Stacking."
   
-<iframe title="PhilTel Payphone Blue Boxing" src="https://diode.zone/videos/embed/7e8a7961-4432-4e0e-a7dc-db79e5fbaf93" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe>
-
-
-
+<iframe title="PhilTel Payphone Blue Boxing" src="https://diode.zone/videos/embed/5ef97335-b8bc-4be6-ac5c-b3aeb2e00354" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe>
