@@ -13,3 +13,7 @@ PhilTel is looking to install new (to us) payphones within the city of Philadelp
 PhilTel was founded in June 2022 and was inspired by [Futel](http://futel.net/){:target="_blank"}.
 
 **We are currently working on installing our second phone. Our first payphone is installed at [Iffy Books](https://iffybooks.net){:target="_blank"} and went live on December 17th 2022!**
+
+Here to learn about phreaking from a PhilTel phone? Check out our [Phreaking](../phreaking){:target="_blank"} page!  
+
+Want to program your Protel phone? Check out [this post]/(../2024/02/10/protel-programming-line.html){:target="_blank"}.
