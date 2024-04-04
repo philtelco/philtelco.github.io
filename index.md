@@ -16,4 +16,4 @@ PhilTel was founded in June 2022 and was inspired by [Futel](http://futel.net/){
 
 Here to learn about phreaking from a PhilTel phone? Check out our [Phreaking](../phreaking){:target="_blank"} page!  
 
-Want to program your Protel phone? Check out [this post]/(../2024/02/10/protel-programming-line.html){:target="_blank"}.
+Want to program your Protel phone? Check out [this post](https://philtel.org/2024/02/10/protel-programming-line.html){:target="_blank"}.
