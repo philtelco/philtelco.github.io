@@ -16,8 +16,6 @@ Presentations we give at conferences or other events are available below.
 
 Presented at "Navigating Cybersecurity in the Digital Age: Telephone Phreaking" at SJU on April 4th, 2024.
 
-{% raw %}<p><iframe width="560" height="315" src="https://www.youtube.com/embed/LTiV1wvphFs?si=8CVn7n4BlsID0Mtl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>{% endraw %}  
-
 *A look into telephone phreaking, following the culture from its inception through an evolution into modern day voice threats.*  
 
 Download slides via [GitHub](https://github.com/philtelco/philtel-presentations/tree/master/sju-navigating-cybersecurity-2024){:target="_blank"}.  
