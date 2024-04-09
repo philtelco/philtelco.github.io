@@ -35,7 +35,7 @@ Stream video via [YouTube](https://www.youtube.com/watch?v=LTiV1wvphFs){:target=
 
 Presented at JawnCon 0x0 on October 20th, 2023.
 
-{% raw %}<p><iframe width="560" height="315" src="https://www.youtube.com/embed/nICy6murDYU?si=o63r-NKTn9q-A-GB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>{% endraw %}  
+{% raw %}<p><iframe width="560" height="315" src="https://www.youtube.com/embed/nICy6murDYU?si=MyDvj6vw_YEsK7qI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>{% endraw %}  
 
 *Payphones were once ubiquitous in the US, but now you'd be hard-pressed to find one--especially in working order! While most people have largely forgotten about payphones, we are trying to figure out what is still out there and how to bring them back! In this talk we will explore the current state of payphone infrastructure framed though exploratory phone scanning/usage tracking, COCOT oddities, and revival/preservation projects like our own PhilTel. We'll discuss what it takes to build up your own VoIP-based free-to-use payphone service and how, through it, you can not only place/take calls from the PSTN but relive the joys of phreaking the phone system by way of the telephone hobbyist network PhreakNet!*  
 
