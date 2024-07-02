@@ -51,6 +51,7 @@ For a lot of this, you will need someone technical (that may be you, or it may n
 
 Yes, we've been featured or mentioned in the news several times. We maintain a list below of the ones we know about for reference.
 
+* 2024-04-12 - [Ring, Ring, Naveen’s Calling!](https://www.34st.com/article/2024/04/naveen-albert-philtel-payphones-philadelphia-communication){:target="_blank"} - 34st.com
 * 2023-11-13 - [JawnCon 0x0: A Strong Start With A Bright Future](https://hackaday.com/2023/11/13/jawncon-0x0-a-strong-start-with-a-bright-future/){:target="_blank"} - hackaday.com
 * 2023-06-30 - [Story2Share: Payphones get unexpected spotlight](https://nbc-2.com/news/2023/06/28/story2share-payphones-get-unexpected-spotlight/){:target="_blank"} - NBC-2 Fort Myers
 * 2023-03-02 - [DelVal Entrepreneur Installs a Free-to-Use Payphone in Philly ](https://delawarevalleyjournal.com/delval-entrepreneur-helps-install-a-free-to-use-payphone-in-philly/){:target="_blank"} - delawarevalleyjournal.com
