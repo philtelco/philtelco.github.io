@@ -1,0 +1,42 @@
+After doing initial testing on programming my Protel 7000 board using the keypad, I learned that this board doesn’t support full programming for this method, so it would have to be programmed via computer.
+
+Protel boards make use of a configuration and management packaged known as ExpressNet (or simply XNet) and interfaces with the board via a modem connection. ExpressNet is an older piece of software, designed to run on DOS systems. After some research, I concluded that DOS applications don’t have the best support on more modern Windows OS versions, so I would need a more time-appropriate environment to install XNet into.
+
+The first logical place to start with this was creating a virtualized environment. I have previously worked fairly extensively with VirtualBox, so I thought it was a logical place to start. To keep this as FOSSy as possible, I decided to install FreeDOS into a virtual machine where I could then install XNet.
+
+Luckily, there is installation media for ExpressNet version 1.55 floating around the Internet, so it was readily available. From what I understand, the floppy image for this software was originally released by Protel themselves online as a free upgrade disk, but hackers were quick to discover they could modify the data and turn the disk into a full-fledged installer.
+
+I’ll be the first person to say that I’m not well-versed in DOS as my first home computer ran Windows 95 and I only became familiar with the most basic idea of it when running games as a kid. In the years that would pass I became more experienced with the shell, but I never had the experience of a straight-up DOS machine to work on.
+
+Almost immediately I ran into issues with the XNet installer failing due to not finding `share.exe`, an executable normally included with MS-DOS. I tried to copy over a legitimate `share.exe` and even a third-party work-alike executable, but I would still get the same failure message.
+
+Reading more about experiences people had with XNet online, I decided to try running Windows 98 instead of FreeDOS, which many people reported to be working perfectly with no issues whatsoever. Instead of digging out my old installation media, I found that there was already a Windows 98 VDI file for VirtualBox available on the Internet Archive, so I decided to use this as the basis of the installation.
+
+While XNet installed just fine, no matter what I did I could not get it to recognize a modem. VirtualBox has a really handy feature that allows you to map a serial port on the host machine to a “virtual” serial port on the VM. This worked just fine as I could access and use the modem via HyperTerminal, but XNet wouldn’t budge.
+
+At this point I decided the best thing to do would be to use bare metal and try running Windows 98 directly on a machine with a real serial port. The choice to stick with Windows 98 was was mostly for familiarity, but also for future compatability. Other payphone software like Elcotel’s PNM Manager needs a Windows environment to run, so having a machine that can be something of a “swiss army knife” for payphone programming was an attractive idea.
+
+The problem with running Windows 98 on real hardware is that it generally works best on period-appropriate hardware. From some of my other projects, most notably an attempt at a dialup ISP, I knew that running 25-year-old (if not older) hardware was a recipe for unexpected issues like disk crashes or power supplies going poof in the night. Of more concern, a lot of older PCs were very power-hungry and likely to make an impact on my power bill if I decided to run one 24/7. What could I do about a stable, power-efficient machine that could run Windows 98?
+
+The answer was thin clients. For a little while I had heard of people repurposing thin clients as servers for their home lab and retro gaming machines. The latter use-case was just what I needed, and enthusiasts had already done a lot of leg-work to document a number of thin clients that supported both DOS and Windows 98. These thin clients generally draw low power, run cool with passive cooling, and and have no moving parts like fans or conventional hard disks.
+
+I settled on a Wyse thin client that was thoroughly documented in its support and easily available on eBay. It also had a real serial port, which is much harder to find on more modern thin clients. While I could perform hardware upgrades and software installation myself, I found someone selling units with a larger DOM installed, more RAM, and both Windows 98 and Windows XP installed dual-booted with all drivers. Surprisingly, these units were priced only slightly higher than a wiped unit plus the memory and disk upgrade.
+
+After I received the thin client, the next step was to install XNet. Initially I decided to use an old Windows 98 machine with a 3.5” internal floppy drive to write the XNet .ima image file directly to a blank diskette. I have two external floppy drives, but neither seemed to be able to read the floppy on the thin client. I tried a different disk, and tried writing the disk with the external floppy drives on a modern Windows computer but still couldn’t get the disk to read so I’m wondering if there is something strange about the image. The next step was to try to mount the disk image directly on the thin client via Daemon Tools, but I quickly found that this wasn’t supported. Then, I tried to extract the image and copy the contents over to the thin client, but running the installer off of the thin client didn’t seem to progress far. What finally ended up working was to dump the contents of the image on a flash drive and then run the installer directly off of the flash drive on the thin client.
+
+The setup is incredibly straight-forward. Below are some screenshots documenting the process.
+
+
+Part II
+
+The next step to getting XNet running was connecting up the modem. I have a Protel UPMS 1200 modem which was built specifically to program payphones via XNet. When I had asked online about whether or not I needed one of these modems to program my Protel 7000 board, many people told me that the 7000-series boards could only be programmed with the official modem and anything else simply wouldn’t work.
+
+I’ve later learned that this isn’t true, but I can now understand where the confusion on this came from. A Protel 7000 series board has a modem that supports a 1200 baud connection, but unlike most modems which will use FSK modulation at 1200 baud (Bell 202), Protel boards use PSK modulation which makes them incompatible. Somehow, this morphed into the myth that the 7000-series boards could only be programmed at 1200 baud when in-fact they can also be programmed at 300 baud (standard Bell 102) if the software is configured to use a non-Protel modem.
+
+At the time though, I didn’t know this. When an opportunity came up to get a UPMS 1200 modem I jumped on it. I figured best case scenario I would be able to use the UPMS to make sure that my setup worked and then experiment from that point to show definitively wether other modems would or wouldn’t work. Worst case scenario I still had all the “proper” components for a functioning setup.
+
+Upon receiving the UPMS modem, I hooked up the phone line, wired the data port to the serial port on the thin client, and powered it up. Immediately I head a loud pop from the internal speaker and then a loud dial-tone. It seemed like the modem immediately went off-hook without being configured to do so. This wasn’t a good sign. Starting XNet will send some initialization configuration to the modem so I loaded it up and watched it open communication and send the init string, but the modem still wouldn’t give up the load dial-tone.
+
+At this point I knew that the modem was broken, so I decided to open it up and investigate for any failures. Cosmetically, the inside of the unit looked fine and all of the components seemed to be intact. I noticed that the board had a handful of electrolytic capacitors so I decided to record the values of these and order replacements. This was only a few dollars worth of parts and luckily all of the capacitors are through-hole so replacement wouldn’t be too difficult.
+
+When the capacitors arrived I went ahead and replaced each one on the board one-by-one with a soldering iron, desoldering vacuum tool, and solder wick over the course of 20-30 minutes.
