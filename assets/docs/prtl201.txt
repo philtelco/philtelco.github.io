@@ -1,0 +1,450 @@
+----------------------------------------------------------------------------
+Programming the Protel CTR-201 COCOT
+Edited by El Oscuro (C) 2000
+----------------------------------------------------------------------------
+
+Getting Inside (which you need to do to program the phone):
+
+To open the case, first insert the square upper housing key into the
+upper housing lock and turn counterclockwise (if you do not have the
+key, then getting inside is an exercise left to the reader).  Then
+insert the T-Key into the T-Key opening about 6 inches above the upper
+housing lock, and turn it clockwise.  Now the upper housing should be
+able to slide away from the lower housing.
+
+----------------------------------------------------------------------------
+
+Programming Basics:
+
+All program entries are done in the program mode, using the keypad.
+
+To enter Program Mode, push and hold the black Program Button which is
+located on the left side of the circuit board, near the top.  Then pick
+up the handset.  You will hear a single beep - now release the Program
+Button.
+
+In all Program Mode functions, one beep signifies a completed entry and
+three beeps indicates an error.  To re-enter an entry, press # and wait
+for the three beeps.
+
+Program entries may be entered in any order.
+
+To initialize the phone (restoring factory settings) enter Program Mode
+and key the following:
+
+00 NPA NXX XXXX *
+47111 *
+
+(Where NPA NXX XXXX is the 10 digit area code and phone number of the phone)
+
+
+Changing or Establishing Rates:
+
+The commands to change and add rates are in 7 sections, as illustrated here:
+
+  6xxx  xxxx  xxxx   xxx   xx   0008   *
+  (1)   (2)   (3)    (4)   (5)  (6)   (7)
+
+1.Call Type Rate Band
+2.Initial Charge
+3.Additional Charge
+4.Initial Time Limit
+5.Additional Time Limit
+6.Keypad Activity
+7.Completes the Entry
+
+Example:
+
+6000 0035 0010 015 05 0008 *
+
+The above entry would make Call Type Rate Band 6000 (7-digit calls,
+non-specific) $. 35 the first 15 minutes and $ .10 each additional 5
+minutes. The 0008 keypad activity means open keypad during the call.
+
+To program a call to have no time limit, set the additional charge at
+0000, set the initial time limit at 255, and set the additional time
+limit at 01.
+
+To disallow keypad use during a call, set the keypad activity at 0001.
+To allow keypad use during a call, set the keypad activity at 0008.
+
+All program entries are done in the program mode, using the keypad.
+
+
+Programming Area Codes:
+
+Note that the CTR-201 is only pre-programmed with the original N0X and
+N1X area codes.
+
+To assign area codes to a Rate Band, enter the Call Type Code Band
+(which is the same as the Rate Band but with a 5 for the first digit
+instead of 6) followed by an area code you want to add, followed by *,
+followed by any additional area codes you want to add, each one
+separated by *, and then complete the command with **.
+
+Like this:
+
+  5xxx  NPA  *  NPA  *  etc...  **
+
+Example Entry:
+
+  5063 888 * 877 **
+
+...adds toll free area codes 888 & 877 & charge the rate established
+under Call Type Rate Band 6063.
+
+----------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+                       Rate Bands and Code Bands
+----------------------------------------------------------------------------
+Call Type                                       Rate Band   Code Band
+----------------------------------------------------------------------------
+Non-specific 7-digit calls                      6000
+(i.e. local calls)
+
+Special 7-digit calls                           6001        5001
+(i.e. long distance 7-digit calls)
+
+10 digit/ 1+10digit                             6008
+Home Area Code calls
+
+10 digit/1+10 digit local calls                 6072        5072
+(Area codes with 0 or 1 as center digit)
+
+10 digit/1+10 digit local calls                 6058        5058
+(Area codes without 0 or 1 as center digit)
+
+In-State Long Distance                          6067
+(Area codes with 0 or 1 as center digit)
+
+In-State Long Distance                          6057        5057
+(Area codes without 0 or 1 as center digit)
+
+Inter-State Long Distance                       6069
+(Area codes with 0 or 1 as center digit)
+
+Inter-State Long Distance                       6056        5056
+(Area codes without 0 or 1 as center digit)
+
+Canadian Long Distance                          6065
+(Area codes with 0 or 1 as center digit)
+
+Canadian Long Distance                          6062        5062
+(Area codes without 0 or 1 as center digit)
+
+Alaska & Hawaii Area Codes                      6071
+
+411 & 1411 (local information)                  6082
+
+Incoming calls                                  6088
+
+1-555-1212 calls (information)                  6101
+
+1+NPA+555-1212 (long distance information)      6102
+
+10-10-XXX (long-distance Carrier Access Codes)  6103
+
+1-800 calls (toll free service)                 6104
+
+1-888 & 1-877 calls                             6063        5063
+(added toll free service)
+
+0 calls (local operator)                        6108
+
+00 calls (long-distance operator)               6109
+
+0+10-digit calls (long distance alt. bill-to    6110
+call)
+
+----------------------------------------------------------------------------
+
+Restricting types of calls:
+
+To restrict a Call Type Rate Band, just enter the Rate Band followed by *.
+
+Example:
+
+   6082 *
+
+...restricts 411 type calls.
+
+----------------------------------------------------------------------------
+
+Setting up free calls!
+
+To make a Rate Band free, enter the Call Type Rate Band followed by
+
+  0000 0000 255 01 0008 *
+
+Example:
+
+   6082 0000 0000 255 01 0008 *
+
+...makes 411 type calls free.
+
+----------------------------------------------------------------------------
+
+Programming free numbers:
+
+To make a number free, enter 23 followed by the number exactly how it
+should be dialed, followed by * to complete the entry.
+
+Example:
+
+   23 281 550 5592 *
+
+...makes calls to the number 281-550-5592 free.
+
+
+To delete a free number that has been programmed, enter 23 *
+
+----------------------------------------------------------------------------
+
+Programming Free Numbers on Speed Dial:
+
+There are 12 Speed Dial slots numbered from *11 to *23.
+
+To program them, enter 3 followed by the speed dial slot (11 thru 23)
+followed by the phone number for that speed dial entry.  Then press * to
+complete the entry.
+
+Example:
+
+   3 11 281 550 5592 *
+
+...makes the phone dial 281-550-5592 anytime *11 is dialed.
+
+To delete a speed dial number, press 3 & the speed dial code that is
+being erased, & then the * key.
+
+----------------------------------------------------------------------------
+
+Programming for PBX Access:
+
+To set up the phone for access through a PBX, first enter 24, followed
+by the PBX access code, then press * to complete the entry.
+
+Example:
+
+   24 9 *
+
+...makes the CTR-201 automatically add a 9 before calling the dialed number.
+
+----------------------------------------------------------------------------
+
+Changing the receiver volume:
+
+To change the receiver volume, enter 27 followed by 1, 2, or 3, where 1
+is low volume, 2 is medium and 3 is loud, followed with a * to complete
+the entry.
+
+Example:
+
+   27 3 *
+
+...sets the receiver volume level to loud.
+
+----------------------------------------------------------------------------
+
+Local 1+10-Digit Calls
+
+If your phone is in an area with more than one local area code, and the
+full 10 digits must be dialed for such local calls, rate band 6072 must
+be set up with all the local area codes with a 1 or 0 as the center
+digit, and rate band 6058 must be set up with the local area codes
+without 1 or 0 as the center digit.
+
+Examples:
+
+   6072 0025 0025 003 03 0008 *  5072 212 * 718 * 917 **
+
+...makes area codes 212, 718 and 917 25 cents every 3 minutes.
+
+   6058 0025 0025 003 03 0008 * 5058 630 * 773 * 847 **
+
+...makes area codes 630, 773 and 847 25 cents every 3 minutes.
+
+----------------------------------------------------------------------------
+
+Separating Local and Toll 7-Digit Calls
+
+In some area codes, 7 digit calls can either be local or long-distance,
+depending on the prefix.
+
+To set up the phone for this, first you should find out which there are
+more of at your location: local or long-distance 7-digit prefixes.
+Whichever is the majority should be the non-specific 7-digit Rate Band
+(6000) and the minority should be the special 7-digit rate band (6001).
+
+Setting up the prefixes in each of these rate bands works just like
+setting up area codes in other rate bands.  First you set up Rate Band
+6000 with the rates for the majority of prefixes (so if that means the
+local ones, rate band 6000 should be set up for local 25 cent calls) and
+then you set up Rate Band 6001 with the rates for the minority of
+prefixes, followed by actually entering those prefixes into Code Band
+5001.
+
+Example:
+
+   6000 0075 0075 002 02 0008 *
+   6001 0025 0000 255 01 0008 *
+   5001 550 * 556 * 578 **
+
+...make prefixes 550, 556 and 578 25 cents a call and all other 7-digit
+calls 75 cents every 2 minutes.
+
+----------------------------------------------------------------------------
+
+Adding 1-888 & 1-877 Toll Free Service:
+
+Just set up rate band 6063 for free calls and then add the toll free
+codes to code band 5063.
+
+Enter 6063 0000 0000 255 01 0008 *
+      5063 888 * 877 **
+
+When 855 comes online, you will probably want to enter it thus:
+
+      6063 0000 0000 255 01 0008 *
+      5063 888 * 877 * 855 **
+
+----------------------------------------------------------------------------
+
+Separating 10-Digit & 1+10-Digit Calls
+
+In some area codes, you dial the area code and the 7 digit phone number
+for a local call, and 1 plus the area code and 7 digit phone number for
+a long distance call.
+
+To make the phone distinguish the two, enter 311 followed by the area
+code you are programming as local.  Then hold down the program button
+and hit # 7 times.  Then release the program button and hit * to
+complete the entry.  Then set up Rate Band 6089 as the rate for the 10
+digit calls for this area code.
+
+Note: 1+10-digit calls will remain in Call Type Rate Band 6008. Straight
+10-digit calls within the area code being programmed for will be
+assigned to Rate Band 6089 after using this procedure.
+
+Example:
+
+   311 281 (pgm. button down & # key 7 times) *
+   6089 0035 0000 255 01 0008 *
+
+...makes calls dialed 281 xxx xxxx 35 cents and calls dialed 1+281 xxx xxxx
+long distance.
+
+
+Programming a 211 Repair Number:
+
+To program a 211 repair number, enter:
+
+   6080 0000 0000 255 01 000801 *
+   22 (repair number)
+
+Example: 6080 0000 0000 255 01 000801 * 22 550 5592
+
+...makes the phone call 550 5592 anytime 211 is dialed.
+
+----------------------------------------------------------------------------
+
+Programming the Coin Box Amount Security Code:
+
+Enter 293, followed by the four digit security code you want to use,
+followed by * to complete the entry.
+
+Example:
+
+   293 1111 *
+
+...sets the Coin Box Amount Security Code to 1111
+
+----------------------------------------------------------------------------
+
+Resetting the Coin Box Amount to Zero:
+
+Make sure you are not in the Program Mode.
+
+Pick up handset & listen for dial tone.
+
+Dial * # 5 followed by your 4-digit Coin Box Amount Security Code.
+
+Example:
+
+   * # 5  1111
+
+...resets the Coin Box Amount to Zero
+
+----------------------------------------------------------------------------
+
+Determining the Coin Box Amount
+
+Make sure you are not in the Program Mode.
+
+Pick up the handset & listen for dial tone.
+
+Dial * # 4 followed by your 4-digit Coin Box Amount Security Code.
+
+Example:
+
+   * # 4 1111
+
+...prompts the phone to give the Coin Box Amount
+
+The phone will give a 5-digit voice prompt, which is the amount in
+cents.  The phone says "Oh" for Zero.
+
+Example 1: 0 1 1 2 5 means $11.25 in the coin box.
+Example 2: 1 3 4 7 0 means $134.70 in the coin box.
+
+----------------------------------------------------------------------------
+
+Default settings:
+
+911 - Free
+
+900 & 976 Calls - Restricted
+
+7-digit calls - 25 cents unlimited time
+
+Long Distance within the Home Area Code - $1.00 first minute, 50 cents
+each additional minute
+
+Long Distance in state (area codes with 0 or 1 as center digit) - $1.00
+first minute, 50 cents each additional minute
+
+Long Distance in state (area codes without 0 or 1 as center digit) -
+No default, must be added
+
+Long Distance interstate (area codes with 0 or 1 as center digit) $1.50
+first minute, 75 cents each additional minute
+
+Long Distance interstate (area codes without 0 or 1 as center digit) -
+No default, must be added
+
+Canadian calls (area codes with 0 or 1 as center digit) - $2.00
+first minute, $1.00 each additional minute
+
+Canadian calls (area codes without 0 or 1 as center digit) - No default,
+must be added.
+
+Alaska & Hawaii calls - $2.00 first minute, $1.00 each additional minute.
+
+411 & 1411 information - 50 cents unlimited time
+
+Incoming calls - Ringer on, free unlimited time
+
+1 555 1212 information - $1.00 unlimited time
+
+1-800 - Free unlimited time
+
+1-888 & 1-877 - Must be added
+
+10-10-XXX type calls - Not enabled
+
+0 type calls- Free unlimited time
+
+----------------------------------------------------------------------------
+
+http://phreaking.iscool.net
