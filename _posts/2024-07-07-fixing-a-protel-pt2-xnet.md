@@ -1,4 +1,4 @@
---
+---
 layout: post
 title: "Fixing a Protel Payphone Part 2: Installing ExpressNet"
 date:   2024-07-07 0:00:01 -0400
@@ -41,7 +41,7 @@ After I received the thin client, the next step was to install XNet. Initially I
 
 The setup is incredibly straight-forward. Below are some screen-shots documenting the process.  
 
-{% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-00.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-00.JPG"></a><figquote>ExpressNet installation files are loaded into the root directory of a flash drive. <pre>Install.exe</pre> can be launched to start installation.</figquote></center></p>{% endraw %}  
+{% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-00.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-00.JPG"></a><figquote>ExpressNet installation files are loaded into the root directory of a flash drive. <i>Install.exe</i> can be launched to start installation.</figquote></center></p>{% endraw %}  
 
 {% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-01.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-01.JPG"></a><figquote>We have no existing data, so proceed with New Install.</figquote></center></p>{% endraw %}  
 
@@ -49,7 +49,7 @@ The setup is incredibly straight-forward. Below are some screen-shots documentin
 
 {% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-03.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-03.JPG"></a><figquote>Press any key to continue.</figquote></center></p>{% endraw %}  
 
-{% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-04.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-04.JPG"></a><figquote>A base installation in the <pre>C:\</pre> directory works just fine.</figquote></center></p>{% endraw %}  
+{% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-04.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-04.JPG"></a><figquote>A base installation in the <i>C:\</i> directory works just fine.</figquote></center></p>{% endraw %}  
 
 {% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-05.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-05.JPG"></a><figquote>Enter your company name.</figquote></center></p>{% endraw %}  
 
@@ -57,26 +57,26 @@ The setup is incredibly straight-forward. Below are some screen-shots documentin
 
 {% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-07.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-07.JPG"></a><figquote>Select a time zone.</figquote></center></p>{% endraw %}  
 
-{% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-08.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-08.JPG"></a><figquote>Enter <pre>0</pre> as to disable password expiration.</figquote></center></p>{% endraw %}  
+{% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-08.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-08.JPG"></a><figquote>Enter <i>0</i> as to disable password expiration.</figquote></center></p>{% endraw %}  
 
 {% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-09.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-09.JPG"></a><figquote>Choose if you would like to add XNet to the system path, and/or start automatically.</figquote></center></p>{% endraw %}  
 
-{% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-10.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-10.JPG"></a><figquote>Enter <pre>Y</pre> to allow XNet to modify <pre>AUTOEXEC.BAT</pre>.</figquote></center></p>{% endraw %}  
+{% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-10.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-10.JPG"></a><figquote>Enter <i>Y</i> to allow XNet to modify <i>AUTOEXEC.BAT</i>.</figquote></center></p>{% endraw %}  
 
-{% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-11.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-11.JPG"></a><figquote>XNet will show you the changes to <pre>AUTOEXEC.BAT</pre>.</figquote></center></p>{% endraw %}  
+{% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-11.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-11.JPG"></a><figquote>XNet will show you the changes to <i>AUTOEXEC.BAT</i>.</figquote></center></p>{% endraw %}  
 
-{% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-12.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-12.JPG"></a><figquote>Enter <pre>Y</pre> to allow XNet to modify <pre>CONFIG.SYS</pre>.</figquote></center></p>{% endraw %}  
+{% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-12.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-12.JPG"></a><figquote>Enter <i>Y</i> to allow XNet to modify <i>CONFIG.SYS</i>.</figquote></center></p>{% endraw %}  
 
-{% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-13.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-13.JPG"></a><figquote>XNet will show you changes to <pre>CONFIG.SYS</pre>.</figquote></center></p>{% endraw %}  
+{% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-13.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-13.JPG"></a><figquote>XNet will show you changes to <i>CONFIG.SYS</i>.</figquote></center></p>{% endraw %}  
 
 {% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-14.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-14.JPG"></a><figquote>Installation is completed, press any key to continue.</figquote></center></p>{% endraw %}  
 
 {% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-15.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-15.JPG"></a><figquote>When starting XNet, it will query for a connected modem on the port(s) you specified during installation and attempt to reset it.</figquote></center></p>{% endraw %}  
 
-{% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-16.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-16.JPG"></a><figquote>Login with user <pre>PROTEL</pre> and password <pre>PROTELX3</pre>.</figquote></center></p>{% endraw %}  
+{% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-16.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-16.JPG"></a><figquote>Login with user <i>PROTEL</i> and password <i>PROTELX3</i>.</figquote></center></p>{% endraw %}  
 
-{% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-17.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-17.JPG"></a><figquote>Press <pre>Enter</pre> to change the password.</figquote></center></p>{% endraw %}  
+{% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-17.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-17.JPG"></a><figquote>Press <i>Enter</i> to change the password.</figquote></center></p>{% endraw %}  
 
-{% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-18.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-18.JPG"></a><figquote>Enter and confirm a new password, then press <pre>F2</pre> to save.</figquote></center></p>{% endraw %}  
+{% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-18.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-18.JPG"></a><figquote>Enter and confirm a new password, then press <i>F2</i> to save.</figquote></center></p>{% endraw %}  
 
 {% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-19.JPG"><img style="width: 80%; max-width: 300px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/xnet-install/expressnet-19.JPG"></a><figquote>You are now running ExpressNet!</figquote></center></p>{% endraw %}  
