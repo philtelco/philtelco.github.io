@@ -5,6 +5,8 @@ date:   2024-07-07 0:00:01 -0400
 categories: payphone software expressnet xnet protel
 ---
 
+*This post is a continuation in a series, "Fixing a Protel Payphone." To view the previous installment, check out [Fixing a Protel Payphone Part 1: Getting Dial Tone]({{ site.baseurl }}/2022/06/27/fixing-a-protel-pt1.html)*
+
 Initially, I attempted to program the phone with call cost rates via the keypad according to some programming instructions I found online targeted at the Protel CTR201 series boards. There is a handy programming quick reference distributed by Protel that walks a user through the programming steps as well as [an old text file from 2000 written by El Oscuro](/assets/docs/prtl201.txt){:target="_blank"}.  
 
 {% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt2/protel-manual.jpg"><img style="width: 80% max-width: 720px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt2/protel-manual.jpg"></a><figquote>Programming instructions for a Protel CTR201.</figquote></center></p>{% endraw %}  
