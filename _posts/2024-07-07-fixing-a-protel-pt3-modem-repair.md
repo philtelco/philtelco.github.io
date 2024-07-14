@@ -19,7 +19,7 @@ Upon receiving the UPMS modem, I hooked up the phone line, wired the data port t
 
 At this point I knew that the modem was broken, so I decided to open it up and investigate for any failures. Cosmetically, the inside of the unit looked just fine and all of the components seemed to be intact. I noticed that the board had a handful of electrolytic capacitors so I recorded the values of these and ordered replacements. Even without the issue I was facing, replacing these capacitors would have been on the to-do list considering the age of the modem and the fact that I would want it to be running 24/7.  
 
-{% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt3-modem-repair/IMG_20230714_014946448.jpg"><img style="width: 80% max-width: 720px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt3-modem-repair/IMG_20230714_014946448-sm.jpg"></a><figquote>A Inside the UPMS modem.</figquote></center></p>{% endraw %}  
+{% raw %}<p><center><a href="/assets/img/2024-07-07-fixing-a-protel-pt3-modem-repair/IMG_20230714_014946448.jpg"><img style="width: 80% max-width: 720px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-07-07-fixing-a-protel-pt3-modem-repair/IMG_20230714_014946448-sm.jpg"></a><figquote>Inside the UPMS modem.</figquote></center></p>{% endraw %}  
 
 For anyone else attempting this, the capacitors needed are:  
 
