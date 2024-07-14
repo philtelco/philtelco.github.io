@@ -50,6 +50,6 @@ The existing relay was desoldered and replaced in the same process as the capaci
 
 A video documenting this whole process is available below. Luckily it all worked great first try!
 
-{% raw %}<p><iframe style="width: 80% max-width: 720px" src="https://www.youtube.com/embed/FJAOqYiTn8E?si=h9-G8c7E276JyGVD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>{% endraw %}
+{% raw %}<p><iframe width="720" height="480" src="https://www.youtube.com/embed/FJAOqYiTn8E?si=h9-G8c7E276JyGVD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>{% endraw %}
 
 With the components replaced in the modem, it should hopefully be able to operate for many years to come. With the new switch, I can operate the modem silently so it doesn't create any annoying audio while operating.
