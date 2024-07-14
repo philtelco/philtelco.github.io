@@ -5,7 +5,7 @@ date:   2024-07-14 0:00:01 -0400
 categories: payphone software expressnet xnet protel
 ---
 
-*This post is a continuation in a series, "Fixing a Protel Payphone." To view the previous installment, check out Fixing a Protel Payphone Part 2: Installing ExpressNet]({{ site.baseurl }}/2024/07/07/fixing-a-protel-pt2-xnet.html)*
+*This post is a continuation in a series, "Fixing a Protel Payphone." To view the previous installment, check out [Fixing a Protel Payphone Part 2: Installing ExpressNet]({{ site.baseurl }}/2024/07/07/fixing-a-protel-pt2-xnet.html)*
 
 The next step to getting XNet running was connecting up the modem. Protel actually produced their own modem, the UPMS 1200, which was designed specifically to program payphones via XNet. Many people online stated that in order to program my 7000-series board, I would absolutely need the UPMS modem and nothing else would do. But wait, I thought, wouldn't a standard Hayes-compatible modem work instead? XNet even has options for a generic-non-protel modem so surely I could find an alternative. I became further confused when people told me *only* the 7000-series boards needed the UPMS modem and other boards worked just fine with something more readily-available.  
 
@@ -50,6 +50,6 @@ The existing relay was desoldered and replaced in the same process as the capaci
 
 A video documenting this whole process is available below. Luckily it all worked great first try!
 
-{% raw %}<p><iframe width="560" height="315" src="https://www.youtube.com/embed/FJAOqYiTn8E?si=h9-G8c7E276JyGVD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>{% endraw %}
+{% raw %}<p><iframe style="width: 80% max-width: 720px" src="https://www.youtube.com/embed/FJAOqYiTn8E?si=h9-G8c7E276JyGVD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>{% endraw %}
 
 With the components replaced in the modem, it should hopefully be able to operate for many years to come. With the new switch, I can operate the modem silently so it doesn't create any annoying audio while operating.
