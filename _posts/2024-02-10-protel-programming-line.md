@@ -27,7 +27,7 @@ If you hear more than one beep on the above steps, simply repeat the step.
 Finally, dial `*#3`. You should hear the phone say the phone number of the phone (in this case __555-555-5555__) and then you will hear the phone connect to ExpressNet and download the necessary configuration. This should take around 5 minutes total.  
 After the download finishes, dial `*#6`, and you should hear a timestamp of the last successful download.  
 
-If your download fails, try repeating the steps above again. Otherwise, make sure you have working (and charged) payphone batteries (test this by calling your payphone and seeing if the internal modem picks up), a working keypad, etc.
+If your download fails, try repeating the steps above again. Otherwise, make sure you have working (and charged) payphone batteries (test this by calling your payphone and seeing if the internal modem picks up), a working keypad, etc. *Note:You may need to retry five times or so depending on a number of factors, VoIP can be temperamental. For additional help, don't hesitate to [contact us](./contact/)*
 
 ## Next Steps
 
