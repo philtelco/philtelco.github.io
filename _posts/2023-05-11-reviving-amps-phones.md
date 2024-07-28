@@ -408,7 +408,7 @@ Now we will be able to interface with the PBX as though we were any other phone 
 
 {% raw %}<p><center><iframe title="SIP Call with an AMPS Cellular Phone" src="https://diode.zone/videos/embed/ab0d57c5-040b-4d23-8862-7a99a1e65482" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="736" height="414" frameborder="0"></iframe><br><figquote>Making a SIP call with an AMPS phone.</figquote></center></p>{% endraw %} 
 
-If our SIP endpoint is NOT within our local network, we will need to modify the Osmocom Call Control command to use the `-P` option to specify our public IP address. For example, if our endpoint was `newyork.voip.ms` and our public IP address was 1.2.3.4` (and all other information was the same), our new command would be:
+If our SIP endpoint is NOT within our local network, we will need to modify the Osmocom Call Control command to use the `-P` option to specify our public IP address. For example, if our endpoint was `newyork.voip.ms` and our public IP address was `1.2.3.4` (and all other information was the same), our new command would be:
 
 ```
 $ osmo-cc-sip-endpoint --local 192.168.1.22 --remote newyork.voip.ms -R login@newyork.voip.ms -A login lamepassword newyork.voip.ms -P 1.2.3.4 -v 0 *
@@ -428,7 +428,7 @@ For a more "universal" (though clumsy) option, we can purchase several [ExpertPo
 
 For other phones we may be able to substitute internal batteries if we can find suitable replacements in the proper dimensions. For example, a Radio Shack 17-002 used two 6V batteries originally manufactured by Radio Shack. There isn't a direct equivalent but these [Power Sonic PS-612 6V 1.4AH SLA batteries](https://www.amazon.com/gp/product/B09DDK2G59/) fit into the battery compartment of the phone and use the same F1 connectors the original batteries did.
 
-{% raw %}<p><center><a href="/assets/img/2023-05-11-reviving-amps-phones/amps-09.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2023-05-11-reviving-amps-phones/amps-09-sm.jpg"></a><figquote>TNew batteries in the Radio Shack phone. The fuse and fuse holder were also replaced.</figquote></center></p>{% endraw %}
+{% raw %}<p><center><a href="/assets/img/2023-05-11-reviving-amps-phones/amps-09.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2023-05-11-reviving-amps-phones/amps-09-sm.jpg"></a><figquote>New batteries in the Radio Shack phone. The fuse and fuse holder were also replaced.</figquote></center></p>{% endraw %}
 
 Of course, we could likely replace batteries in these phones with Lithium-Ion equivalents, but sticking to the original chemistry means that the original charging circuitry can be used without modification. Always remember to stick to **sealed** lead-acid batteries so they can be used in any orientation if going with lead-acid chemistry.
 
