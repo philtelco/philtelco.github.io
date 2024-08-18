@@ -10,7 +10,7 @@ After publishing [our April Fools' Day post](https://philtel.org/2023/04/01/anno
 
 {% raw %}<p><center><a href="/assets/img/2023-05-11-reviving-amps-phones/amps-01.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2023-05-11-reviving-amps-phones/amps-01-sm.jpg"></a><figquote>Two AMPS phones: A Radio Shack 17-1002 and a Panasonic EF-6106EA.</figquote></center></p>{% endraw %}  
 
-# What is AMPS?
+# What is AMPS? {#what-is-amps}
 
 Advanced Mobile Phone System (AMPS) is an analog mobile phone standard that was introduced in the Americas in late 1983. It was the most popular analog standard in North America until it was finally shut down in 2008. AMPS is part of the first generation of cellular technology (1G), and operated in the 850 MHz Cellular band. 
 
@@ -18,7 +18,7 @@ AMPS utilized 60kHz duplex channels, each of which was composed of two frequenci
 
 While AMPS phones have been replaced by digital successors these days, they were fairly popular in their time and mostly exist now as paperweights.
 
-# What do I need?
+# What do I need? {#what-do-i-need}
 
 To get an AMPS phone(s) running we will need the following:
 
@@ -54,7 +54,7 @@ All of my phones seem to operate at 3 watts (perhaps this was a standard) so I p
 
 Hand-held phones often do not have removable antennas, and I don't have a good way to limit their power output. Because of this, I don't use them. In my testing, operating an AMPS phone with a dummy load limits the use to the room that the LimeSDR Mini is in and I haven't observed the signals being able to travel through walls but this may not be the same for everyone. If you have access to a Faraday cage, that would be the safest place to operate your SDR and phones.
 
-# Installing Osmocom-Analog
+# Installing Osmocom-Analog {#installing-osmocom-analog}
 
 The below commands are performed on a computer running Ubuntu Linux with a non-root, sudo user.
 
@@ -98,7 +98,7 @@ $ cd ..
 
 That's it, we are ready to test out a phone!
 
-# Calling Our Phone
+# Calling Our Phone {#calling-our-phone}
 
 We're ready to call our phone! Launch Osmocom-Analog with the following command:
 
@@ -327,7 +327,7 @@ message.c  567 cc-info   :   IE_CAUSE location=0(user) isdn_cause=16(normal call
 endpoint.c  800 cc-info   : Changing message to CC-DISC-REQ.
 ```
 
-# Operating Two (Or More) Phones
+# Operating Two (Or More) Phones {#operating-two-phones}
 
 If we have multiple phones, we can have them call one another by slightly modifying the `amps` command:
 
@@ -341,7 +341,7 @@ Just as we did previously, we can run the command and then power up both phones.
 
 {% raw %}<p><center><iframe title="PhilTel Cellular Demonstration" src="https://diode.zone/videos/embed/71fa4a49-bc12-4ea0-baab-ae320b3caf84" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="736" height="414" frameborder="0"></iframe><br><figquote>Demonstration of one phone calling the other.</figquote></center></p>{% endraw %} 
 
-# Interface an AMPS Phone with SIP
+# Interface an AMPS Phone with SIP {#interface-with-sip}
 
 Sure, calling one AMPS phone with another is fun, but it would be more fun to make/place actual phone calls to the PSTN.
 
@@ -414,7 +414,7 @@ If our SIP endpoint is NOT within our local network, we will need to modify the 
 $ osmo-cc-sip-endpoint --local 192.168.1.22 --remote newyork.voip.ms -R login@newyork.voip.ms -A login lamepassword newyork.voip.ms -P 1.2.3.4 -v 0 *
 ```
 
-# Make A Phone Portable Again
+# Make A Phone Portable Again {#make-a-phone-portable-again}
 
 As previously mentioned we can run these phones off of a bench power supply, but what if we wanted to take one on-the-go? 
 
@@ -432,7 +432,7 @@ For other phones we may be able to substitute internal batteries if we can find 
 
 Of course, we could likely replace batteries in these phones with Lithium-Ion equivalents, but sticking to the original chemistry means that the original charging circuitry can be used without modification. Always remember to stick to **sealed** lead-acid batteries so they can be used in any orientation if going with lead-acid chemistry.
 
-# Eavesdrop on Phone Calls
+# Eavesdrop on Phone Calls {#eavesdrop-on-phone-calls}
 
 In the early 1990's it was really common for technically-savvy people to eavesdrop on cellular calls with completely off-the-shelf hardware. Oftentimes, radio scanners were leveraged as they were already the de facto devices for moniroing on other radio transmissions. While most scanners of the time would explicitly block out the cellular telephone range, there was one popular model that could easily be modified to allow receipt of cellular traffic with no tools required and no need to even open the device!
 
@@ -448,7 +448,7 @@ Keep in mind that when intercepting phone calls, we will only hear one side of t
 
 Of course, after a while the FCC figured out people were doing this and in 1994 they forced Radio Shack to provide a fix for this test mode so that the cellular frequencies were once again inaccessible. From [anecdotal information I have gathered](https://docplayer.net/125651608-Modifications-for-the-radio-shack-pro-51.html), any scanner manufactured in August of 1994 or later will be updated to fully block cellular frequencies. However, there are reports that Uniden-manufactured Radio Shack scanners actually have a workaround for this where they can be put into "Test Mode 3" and then quickly put into "Test Mode 1" to restore cellular frequency access. [This guide](http://cd.textfiles.com/hackersencyc/RADIO/SCANNER/PRO_51.TST) goes into more details on the specifics, and also lets us know that the previously mentioned test mode trick potentially works for other Uniden-manufactured Radio Shack scanners like the PRO-23 and PRO-46. However, other manufacturers may have built PRO scanners for Radio Shack so it's possible that a scanner from August 1994 simply won't work for cellular. The easiest thing to do in order to verify if a scanner was made before the FCC-mandated update is to check the date code on the scanner's back label that will be in the format `MMAY`. For example, the scanner pictured above has the code `11A3` which means it was manufactured in November 1993. As long as we have a scanner with code `7A4` or earlier it should work fine!
 
-# Conclusion
+# Conclusion {#conclusion}
 
 AMPS is now a thing of the past, but it is fun to bring life back to the old hardware and once again make these phones usable.
 
