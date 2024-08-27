@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Free Community Protel Programming Line is Live"
+image: /assets/img/2024-08-26-fixing-a-protel-pt4-xnet-config/rpviewer1.png
 date:   2024-02-10 0:00:01 -0400
 categories: payphone software expressnet xnet protel
 ---
