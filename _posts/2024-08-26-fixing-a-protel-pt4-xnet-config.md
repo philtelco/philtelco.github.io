@@ -157,6 +157,8 @@ On the *View Modem Status* page we can see a live view of modem activity:
 
 From here, press `SPACE` to go to the *Activity* screen. This screen is useful to keep up in XNet to monitor incoming calls and view programming status.
 
+{% raw %}<p><center><a href="/assets/img/2024-08-26-fixing-a-protel-pt4-xnet-config/rpviewer30.png"><img style="width: 80% max-width: 720px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-08-26-fixing-a-protel-pt4-xnet-config/rpviewer30.png"></a><figquote>Modem Activity.</figquote></center></p>{% endraw %}
+
 ## Conclusion
 
 This is a basic way to set up ExpressNet for Protel phone programming, and it wasn't nearly as daunting as I thought it was going to be on the surface.
