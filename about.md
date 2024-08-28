@@ -7,6 +7,8 @@ permalink : /about/
 
 PhilTel is an amateur phone collective looking to install new (to us) payphones within the city of Philadelphia. Any payphone installed will be completely free-to-use, allowing the user to place calls within North America. Additionally, we would like to provide various experiences and services through the phones; these could be as simple as voicemail, fun as a phone number that randomly calls other payphones, or as complex as an integration with [phone collectors' networks](../networks){:target="_blank"} to allow [phone-phreaking](../phreaking){:target="_blank"} and exploration!
 
+PhilTel's mission is to not only provide the public with free-to-use telephones installed throughout the city of Philadelphia (and surrounding areas) but also to educate the public regarding the history and operation of telephony, including general telephony, underlying technologies, and special interest in pay-telephony; to maintain, repair, preserve, curate, and exhibit telephone infrastructure and history by means of research, presentations, public exhibition and installation, and creation of literature; and to provide services for the general public and hobbyists alike to both allow hands-on use of old telephony equipment and also enable like-minded projects via free (gratis) phone programming lines and comprehensive documentation.
+
 ## Frequently Asked Questions
 
 ### So I just use this phone to call people?
