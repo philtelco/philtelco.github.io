@@ -9,7 +9,7 @@ categories: payphone software expressnet xnet protel
 
 Now that ExpressNet is installed and a modem is in working order, the next step to getting XNet running was actually configuring it.
 
-Much of the below was accomplished with the help of [Peter and his great documentation on Protel programming](http://telesfor.org/payphones/doku.php?id=smart:protel:program){:target="_blank"}, John Porter who sent me a scanned ExpressNet manual, and [*Programming Protel Payphones* by El Jefe]({{ site.baseurl }}/programming_protel_payphones.pdf){:target="_blank"}. I originally had a lot of issues trying to create my configurations from scratch, but soon learned a much better idea was to clone the sample configurations and then make minor adjustments. Hopefully that revelation will save others a lot of time and headaches.
+Much of the below was accomplished with the help of [Peter and his great documentation on Protel programming](http://telesfor.org/payphones/doku.php?id=smart:protel:program){:target="_blank"}, John Porter who sent me a scanned ExpressNet manual, and [*Programming Protel Payphones* by El Jefe](/assets/docs/programming_protel_payphones.pdf){:target="_blank"}. I originally had a lot of issues trying to create my configurations from scratch, but soon learned a much better idea was to clone the sample configurations and then make minor adjustments. Hopefully that revelation will save others a lot of time and headaches.
 
 Note that the following steps show how to configure ExpressNet to program phones to allow free calling. Rating calls for any amount of money is outside of the scope of this project but the resources linked above should help anyone inclined to make a phone charge for calls. Further, this guide only has ExpressNet reacting to incoming programming requests (originating from the phone) and it is not set up to perform outgoing programming (originating from XNet).
 
@@ -140,6 +140,8 @@ On the *Add New Record* screen. enter a telephone number in the *Phone Nr* field
 {% raw %}<p><center><a href="/assets/img/2024-08-26-fixing-a-protel-pt4-xnet-config/rpviewer23.png"><img style="width: 80% max-width: 720px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-08-26-fixing-a-protel-pt4-xnet-config/rpviewer23.png"></a><figquote>Add New Record.</figquote></center></p>{% endraw %} 
 
 On the resulting *Edit Site Record* screen, make sure that *Costing Record* is set to `COST1` and *Options Record* is set to `OPTIONS1` which are the records we created earlier. Note that the *Phone Setup* section of this record has configuration for *Phone Speed* and *Dial Pattern* but these only need to be set for outgoing calls from XNet (which we are not using). Other fields in here can be updated as needed but are not required for programming. When done we can press `F2` to save.
+
+{% raw %}<p><center><a href="/assets/img/2024-08-26-fixing-a-protel-pt4-xnet-config/rpviewer24.png"><img style="width: 80% max-width: 720px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-08-26-fixing-a-protel-pt4-xnet-config/rpviewer24.png"></a><figquote>Edit Site Record.</figquote></center></p>{% endraw %} 
 
 ## Modem Status
 
