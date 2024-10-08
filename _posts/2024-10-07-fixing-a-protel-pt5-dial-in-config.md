@@ -119,7 +119,7 @@ The Sangoma A101 I have is a bit of an interesting card, and I get the feeling i
 
 I ended up acquiring a machine based on this card's needs, which wasn't difficult. The card has a PCIe x1 connector, so anything with PCIe would work. The only other stipulation was that since I only had the low-profile bracket, I wanted something that fit low profile cards. I didn't want to run without a bracket and a full-size bracket second-hand would cost just as much the card itself! I stumbled upon a Lenovo ThinkStation E32 SFF machine that had everything I needed and I was able to get it for $30. 
 
-{% raw %}<p><center><a href="/assets/img/2024-10-07-fixing-a-protel-pt5-dial-in-config/thinkstation-e32sff.jpg"><img style="width: 80% max-width: 720px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-10-07-fixing-a-protel-pt5-dial-in-config/thinkstation-e32sff.jpg"></a><figquote>ThinkStation E32 SFF.</figquote></center></p>{% endraw %}
+{% raw %}<p><center><a href="/assets/img/2024-10-07-fixing-a-protel-pt5-dial-in-config/thinkstation-e32sff.jpeg"><img style="width: 80% max-width: 720px; display: block; margin: 0 auto; border 0" src="/assets/img/2024-10-07-fixing-a-protel-pt5-dial-in-config/thinkstation-e32sff.jpeg"></a><figquote>ThinkStation E32 SFF.</figquote></center></p>{% endraw %}
 
 Aside from the E32, the channel bank, the Rj-21 breakout, and the T1 card, the only other thing I ultimately purchased was an inexpensive T1 cable. While a T1 cable resembles a standard ethernet patch cable, it has different wiring (though it does use 8P8C connectors so you could easily make one yourself) so make sure you have a dedicated and clearly-labeled T1 cable between the card and channel bank.
 
