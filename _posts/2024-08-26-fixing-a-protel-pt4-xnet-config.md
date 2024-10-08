@@ -5,7 +5,7 @@ date:   2024-08-26 0:00:01 -0400
 categories: payphone software expressnet xnet protel
 ---
 
-*This post is a continuation in a series, "Fixing a Protel Payphone." To view the previous installment, check out [Fixing a Protel Payphone Part 3: Modem Repair]({{ site.baseurl }}/2024/07/14/2024-07-14-fixing-a-protel-pt3-modem-repair.html)*
+*This post is a continuation in a series, "Fixing a Protel Payphone." To view the previous installment, check out [Fixing a Protel Payphone Part 3: Modem Repair]({{ site.baseurl }}/2024/07/14/fixing-a-protel-pt3-modem-repair.html)*
 
 Now that ExpressNet is installed and a modem is in working order, the next step to getting XNet running was actually configuring it.
 

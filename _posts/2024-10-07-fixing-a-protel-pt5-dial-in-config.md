@@ -6,7 +6,7 @@ date:   2024-10-07 0:00:01 -0400
 categories: payphone software expressnet xnet protel digium sangoma t1 adit serial
 ---
 
-*This post is a continuation in a series, "Fixing a Protel Payphone." To view the previous installment, check out [Fixing a Protel Payphone Part 4: XNet Config]({{ site.baseurl }}/2024/08/26/2024-08-26-fixing-a-protel-pt4-xnet-config.html)*
+*This post is a continuation in a series, "Fixing a Protel Payphone." To view the previous installment, check out [Fixing a Protel Payphone Part 4: XNet Config]({{ site.baseurl }}/2024/08/26/fixing-a-protel-pt4-xnet-config.html)*
 
 With XNet now configured, the last step was to take care of the connection between the phone and the modem. Normally this wouldn't be a problem as I can usually take an ATA or two and configure them on my Asterisk PBX and things work without issue. However, this wasn't the case for Protel programming, and I was constantly bothered by calls dropping or connection failures early in the handshake process.
 
