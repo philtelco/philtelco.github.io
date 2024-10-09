@@ -6,6 +6,8 @@ date:   2024-02-10 0:00:01 -0400
 categories: payphone software expressnet xnet protel
 ---
 
+*Updated 2024-10-08 with SIP information*
+
 After a little over a year from having the idea to run a communal Protel programming line, we now have one running on both the PSTN and [PhreakNet](https://portal.phreaknet.org/){:target="_blank"}! Using this line, most Protel payphones can be programmed to rate all calls free, essentially turning them into standard "dumb" telephones. Note that we haven't tested many firmwares or different board types, but our understanding is that most boards are supported as long as they have later firmware versions.
 
 The number for the line is **225-2PROTEL** (PSTN) and **263-0500** (PhreakNet). We have tested this both from a Cable-ISP VoIP line and an ATA (forcing ulaw codec, setting jitter buffer fixed and low, and disabling echo cancellation) connected to a separate exchange on PhreakNet and have had programming successfully work most of the time. Your mileage may vary, and this service is offered with no guarantees or warranty. 
@@ -29,6 +31,20 @@ Finally, dial `*#3`. You should hear the phone say the phone number of the phone
 After the download finishes, dial `*#6`, and you should hear a timestamp of the last successful download.  
 
 If your download fails, try repeating the steps above again. Otherwise, make sure you have working (and charged) payphone batteries (test this by calling your payphone and seeing if the internal modem picks up), a working keypad, etc. **Note: You may need to retry five times or so depending on a number of factors, VoIP can be temperamental. For additional help, don't hesitate to [contact us](/contact/).**
+
+## Direct SIP Connection
+
+We now have a direct SIP connection into our PBX for programming. Connection information is supplied below.
+
+* Server: programming.philtel.org
+* Port: 16556
+* Username: protel
+* Password: protel
+* Codec(s): ulaw
+
+The context is set so that any phone number dialed over this connection will be sent to out programming setup. You can follow the programming steps above as written with this SIP setup and the behavior should be identical.
+
+If you are connecting via an ATA, make sure you use the G.711 ulaw codec, disable echo cancellation and fax options, and set the jitter buffer to be fixed (different people have different success rates with high/medium/low buffer so you may need to play around with this).
 
 ## Next Steps
 
