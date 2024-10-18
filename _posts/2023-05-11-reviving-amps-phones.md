@@ -5,6 +5,7 @@ date:   2023-05-11 0:00:01 -0400
 image: /assets/img/2023-05-11-reviving-amps-phones/amps-01.jpg
 categories: cellular mobile
 ---
+*Last updated 2024-10-17.*
 
 After publishing [our April Fools' Day post](https://philtel.org/2023/04/01/announcing-philtel-cellular.html), some people were surprised to learn that we could actually get old AMPS "bagphones" working and communicating with one another. There are posts online regarding how to do this, but I've found them to be slightly incomplete and wanted to walk through the process of getting everything working. Many thanks can be given to [Dmitrii Eliuseev for his 2021 post *HowTo: Running the 1G Analog Phone from 1997*](https://medium.com/geekculture/howto-running-the-1g-analog-phone-from-1997-3caec77a9df9) and [the wonderful folks at the *osmocom-analog* mailing list](https://lists.osmocom.org/hyperkitty/list/osmocom-analog@lists.osmocom.org/)
 
@@ -58,42 +59,68 @@ Hand-held phones often do not have removable antennas, and I don't have a good w
 
 The below commands are performed on a computer running Ubuntu Linux with a non-root, sudo user.
 
-First, we need to install SoapySDR version 7 which is used to interface with the SDR hardware:
+First, let's update apt and install some things:
 
 ```
 $ cd ~
 $ sudo apt-get update
-$ sudo apt-get install libusb-1.0-0-dev build-essential autoconf gcc make cmake libasound2-dev pkg-config git
+$ sudo apt-get install libusb-1.0-0-dev build-essential autoconf gcc make cmake libasound2-dev pkg-config git libtool
+```
+
+At the time of initial writing we needed to install SoapySDR version 7 manually, which is used to interface with the SDR hardware. However, as of 2024-10-15 MC4f provided some updated installation settings to install SoapySDR and some Osmocom libraries from apt:
+
+```
+$ sudo apt install libasound2-dev libsoapysdr-dev soapysdr-tools libosmocore
+$ sudo apt install libosmocore-dev # just in case
+```
+
+To perform a manual installation as done initially, here are the steps:
+
+```
 $ wget https://github.com/pothosware/SoapySDR/archive/refs/tags/soapy-sdr-0.7.2.tar.gz
 $ tar -xf soapy-sdr-0.7.2.tar.gz
 $ cd SoapySDR-soapy-sdr-0.7.2 && mkdir build && cd build
 $ cmake ..
 $ make -j4 && sudo make install && sudo ldconfig
-$ cd ../..
 ```
 
 Next, we will install the LimeSuite library:
 
 ```
+$ cd ~
 $ wget https://github.com/myriadrf/LimeSuite/archive/refs/tags/v20.10.0.tar.gz
 $ tar -xf v20.10.0.tar.gz
 $ cd LimeSuite-20.10.0
 $ mkdir build && cd build
 $ cmake ..
 $ make -j4 && sudo make install && sudo ldconfig
-$ cd ../..
+```
+
+Now, install libosmo-cc:
+
+```
+$ cd ~
+$ git clone https://gitea.osmocom.org/cc/libosmo-cc
+$ cd libosmo-cc
+$ autoreconf -if
+$ ./configure
+$ make clean
+$ make -j4
+$ sudo make install
+$ sudo ldconfig
 ```
 
 Lastly, we will install Osmocom-Analog:
 
 ```
-$ git clone git://git.osmocom.org/osmocom-analog
+$ cd ~
+$ git clone https://gitea.osmocom.org/cellular-infrastructure/osmocom-analog
 $ cd osmocom-analog
 $ autoreconf -if
 $ ./configure
+$ make clean
 $ make -j4
 $ sudo make install
-$ cd ..
 ```
 
 That's it, we are ready to test out a phone!
@@ -367,7 +394,7 @@ Next we can install Osmocom Call Control:
 
 ```
 $ sudo apt install aclocal m4 autom4te
-$ git clone git://git.osmocom.org/cc/osmo-cc-sip-endpoint
+$ git clone https://gitea.osmocom.org/cc/osmo-cc-sip-endpoint.git
 $ cd osmo-cc-sip-endpoint
 ```
 
