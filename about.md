@@ -51,8 +51,10 @@ For a lot of this, you will need someone technical (that may be you, or it may n
 
 ### Did I see you in a news article or hear about you on the radio/television?
 
-Yes, we've been featured or mentioned in the news several times. We maintain a list below of the ones we know about for reference.
+We've been featured or mentioned in the news several times. We maintain a list below of the ones we know about for reference.
 
+* 2024-08-09 - [Public phones make a comeback in White River Valley](https://www.vnews.com/A-public-phone-pops-up-in-Tunbridge-and-could-be-the-start-of-a-movement-56437864){:target="_blank"} - vnews.com
+* 2024-08-08 - [Free Calls from Retro Payphone](https://www.ourherald.com/articles/free-calls-from-retro-payphone/){:target="_blank"} - ourherald.com
 * 2024-04-12 - [Ring, Ring, Naveen’s Calling!](https://www.34st.com/article/2024/04/naveen-albert-philtel-payphones-philadelphia-communication){:target="_blank"} - 34st.com
 * 2023-11-13 - [JawnCon 0x0: A Strong Start With A Bright Future](https://hackaday.com/2023/11/13/jawncon-0x0-a-strong-start-with-a-bright-future/){:target="_blank"} - hackaday.com
 * 2023-06-30 - [Story2Share: Payphones get unexpected spotlight](https://nbc-2.com/news/2023/06/28/story2share-payphones-get-unexpected-spotlight/){:target="_blank"} - NBC-2 Fort Myers
