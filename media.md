@@ -16,6 +16,8 @@ Presentations we give at conferences or other events are available below.
 
 Presented at JawnCon 010 on October 11th, 2024.
 
+{% raw %}<p><iframe width="560" height="315" src="https://www.youtube.com/embed/AqlpU7LMxPM?si=yLomua2K-WDaJ5Vl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>{% endraw %} 
+
 *Almost all payphones that are still installed today are COCOTs, Customer-owned coin-operated telephones, that are owned by private organizations not affiliated with "the phone company." COCOTs are the black sheep of the payphone world, often dismissed and discarded by enthusiasts because of their "outsider" status and difficulty to configure and program. As more COCOTs enter the second-hand market, those who buy a payphone of their very own often get saddled with hardware they ultimately can't or won't use... but not anymore.
 
 Join us as we discuss the current state of COCOTs, both taking the pulse of COCOTs in North America via a home-grown tool that actively monitors activity/usage from the thousands of payphones we know about, and the two-year journey to not only figure out how to program our "Protel" COCOTs but also set up a free-to-use programming line that others can use to quickly make their payphones usable again or bootstrap their own telephone collectives.*  
