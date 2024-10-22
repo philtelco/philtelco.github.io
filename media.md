@@ -23,6 +23,7 @@ Presented at JawnCon 010 on October 11th, 2024.
 Join us as we discuss the current state of COCOTs, both taking the pulse of COCOTs in North America via a home-grown tool that actively monitors activity/usage from the thousands of payphones we know about, and the two-year journey to not only figure out how to program our "Protel" COCOTs but also set up a free-to-use programming line that others can use to quickly make their payphones usable again or bootstrap their own telephone collectives.*  
 
 Download slides via [GitHub](https://github.com/philtelco/philtel-presentations/tree/master/jawncon-0x1){:target="_blank"}.  
+Stream video via [YouTube](https://www.youtube.com/watch?v=LTiV1wvphFs){:target="_blank"}.   
 
 ### Unlocking the Secrets of Telephone Phreaking - Phreaking and its implications on modern cyber threats
 
@@ -41,7 +42,7 @@ Presented at BSidesPhilly 2023 on December 8th, 2023.
 *Payphones were once ubiquitous in the US, but now you'd be hard-pressed to find one--especially in working order! While most people have largely forgotten about payphones, we are trying to figure out what is still out there and how to bring them back! In this talk we will explore the current state of payphone infrastructure framed though exploratory phone scanning/usage tracking, COCOT oddities, and revival/preservation projects like our own PhilTel. We'll discuss what it takes to build up your own VoIP-based free-to-use payphone service and how, through it, you can not only place/take calls from the PSTN but relive the joys of phreaking the phone system by way of the telephone hobbyist network PhreakNet!*  
 
 Download slides via [GitHub](https://github.com/philtelco/philtel-presentations/tree/master/bsides-philly-2023){:target="_blank"}.  
-Stream video via [YouTube](https://www.youtube.com/watch?v=LTiV1wvphFs){:target="_blank"}.  
+Stream video via [YouTube](https://www.youtube.com/watch?v=AqlpU7LMxPM){:target="_blank"}.  
 
 ### The Payphone You Have Dialed Has Been Disconnected – The State (and Revival) of Payphones in 2023
 
