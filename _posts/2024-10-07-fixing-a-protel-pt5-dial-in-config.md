@@ -136,7 +136,7 @@ To install Asterisk, DAHDI, and Wanpipe, I leveraged [Phreakscript](https://gith
 As a root user I downloaded and built Phreakscript, then updated it,
 
 ```
-# cd /usr/local/src; wget https://docs.phreaknet.org/script/phreaknet.sh; chmod +x phreaknet.sh; ./phreaknet.sh make
+# cd /usr/local/src; wget https://raw.githubusercontent.com/InterLinked1/phreakscript/refs/heads/master/phreaknet.sh; chmod +x phreaknet.sh; ./phreaknet.sh make
 # phreaknet update
 ```
 
@@ -153,7 +153,7 @@ Then, I setup some audio pieces, adding revertive pulsing sounds and the Pat Fle
 # phreaknet sounds --boilerplate
 ```
 
-Next, because this node is on [PhreakNet](https://portal.phreaknet.org/){:target="_blank"}, I configured it to add boilerplate PhreakNet configuration for my node and rotate keys. Then I edited some config to better suit my exchange,
+Next, because this node is on [PhreakNet](https://portal.phreaknet.org/){:target="_blank"}, I configured it to add boilerplate PhreakNet configuration for my node and rotate keys. Then I edited some config to better suit my exchange as the boilerplate configs assume a reserved thousands block of `555-0` whereas mine is `263-1`,
 
 ```
 # phreaknet config --api-key=JpA4eNQs5cmG12B8rpHlNmIKen98IxnCUcgU7KZs2TCiu1aH --clli=PHLAPASODS0 --disa=2630111
