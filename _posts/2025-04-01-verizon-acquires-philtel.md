@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Verizon Acquires PhilTel, Reentering the Payphone Market"
-date:   2025-04-04 0:00:01 -0400
+date:   2025-04-01 0:00:01 -0400
 categories: payphone
 ---
 
