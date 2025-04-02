@@ -1,9 +1,11 @@
 ---
 layout: post
-title: "Verizon Acquires PhilTel, Reentering the Payphone Market"
+title: "[April Fools] Verizon Acquires PhilTel, Reentering the Payphone Market"
 date:   2025-04-01 0:00:01 -0400
 categories: payphone
 ---
+
+**The below is an April Fools Day post. Hopefully you find it as funny as we did!**
 
 FOR IMMEDIATE RELEASE
 
