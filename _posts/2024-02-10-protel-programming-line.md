@@ -51,3 +51,5 @@ If you are connecting via an ATA, make sure you use the G.711 ulaw codec, disabl
 We are currently working on documenting how we set this up so that others can follow and recreate the setup. We also want to see how we can modify the setup to virtualize the software environment and use more abundant modems to lower the barrier for entry and allow others to set up their own programming environments quickly and easily.
 
 While the line only rates calls for free at the moment, we ultimately hope to come up with a system so that people can submit custom programming requests and we can set up site records in ExpressNet to accommodate them. 
+
+Our current configuration files for ExpressNet are available [here](/assets/software/protel-xnet-config-export.zip){:target="_blank"}.

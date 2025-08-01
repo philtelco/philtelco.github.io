@@ -165,4 +165,6 @@ From here, press `SPACE` to go to the *Activity* screen. This screen is useful t
 
 This is a basic way to set up ExpressNet for Protel phone programming, and it wasn't nearly as daunting as I thought it was going to be on the surface.
 
+Our current configuration files for ExpressNet are available [here](/assets/software/protel-xnet-config-export.zip){:target="_blank"}.
+
 In the next installment of this series, we will be tackling how to actually program a phone via XNet and all the required infrastructure needed to do so!
