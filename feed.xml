@@ -13,6 +13,7 @@ layout:
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
     {% for post in site.posts limit:10 %}
+	  {% if (post.hidden == nil or post.hidden == false or post.hidden == "false") %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
         <description>{{ post.content | xml_escape | replace: 'src=&quot;/', 'src=&quot;https://philtel.org/' | replace: 'href=&quot;/', 'href=&quot;https://philtel.org/' }}</description>
@@ -26,6 +27,7 @@ layout:
         <category>{{ cat | xml_escape }}</category>
         {% endfor %}
       </item>
+	  {% endif %}
     {% endfor %}
   </channel>
 </rss>
