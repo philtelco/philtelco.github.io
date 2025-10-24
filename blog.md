@@ -7,11 +7,13 @@ layout: default
 PhilTel's blog posts are listed here!
 
 {% for post in site.posts %}
+{%- if post.title and post.hidden == nil or post.hidden == "false" -%}
 {% assign currentdate = post.date | date: "%Y-%m-%d" %}
-{%- if post.title and (post.deprecated == nil or post.deprecated == "false") and (post.hidden == nil or post.hidden == "false") -%}
+{%- if post.title and post.deprecated == nil or post.deprecated == "false" -%}
 <p>{{ currentdate }} - <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></p>
 {%- endif -%}
 {%- if post.title and post.deprecated == true -%}
 <p>{{ currentdate }} - <a href="{{ post.url }}" title="{{ post.title }}"><s>{{ post.title }}</s></a></p>
+{%- endif -%}
 {%- endif -%}
 {% endfor %}
