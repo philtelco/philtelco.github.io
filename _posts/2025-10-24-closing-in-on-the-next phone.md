@@ -21,9 +21,9 @@ To replace the wiring, we used a new-old-stock box of Cerrowire from the 1970's.
 
 Around the same time, we also ran the previously-mentioned-in-our-last-update gray-jacketed telephone cable from the property's network area along the ceiling to the booth. This telephone wire terminates to a Grandstream HT802 analog telephone adapter on the network side and a terminal block on the booth on the other side, providing the last leg of telephone service over copper.
 
-{% raw %}<p><center><a href="/assets/img/2025-10-24-closing-in-on-the-next phone/booth-5.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2025-10-24-closing-in-on-the-next phone/booth-5.jpg"></a><figquote>Out with the old.</figquote></center></p>{% endraw %}
+{% raw %}<p><center><a href="/assets/img/2025-10-24-closing-in-on-the-next phone/booth-2.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2025-10-24-closing-in-on-the-next phone/booth-2.jpg"></a><figquote>Out with the old.</figquote></center></p>{% endraw %}
 
-{% raw %}<p><center><a href="/assets/img/2025-10-24-closing-in-on-the-next phone/booth-3.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2025-10-24-closing-in-on-the-next phone/booth-3.jpg"></a><figquote>Out with the old.</figquote></center></p>{% endraw %}
+{% raw %}<p><center><a href="/assets/img/2025-10-24-closing-in-on-the-next phone/booth-5.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2025-10-24-closing-in-on-the-next phone/booth-5.jpg"></a><figquote>Rewiring in progress.</figquote></center></p>{% endraw %}
 
 Unfortunately, during the rewiring a mercury switch that controlled the state of the directory lamp when the booth door is opened/closed was shattered, spilling toxic mercury on top of the booth. At this point work halted until powdered sulfur was obtained and scattered around the contaminated area. There it was left to sit for several months so it could safely amalgamate the mercury. Work resumed after this amalgam was sucked up with a wet/dry vacuum. 
 
