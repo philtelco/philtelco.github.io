@@ -3,7 +3,6 @@ layout: post
 title: "Closing in on the Next Phone"
 date:   2025-10-24 0:00:01 -0400
 categories: western electric, booth, rotary, payphone
-hidden: true
 ---
 Our next phone is coming along nicely and a lot more work has been done since our last update! Let's dive into some of the work that's been done and what's left to accomplish.
 
