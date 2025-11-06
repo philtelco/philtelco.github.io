@@ -10,9 +10,9 @@ When running a phone line up to the vintage phone booth, we noticed that the old
 
 {% raw %}<p><center><a href="/assets/img/2025-10-24-closing-in-on-the-next phone/booth-1.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2025-10-24-closing-in-on-the-next phone/booth-1-sm.jpg"></a><figquote>Original booth wiring.</figquote></center></p>{% endraw %}
 
-Luckily we have a friend who is an electrician (and formerly a ballet dancer, making her uniquely skilled at balancing on the ladder to work at an awkward angle above the booth) and she was excited to help out with this portion of the project!.
+Luckily we have a friend Lou who is an electrician (and formerly a ballet dancer, making her uniquely skilled at balancing on the ladder to work at an awkward angle above the booth) and she was excited to help out with this portion of the project!.
 
-{% raw %}<p><center><a href="/assets/img/2025-10-24-closing-in-on-the-next phone/booth-3.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2025-10-24-closing-in-on-the-next phone/booth-3-sm.jpg"></a><figquote>Our anonymous electrician.</figquote></center></p>{% endraw %}
+{% raw %}<p><center><a href="/assets/img/2025-10-24-closing-in-on-the-next phone/booth-3.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2025-10-24-closing-in-on-the-next phone/booth-3-sm.jpg"></a><figquote>Our electrician, Lou.</figquote></center></p>{% endraw %}
 
 To replace the wiring, we used a new-old-stock box of Cerrowire from the 1970's. Our electrician was able to meticulously replace the wiring for the light and fan, and add a standard NEMA 5-15P plug so it can easily be plugged into a standard power receptacle.
 
@@ -39,7 +39,7 @@ The phone will also need a replacement bolt to secure the upper-housing and a va
 
 The previously-mentioned mercury switch will also need to be replaced, and the associated control rod and linkage assembly that rocks the switch to turn on the directory lamp will need to be repaired. Luckily, timing worked in our favor as the same week that the switch shattered we became aware of one being sold at the then-upcoming [Lancaster Telephone Collector's International show](https://www.telephonecollectors.org/shows/2025/Lancaster/index.htm). We were able to acquire a replacement switch in-person at the show, which was incredible as we were unable to get a replacement shipped due to regulations in transporting mercury.
 
-During our recent repairs we discovered the relevant [Bell System Practices document for 4-type light fixture in our booth](https://telecomarchive.s3.us-east-2.amazonaws.com/docs/bsp-archive/508/508-815-100_I1.pdf) and learned we will need a frosted 4-watt bulb in the directory light to restore it to spec.
+During our recent repairs we discovered the relevant [Bell System Practices document for 4-type light fixture in our booth](https://telecomarchive.s3.us-east-2.amazonaws.com/docs/bsp-archive/508/508-815-100_I1.pdf) and learned we will need a frosted 40-watt bulb in the directory light to restore it to spec.
 
 Further, a beautiful glass "phone" sign was installed at the front of the booth and we are considering options for back-lighting it.
 
