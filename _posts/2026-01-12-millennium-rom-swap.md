@@ -4,7 +4,7 @@ title: "Nortel Millennium ROM Swap Service"
 date:   2025-10-24 0:00:01 -0400
 categories: payphone, nortel, millennium
 ---
-We're happy to announce a new ROM swapping service for Nortel Millennium phones in conjunction with [RandTel](https://randtel.co/) and others in the community!  
+We're happy to announce a new ROM swapping service for Nortel Millennium phones in conjunction with [RandTel](https://randtel.co/eeprom.html) and others in the community!  
 
 Do you own a Nortel Millennium payphone and want your phone to work like a normal landline phone that can take/make calls with no coins and no other special equipment running? Did you know that the software currently in your phone may not be recovered/known yet and be important to tinkerers and preservationists?  
 
