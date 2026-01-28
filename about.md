@@ -45,9 +45,17 @@ For a lot of this, you will need someone technical (that may be you, or it may n
 
 [Futel](https://futel.net){:target="_blank"} is a Portland, Oregon-based phone company started in 2014 by Karl Anderson. Futel currently operates twelve free-to-use phones (both payphones and armored phones) within Oregon, Washington, and Michigan, including one at Right 2 Dream Too, a self-managed houseless encampment in Portland. Fore more information, visit 
 
-[Talk To Me](http://talktomenyc.com/){:target="_blank"} is a network of five public payphones located in each of the five boroughs of New York City, that only call each other. Participants who pick up a TTM receiver set the other four ringing, inviting passing New Yorkers to answer the call. Upon connection, two unsuspecting strangers are thrust into conversation and left to navigate a serendipitous interaction with their neighbor. Talk To Me was launched in June 2022 by Jordan Seiler. For more information visit
+[Talk To Me](http://talktomenyc.com/){:target="_blank"} is a network of five public payphones located in each of the five boroughs of New York City, that only call each other. Participants who pick up a TTM receiver set the other four ringing, inviting passing New Yorkers to answer the call. Upon connection, two unsuspecting strangers are thrust into conversation and left to navigate a serendipitous interaction with their neighbor. Talk To Me was launched in June 2022 by Jordan Seiler.
 
 [OIRCT](https://oirct.org/){:target="_blank"} is a project in France setting up telephone booths with free-to-use, public telephones.
+
+[RandTel](https://randtel.co/){:target="_blank"} is a telephone cooperative in Central Vermont with the goal of providing free-to-use public telephones to rural areas.
+
+[0DIAL](https://0dial.net/){:target="_blank"} is Canada's only non-payphone service.
+
+## Do you have a code of conduct?
+
+[Yes we do.](../code-of-conduct)
 
 ### Did I see you in a news article or hear about you on the radio/television?
 
@@ -75,7 +83,6 @@ We've been featured or mentioned in the news several times. We maintain a list b
 * 2022-12-01 - [As last pay phones disappear in Philly, new project envisions a free network of cloud-based kiosks to make calls](https://www.phillyvoice.com/payphones-philly-philtel-project-free-voip-network-iffy-books/){:target="_blank"} - Phillyvoice.com
 * 2022-11-29 - [Pay Phones Are Coming Back in Philadelphia Thanks to Linux, No Quarters Required](https://www.makeuseof.com/payphones-are-coming-back-in-philadelphia-thanks-to-linux/){:target="_blank"} - Makeuseof.com
 * 2022-11-28 - [How open source is revitalizing the payphone](https://opensource.com/article/22/11/open-source-payphone-philtel){:target="_blank"} - Opensource.com
-
 
 ### What is 'phreaking'?
 
