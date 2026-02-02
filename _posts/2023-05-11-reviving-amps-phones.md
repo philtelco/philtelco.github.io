@@ -5,7 +5,7 @@ date:   2023-05-11 0:00:01 -0400
 image: /assets/img/2023-05-11-reviving-amps-phones/amps-01.jpg
 categories: cellular mobile
 ---
-*Last updated 2024-10-17.*
+*Last updated 2026-02-01.*
 
 After publishing [our April Fools' Day post](https://philtel.org/2023/04/01/announcing-philtel-cellular.html), some people were surprised to learn that we could actually get old AMPS "bagphones" working and communicating with one another. There are posts online regarding how to do this, but I've found them to be slightly incomplete and wanted to walk through the process of getting everything working. Many thanks can be given to [Dmitrii Eliuseev for his 2021 post *HowTo: Running the 1G Analog Phone from 1997*](https://medium.com/geekculture/howto-running-the-1g-analog-phone-from-1997-3caec77a9df9) and [the wonderful folks at the *osmocom-analog* mailing list](https://lists.osmocom.org/hyperkitty/list/osmocom-analog@lists.osmocom.org/)
 
@@ -43,7 +43,7 @@ My SDR did not come with antennas, and instead of opting for telescoping antenna
 
 We will need a computer to run [Osmocom-Analog](http://osmocom-analog.eversberg.eu/), the software that will interface with our SDR and get the phones operational. I'm using a laptop with Ubuntu installed, and this guide assumes a Debian-based operating system. Osmocom-Analog may run on a different POSIX operating system with some modifications, but there are many dependencies that need to be satisfied. I'll be using a ThinkPad X230 laptop as the host computer for its portability. A top-of-the-line computer is not needed to support the LimeSDR Mini.
 
-An AMPS phone should never be powered on without an antenna attached as this can damage the radio in the phone. However, it is also important to note that **these days the AMPS frequencies have been reallocated for emergency radio use and it would be incredibly bad if you were to interfere with these frequencies. That said, consider this guide for informational purposes only, and follow it at your own risk.**
+An AMPS phone should never be powered on without an antenna attached as this can damage the radio in the phone. However, it is also important to note that **these days the AMPS frequencies are still used for modern cell phones (NOTE emergency radio use like many think) and it would be incredibly bad if you were to interfere with these frequencies. That said, consider this guide for informational purposes only, and follow it at your own risk.**
 
 All of my phones luckily have removable antennas, so I opted to buy dummy loads to replace the current antennas. To get an idea of output power for any AMPS phone, take note of the FCC ID for the phone, usually located on a sticker somewhere on the unit. Then, plug this id into a tool like [fccid.io](https://fccid.io/) to get the operating frequency range(s) (to assure that this is indeed an AMPS phone) and the power output of the phone in watts. 
 
