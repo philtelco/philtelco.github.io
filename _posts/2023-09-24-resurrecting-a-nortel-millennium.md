@@ -5,7 +5,7 @@ image: /assets/img/2023-09-24-resurrecting-a-nortel-millennium/millennium-01-sm.
 date:   2023-09-24 0:00:01 -0400
 categories: payphone software nortel millennium eprom programming
 ---
-*This guide is a work-in-progress and may change over time. Please reach out with any issues! Updated 2023-11-13.*
+*This guide is a work-in-progress and may change over time. Please reach out with any issues! Updated 2026-02-01.*
 
 In the mid '90s Nortel released a new type of payphone, the Millennium, that could accept coins, smart chip cards, and standard credit cards. No longer would the masses need to carry around pocket change! More interestingly, and perhaps a main selling point given the name, was the fact that the phone featured a 2x20 character VFD screen that could display text to the caller. Unfortunately, while these phones were adopted by numerous telephone companies, they never received widespread adoption. Eventually Nortel would exit the hardware business and sell the rights to these phones to QuorTech, who in-turn would later fold and sell the rights to WiMacTel who continues to operate remaining phones today.
 
@@ -32,6 +32,8 @@ To connect phone and power up to the Millennium we need a [4-pin plug-in screw t
 {% raw %}<p><center><a href="/assets/img/2023-09-24-resurrecting-a-nortel-millennium/millennium-03.jpg"><img style="width: 80%; max-width: 600px; display: block; margin: 0 auto; border 0" src="/assets/img/2023-09-24-resurrecting-a-nortel-millennium/millennium-03-sm.jpg"></a><figquote>The connector is wired and plugged into the Millennium's PCB.</figquote></center></p>{% endraw %}
 
 ## Setting Up Millennium Manager
+
+*NOTE: Since this guide was written, the [Millennium Demo Firmware Customizer](https://payphones.telesfor.org/nortel-demo/) has been created which means you can do some customization (including rates and announcements) without needing to run or use `mm_manager` at all. This simplifies setups for people who don't want the external dependency but still would like some customization. Note that you will still have to burn an EPROM and walk through the setup process in the phone (though with this firmware you will not be prompted for the phone number of a machine running `mm_manager`) so while I endorse this customizer tool I advise you still read the below.*
 
 To program the Millennium we will use a utility from Howard Harte called [Millennium Manager or mm_manager](https://github.com/hharte/mm_manager){:target="_blank"}. `mm_manager` runs on Linux, MacOs, or Windows, but I will be showing how to use it via a Linux machine running Debian.
 
