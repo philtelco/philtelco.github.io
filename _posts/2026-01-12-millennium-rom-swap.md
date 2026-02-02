@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Nortel Millennium ROM Swap Service"
-date:   2025-10-24 0:00:01 -0400
+date:   2026-01-12 0:00:01 -0400
 categories: payphone, nortel, millennium
 ---
 We're happy to announce a new ROM swapping service for Nortel Millennium phones in conjunction with [RandTel](https://randtel.co/eeprom.html) and others in the community!  
