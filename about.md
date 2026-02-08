@@ -51,6 +51,8 @@ For a lot of this, you will need someone technical (that may be you, or it may n
 
 [RandTel](https://randtel.co/){:target="_blank"} is a telephone cooperative in Central Vermont with the goal of providing free-to-use public telephones to rural areas.
 
+[Good Phone Project](https://www.goodphoneproject.com/){:target="_blank"} is a public-service effort to provide free VoIP phone service and high-speed WiFi to Monroe County, NY residents.
+
 [0DIAL](https://0dial.net/){:target="_blank"} is Canada's only non-payphone service.
 
 ## Do you have a code of conduct?
