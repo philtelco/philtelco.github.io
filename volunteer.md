@@ -2,6 +2,7 @@
 layout: page
 title: Volunteer
 permalink: /volunteer/
+published: false
 ---
 
 PhilTel is actively looking for volunteers to help with both technical and outreach tasks. We are a completely volunteer-run collective operating in the Philadelphia area, and we need help to grow and evolve our network!
