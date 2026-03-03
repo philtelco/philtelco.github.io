@@ -12,9 +12,20 @@ We have a zine about the PhilTel project! Download it [here](/assets/docs/philte
 
 Presentations we give at conferences or other events are available below.
 
+### Modem Madness - Recent Experiments with Dial-up Modems
+
+Presented at JawnCon 0x2 on October 11th, 2025.
+
+*Once the premier way to access the Internet and different computer systems, the venerable dial-up modem has mostly been ignored and pushed by the wayside as it has been replaced with newer technologies. However, over the past few years we've been using modems in a collection of projects that give them a new lease on life.
+
+In this talk we will discuss several projects we have been working on that utilize modems, debunk myths about using modems in the present day, and outline our future efforts in the space. If we're lucky, we may inspire you to dust off your old modem and put it back to work!*  
+
+Download slides via [GitHub](https://github.com/philtelco/philtel-presentations/tree/master/jawncon-0x2) {:target="_blank"}.  
+Stream video via [YouTube](https://youtu.be/hkzPr54hbk){:target="_blank"}.
+
 ### Resurrecting COCOTs, or: How We Decided to Stop Worrying and Save Tons of Payphones
 
-Presented at JawnCon 010 on October 11th, 2024.
+Presented at JawnCon 0x1 on October 11th, 2024.
 
 {% raw %}<p><iframe width="560" height="315" src="https://www.youtube.com/embed/AqlpU7LMxPM?si=yLomua2K-WDaJ5Vl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>{% endraw %} 
 
