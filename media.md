@@ -22,7 +22,7 @@ Presented at JawnCon 0x2 on October 11th, 2025.
 
 In this talk we will discuss several projects we have been working on that utilize modems, debunk myths about using modems in the present day, and outline our future efforts in the space. If we're lucky, we may inspire you to dust off your old modem and put it back to work!*  
 
-Download slides via [GitHub](https://github.com/philtelco/philtel-presentations/tree/master/jawncon-0x2) {:target="_blank"}.  
+Download slides via [GitHub](https://github.com/philtelco/philtel-presentations/tree/master/jawncon-0x2){:target="_blank"}.  
 Stream video via [YouTube](https://youtu.be/hkzPr54hbk){:target="_blank"}.
 
 ### Resurrecting COCOTs, or: How We Decided to Stop Worrying and Save Tons of Payphones
