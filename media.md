@@ -12,6 +12,37 @@ We have a zine about the PhilTel project! Download it [here](/assets/docs/philte
 
 Presentations we give at conferences or other events are available below.
 
+### Paging in 2026 - From current carriers to OSS and hobbyist networks
+
+Presented at JawnCon 0x3 on October 18th, 2026.
+
+*While pagers once ruled the '90s, these communications devices have generally fallen out of favor with the popularity of cell phones and text messaging. Pagers are still used by many people today, and the technology and infrastructure to run it is still there, but aspiring individuals can also make use of the underlying protocols and vintage equipment to create and operate paging implementations or build small sites for their own or existing projects.
+
+This talk will cover the current landscape of paging, an overview of the protocols, provider consolidation and current support, security considerations and attack vectors, and how alphanumeric paging can be done today. Further, we will cover an integration of paging support into open source software, showing how to easily support/make use of various paging protocols today. We will also explore how to join and use DAPNET, a worldwide decentralized paging network for amateur radio operators, allowing users to build and operate small paging sites with inexpensive or surplus hardware easily and legally..*  
+
+Download slides via [GitHub](https://github.com/philtelco/philtel-presentations/tree/master/jawncon-0x3){:target="_blank"}. 
+
+
+### Freephones - A look at free-to-use payphone projects via PhilTel
+
+Presented at PhoneCon on July 25th, 2026.
+
+*Payphones once dotted street corners, transportation centers, restaurants, community centers, and everywhere in between. With the rise of mobile phones, payphones have become all but extinct and the once-prominent method of communication now blends in to the background of the public commons, ignored and forgotten by most passers-by. While many people, businesses, and telephone companies have abandoned the concept of public phones, there is a grassroots movement to bring back public telephones helmed by small regional organizations and solo actors, armed with a tinkerer's mindset and repurposed second-hand payphone hardware. These "freephones" are being erected in growing numbers and are filling a void in the communities they service. In this talk we will explore the freephone phenomenon as a whole and talk about our own Philadelphia-based group, PhilTel, discussing how we built the project and lessons learned in the process.*  
+
+Download slides via [GitHub](https://github.com/philtelco/philtel-presentations/tree/master/phonecon-2026){:target="_blank"}. 
+
+### No Coin, No Problem – A look into Freephone Projects
+
+Presented at Temple Electronics Faire on April 10th, 2026.
+
+*Payphones once dotted street corners, transportation centers, restaurants, community centers, and everywhere in between. With the rise of mobile phones, payphones have become all but extinct and the once-prominent method of communication now blends in to the background of the public commons, ignored and forgotten by most passers-by.
+
+Mobile phones have surpassed landlines and public phones as the predominant telephony platform, but it is estimated only 98% of adults in the USA have a mobile phone. Considering the population of Philadelphia, this means upwards of 31,000 of our residents don’t own one, and that is only based on census counts, not factoring in unhoused or undocumented residents. That’s enough adults to fill the Xfinity Mobile Arena one and a half times. With payphone operating companies leaving or otherwise reducing their footprint in Philadelphia and around the county, fewer people may have access to a communication method they use and rely on for their day-to-day needs.
+
+In this talk I want to explore the concept of “freephones,” or payphones converted to completely free-use, and the groups installing, repairing, and maintaining them. Anyone can walk up to one of these phones to make or take a phone call free-of-charge, providing access to communication that may otherwise be lost in different geographical areas, socio-economic groups, or communities.*  
+
+Download slides via [GitHub](https://github.com/philtelco/philtel-presentations/tree/master/temple-electronics-faire-2026){:target="_blank"}.  
+
 ### Modem Madness - Recent Experiments with Dial-up Modems
 
 Presented at JawnCon 0x2 on October 11th, 2025.
