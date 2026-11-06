@@ -5,9 +5,13 @@ permalink: /donate/
 ---
 ## Donations
 
-Monetary donations can be made via [Ko-fi](https://ko-fi.com/philtel){:target="_blank"}, [Patreon](https://www.patreon.com/philtel){:target="_blank"}, and/or [GitHub Sponsors](https://github.com/sponsors/philtelco){:target="_blank"}.
+Monetary donations can be made through the following methods:
 
-We also have print-on-demand clothing for sale [here](https://philtel.myspreadshop.com/all){:target="_blank"}, with ~$4 of each purchase going to support PhilTel!
+- Paypal to _paypal@philtel.org_
+- Venmo to _@philtel_
+- [Ko-fi](https://ko-fi.com/philtel){:target="_blank"}
+- [Patreon](https://www.patreon.com/philtel){:target="_blank"}
+- [GitHub Sponsors](https://github.com/sponsors/philtelco){:target="_blank"}
 
 Alternatively, coins can be donated by dropping them directly into the coin slot on a PhilTel phone (no change given).
 
@@ -32,5 +36,3 @@ PhilTel is always in search of hardware to support our infrastructure and instal
 ## Patreon Supporters
 
 Zach S.
-
-
