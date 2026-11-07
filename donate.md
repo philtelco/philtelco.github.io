@@ -7,8 +7,9 @@ permalink: /donate/
 
 Monetary donations can be made through the following methods:
 
-- Paypal to _paypal@philtel.org_
-- Venmo to _@philtel_
+- [Paypal](https://www.paypal.biz/philtel){:target="_blank"} or _paypal@philtel.org_
+- [Venmo](https://www.venmo.com/u/philtel){:target="_blank"}
+- [Cash App](https://cash.app/$philtel){:target="_blank"}
 - [Ko-fi](https://ko-fi.com/philtel){:target="_blank"}
 - [Patreon](https://www.patreon.com/philtel){:target="_blank"}
 - [GitHub Sponsors](https://github.com/sponsors/philtelco){:target="_blank"}
